@@ -1,0 +1,22 @@
+{
+  "dates": [
+    { "id": "noel", "titre": "Menu de Noël", "date": "2026-12-25", "jour": "Vendredi 25 décembre", "moment": "Au déjeuner", "prix": "79 €", "precision": "par personne, hors boissons", "image": "noel-salle",
+      "menu": ["Coupe de bienvenue", "Huître tiède au sabayon de champagne", "Foie gras poêlé sur poire pochée au vin moelleux", "Suprême de chapon farci à la truffe, purée de châtaigne", "Coque en chocolat, tiramisu mangue passion"],
+      "reserver": "date=2026-12-25&service=midi" },
+    { "id": "saint-sylvestre", "titre": "Saint-Sylvestre", "date": "2026-12-31", "jour": "Jeudi 31 décembre", "moment": "Soirée animée par DJ Laurent Geymet", "prix": "120 €", "precision": "le menu, 170 € avec l'accord mets et vins", "image": "sylvestre-salle",
+      "menu": ["Bouchée gourmande et coupe de Champagne", "Velours de foie gras, éclats de truffe noire", "Esturgeon poché, sauce citronnée au caviar, lentilles noires Béluga", "Filet de bœuf aux morilles, jus réduit infusé au café", "Sablé breton au yuzu, crémeux de yuzu et meringue brûlée"],
+      "reserver": "date=2026-12-31&service=soir" }
+  ],
+  "emporter": { "titre": "À emporter pour les fêtes", "debut": "2026-12-05", "fin": "2026-12-31", "image": "emporter",
+    "produits": [
+      { "nom": "Escargots à la crème d'ail", "prix": "18 €" }, { "nom": "Tourte aux escargots", "prix": "32 €" },
+      { "nom": "Tourte aux grenouilles", "prix": "32 €" }, { "nom": "Pâté lorrain", "prix": "28 € le kilo" },
+      { "nom": "Foie gras de canard maison", "prix": "36 €" }, { "nom": "Gravlax de saumon maison", "prix": "22 €" },
+      { "nom": "Tataki de bœuf", "prix": "25 €" }, { "nom": "Tataki de thon", "prix": "25 €" } ] },
+  "passees": [
+    { "titre": "Soirée libanaise", "date": "2026-10-31" },
+    { "titre": "Le Grand Buffet", "date": "2026-08-30" },
+    { "titre": "Le Grand Buffet", "date": "2026-08-23" },
+    { "titre": "Le Grand Buffet", "date": "2026-08-16" }
+  ]
+}

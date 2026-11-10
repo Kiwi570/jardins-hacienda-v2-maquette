@@ -1,0 +1,209 @@
+{
+ "mission": "reveillon",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 12602,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "La carte",
+    "Le lieu",
+    "Réceptions",
+    "Contact",
+    "Réserver",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "defiler 11",
+   "resultat": "ok",
+   "gestes": 11,
+   "secondes": 11.7,
+   "adresse": "/",
+   "y": 8415,
+   "hauteurPage": 12602,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël",
+    "h3 Saint-Sylvestre",
+    "h3 À emporter pour les fêtes"
+   ],
+   "actions": [
+    "Réserver",
+    "Commander par téléphone"
+   ],
+   "prixVus": [
+    "79 €",
+    "120 €",
+    "170 €",
+    "18 €",
+    "32 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 11,
+   "secondes": 11.7,
+   "adresse": "/",
+   "y": 8415,
+   "hauteurPage": 12602,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël",
+    "h3 Saint-Sylvestre",
+    "h3 À emporter pour les fêtes"
+   ],
+   "actions": [
+    "Réserver",
+    "Commander par téléphone"
+   ],
+   "prixVus": [
+    "79 €",
+    "120 €",
+    "170 €",
+    "18 €",
+    "32 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-2.png"
+  },
+  {
+   "k": 3,
+   "geste": "cliquer Le menu",
+   "resultat": "ok",
+   "gestes": 12,
+   "secondes": 14.1,
+   "adresse": "/",
+   "y": 8988,
+   "hauteurPage": 12650,
+   "titres": [],
+   "actions": [
+    "Réserver",
+    "Commander par téléphone"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €",
+    "32 €",
+    "28 €",
+    "36 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 12,
+   "secondes": 14.1,
+   "adresse": "/",
+   "y": 8988,
+   "hauteurPage": 12650,
+   "titres": [],
+   "actions": [
+    "Réserver",
+    "Commander par téléphone"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €",
+    "32 €",
+    "28 €",
+    "36 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-4.png"
+  }
+ ]
+}

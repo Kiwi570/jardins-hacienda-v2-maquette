@@ -1,0 +1,134 @@
+{
+ "mission": "prix",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.5,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 12750,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Voir la carte",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 5.9,
+   "adresse": "/la-carte",
+   "y": 0,
+   "hauteurPage": 5661,
+   "titres": [
+    "h1 La carte"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Entrées 9 à 21 €",
+    "Plats 21 à 26 €",
+    "Desserts 9 à 11 €",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "26 €",
+    "21 €",
+    "11 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "26 €",
+    "21 €",
+    "11 €",
+    "18 €",
+    "14 €",
+    "9 €",
+    "24 €",
+    "45 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 5.9,
+   "adresse": "/la-carte",
+   "y": 0,
+   "hauteurPage": 5661,
+   "titres": [
+    "h1 La carte"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Entrées 9 à 21 €",
+    "Plats 21 à 26 €",
+    "Desserts 9 à 11 €",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "26 €",
+    "21 €",
+    "11 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "26 €",
+    "21 €",
+    "11 €",
+    "18 €",
+    "14 €",
+    "9 €",
+    "24 €",
+    "45 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-2.png"
+  }
+ ]
+}

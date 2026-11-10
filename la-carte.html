@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La carte : Les Jardins de l&#39;Hacienda</title>
+<meta name="description" content="La carte du chef Régis Clauss : entrées, plats, planches à partager et desserts, avec leurs prix. Menu enfant à 16 €.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jardins-hacienda-v2-maquette.vercel.app/la-carte">
+<style>:root{--fond:#F2EFE9;--texte:#1C1A17;--voile-fond:#1F3E8C;--ouverture-fond:#F2EFE9;--menu-fond:#1F3E8C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<script>try{var hh=+new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',hour:'numeric',hourCycle:'h23'}).format(new Date());if(hh>=18||hh<7)document.documentElement.setAttribute('data-moment','soir')}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/gloock.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F2EFE9">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Les Jardins de l&#39;Hacienda">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La carte : Les Jardins de l&#39;Hacienda">
+<meta property="og:description" content="La carte du chef Régis Clauss : entrées, plats, planches à partager et desserts, avec leurs prix. Menu enfant à 16 €.">
+<meta property="og:url" content="https://jardins-hacienda-v2-maquette.vercel.app/la-carte">
+<meta property="og:image" content="https://jardins-hacienda-v2-maquette.vercel.app/assets/partage/la-carte-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La carte des Jardins de l&#39;Hacienda, une assiette du chef">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Les Jardins de l'Hacienda","description":"Restaurant traditionnel et lieu de réception avec terrasse et piscine, à Moineville, près de Metz.","telephone":"+33 6 18 21 28 10","address":{"@type":"PostalAddress","streetAddress":"6 Vathier Haye","postalCode":"54580","addressLocality":"Moineville","addressCountry":"FR"},"servesCuisine":"Cuisine traditionnelle de saison","acceptsReservations":true,"sameAs":["https://www.facebook.com/lesjardinsdelhacienda54","https://www.instagram.com/lesjardinsdel.hacienda/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persienne" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-h-clair.png" alt="" width="64" height="64"><span data-voile-libelle>La carte</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-h.png" alt="" width="96" height="96" data-ouverture-objet>
+  <p class="ouverture-nom">Les Jardins de l&#39;Hacienda</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Restaurant &amp; réceptions · Moineville</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-h.png" alt="" width="40" height="40"><span>Les Jardins de l&#39;Hacienda</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-carte" data-libelle="La carte" aria-current="page">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-carte" class="menu-lien" data-libelle="La carte" aria-current="page">La carte</a></li><li style="--i:2"><a href="/le-lieu" class="menu-lien" data-libelle="Le lieu">Le lieu</a></li><li style="--i:3"><a href="/receptions" class="menu-lien" data-libelle="Réceptions">Réceptions</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33618212810">Appeler 06 18 21 28 10</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="carte-ouv page-ouv lumiere" id="debut" data-ambiance="midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="carte-ouv-grille conteneur">
+    <div class="carte-ouv-texte">
+      <p class="surtitre" data-anime="gsap">Cuisine de saison · carte changée chaque semaine</p>
+      <h1 class="titre-page tampon" data-grille="typo" data-effet="tampon"><span class="tampon-texte">La carte</span></h1>
+      <p class="masque-ecran-bas" data-anime="gsap">Les plats du moment du chef Régis Clauss. Les suggestions du jour s&#39;ajoutent à l&#39;ardoise et s&#39;annoncent à table.</p>
+      <p class="texte-cle" data-info-cle data-anime="gsap"><span data-prix>Plats de 21 à 26 €</span></p>
+      <p data-anime="gsap"><a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale>Réserver une table</a></p>
+    </div>
+    <div class="volets" data-iris-centre data-effet="carte-volets" role="group" aria-label="La carte, dépliée en trois volets">
+      <a class="volet volet--0" href="#carte-detail" data-anime="gsap" data-sans-transition data-rubrique-lien="entrees">
+        <figure class="media volet-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/plat-2-784.webp" srcset="/assets/images/plat-2-480.webp 480w, /assets/images/plat-2-640.webp 640w, /assets/images/plat-2-784.webp 784w" sizes="(max-width: 760px) 30vw, 13vw" alt="Une assiette du chef : salade colorée et fleurs" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="volet-nom">Entrées</span><span class="volet-prix" data-prix>9 à 21 €</span>
+      </a><a class="volet volet--1" href="#carte-detail" data-sans-transition data-rubrique-lien="plats">
+        <figure class="media volet-photo" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/plat-1-784.webp" srcset="/assets/images/plat-1-480.webp 480w, /assets/images/plat-1-640.webp 640w, /assets/images/plat-1-784.webp 784w" sizes="(max-width: 760px) 30vw, 13vw" alt="Une assiette du chef : viande glacée, purée et légumes" width="784" height="1176" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+        <span class="volet-nom">Plats</span><span class="volet-prix" data-prix>21 à 26 €</span>
+      </a><a class="volet volet--2" href="#carte-detail" data-anime="gsap" data-sans-transition data-rubrique-lien="desserts">
+        <figure class="media volet-photo" style="--cadrage:44% 44%">
+  <picture>
+    <img src="/assets/images/dessert-1-784.webp" srcset="/assets/images/dessert-1-480.webp 480w, /assets/images/dessert-1-640.webp 640w, /assets/images/dessert-1-784.webp 784w" sizes="(max-width: 760px) 30vw, 13vw" alt="Un dessert en verre, fruits rouges" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="volet-nom">Desserts</span><span class="volet-prix" data-prix>9 à 11 €</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="carte-plats lumiere" id="carte-detail" data-ambiance="midi">
+  <figure class="media carte-plats-fond" data-grok style="--cadrage:67% 34%">
+  <picture>
+    <img src="/assets/images/grok/lin-ombre-1280.webp" srcset="/assets/images/grok/lin-ombre-640.webp 640w, /assets/images/grok/lin-ombre-1280.webp 1280w" sizes="100vw" alt="" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur">
+    <div class="carte-filtres" data-filtres role="group" aria-label="Filtrer la carte">
+      <button type="button" data-filtre="tout" aria-pressed="true">Toute la carte</button>
+      <button type="button" data-filtre="entrees" aria-pressed="false">Entrées</button><button type="button" data-filtre="plats" aria-pressed="false">Plats</button><button type="button" data-filtre="partager" aria-pressed="false">À partager</button><button type="button" data-filtre="desserts" aria-pressed="false">Desserts</button>
+    </div>
+    <div class="carte-grille" data-carte-grille>
+      <article class="rubrique" data-rubrique="entrees" id="entrees">
+        <h2 class="rubrique-titre">Entrées</h2>
+        <ul class="plats" data-anime="cascade"><li><span class="plat-nom">Foie gras de canard maison</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>21 €</span></li><li><span class="plat-nom">Risotto de Saint-Jacques au riz noir</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>21 €</span></li><li><span class="plat-nom">Rouget en vinaigrette</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>18 €</span></li><li><span class="plat-nom">Œuf cocotte à la bourguignonne</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>14 €</span></li><li><span class="plat-nom">L&#39;os à moelle</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>9 €</span></li></ul>
+      </article><article class="rubrique" data-rubrique="plats" id="plats">
+        <h2 class="rubrique-titre">Plats</h2>
+        <ul class="plats" data-anime="cascade"><li><span class="plat-nom">Pièce du boucher</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>Prix du marché</span></li><li><span class="plat-nom">Poisson selon l&#39;arrivage</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>26 €</span></li><li><span class="plat-nom">Suprême de pintade</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>24 €</span></li><li><span class="plat-nom">Porc et ail confit</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>24 €</span></li><li><span class="plat-nom">Dhal aux trois lentilles</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>21 €</span></li></ul>
+      </article><article class="rubrique" data-rubrique="partager" id="partager">
+        <h2 class="rubrique-titre">À partager <span class="rubrique-note">Planches pour 4 personnes</span></h2>
+        <ul class="plats" data-anime="cascade"><li><span class="plat-nom">La Libanaise</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>45 €</span></li><li><span class="plat-nom">La Charcuterie</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>45 €</span></li><li><span class="plat-nom">La Mer</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>45 €</span></li><li><span class="plat-nom">Houmous</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>12 €</span></li></ul>
+      </article><article class="rubrique" data-rubrique="desserts" id="desserts">
+        <h2 class="rubrique-titre">Desserts</h2>
+        <ul class="plats" data-anime="cascade"><li><span class="plat-nom">Le Gourmand</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>11 €</span></li><li><span class="plat-nom">Crème brûlée à la vanille de l&#39;île Maurice</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>10 €</span></li><li><span class="plat-nom">Brioche perdue</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>10 €</span></li><li><span class="plat-nom">Figues rôties au miel</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>10 €</span></li><li><span class="plat-nom">Tarte aux fruits de saison</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>9 €</span></li></ul>
+      </article>
+      <article class="rubrique rubrique--enfant" data-rubrique="plats">
+        <h2 class="rubrique-titre">Menu enfant</h2>
+        <ul class="plats"><li><span class="plat-nom">Jusqu&#39;à 10 ans : un plat et un dessert</span><span class="plat-points" aria-hidden="true"></span><span class="plat-prix" data-prix>16 €</span></li></ul>
+      </article>
+    </div>
+    <p class="carte-notes" data-anime>Supplément planche à partager : 10 € par personne, ou 25 € pour deux.<br>Informations sur les allergènes disponibles sur demande.</p>
+  </div>
+</section>
+<section class="carte-assiettes lumiere" id="assiettes" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur carte-assiettes-tete">
+    <h2 data-anime="lignes">Dans l&#39;assiette</h2>
+    <p data-anime>Quelques assiettes servies au fil des saisons : la carte, elle, change chaque semaine.</p>
+  </div>
+  <div class="rangee-assiettes" tabindex="0" role="region" aria-label="Galerie des assiettes, défilement horizontal">
+    <figure class="media rangee-photo rangee-photo--0" data-fx="zoom" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/plat-1-784.webp" srcset="/assets/images/plat-1-480.webp 480w, /assets/images/plat-1-640.webp 640w, /assets/images/plat-1-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Une assiette du chef : viande glacée, purée et légumes" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media rangee-photo rangee-photo--1" data-anime="rideau" style="--cadrage:53% 50%">
+  <picture>
+    <img src="/assets/images/plat-3-784.webp" srcset="/assets/images/plat-3-480.webp 480w, /assets/images/plat-3-640.webp 640w, /assets/images/plat-3-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Une assiette du chef : poisson en millefeuille, sauce blanche" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media rangee-photo rangee-photo--2" data-fx="zoom" style="--cadrage:50% 53%">
+  <picture>
+    <img src="/assets/images/plat-4-784.webp" srcset="/assets/images/plat-4-480.webp 480w, /assets/images/plat-4-640.webp 640w, /assets/images/plat-4-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Une assiette du chef : viande, chou et morilles" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media rangee-photo rangee-photo--0" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/plat-2-784.webp" srcset="/assets/images/plat-2-480.webp 480w, /assets/images/plat-2-640.webp 640w, /assets/images/plat-2-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Une assiette du chef : salade colorée et fleurs" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media rangee-photo rangee-photo--1" data-fx="zoom" style="--cadrage:44% 44%">
+  <picture>
+    <img src="/assets/images/dessert-1-784.webp" srcset="/assets/images/dessert-1-480.webp 480w, /assets/images/dessert-1-640.webp 640w, /assets/images/dessert-1-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Un dessert en verre, fruits rouges" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media rangee-photo rangee-photo--2" data-anime="rideau" style="--cadrage:43% 44%">
+  <picture>
+    <img src="/assets/images/cheminee-dessert-784.webp" srcset="/assets/images/cheminee-dessert-480.webp 480w, /assets/images/cheminee-dessert-640.webp 640w, /assets/images/cheminee-dessert-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Dessert en coupe sur une table en bois, le feu de cheminée derrière" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="carte-chef lumiere" id="chef" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur carte-chef-grille">
+    <figure class="media carte-chef-photo" data-anime="rideau" style="--cadrage:50% 51%">
+  <picture>
+    <img src="/assets/images/chef-784.webp" srcset="/assets/images/chef-480.webp 480w, /assets/images/chef-640.webp 640w, /assets/images/chef-784.webp 784w" sizes="(max-width: 760px) 70vw, 30vw" alt="Le chef Régis Clauss au bord de la piscine" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <h2 data-anime="lignes">Tradition et créativité</h2>
+      <p data-anime>Le chef sublime les produits de saison et réinvente sa carte chaque semaine. Une cuisine pensée pour les repas de famille comme pour les dîners en tête-à-tête.</p>
+    </div>
+  </div>
+</section>
+<section class="fin-page lumiere" id="reserver-fin" data-ambiance="midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur">
+    <figure class="media fin-photo" data-anime="rideau" style="--cadrage:50% 44%">
+  <picture>
+    <img src="/assets/images/salle-midi-1200.webp" srcset="/assets/images/salle-midi-480.webp 480w, /assets/images/salle-midi-800.webp 800w, /assets/images/salle-midi-1200.webp 1200w" sizes="180px" alt="La salle du restaurant baignée de soleil à midi" width="1200" height="1500" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <h2 data-anime="lignes">Une table vous attend</h2>
+    <p data-anime>Midi ou soir, en salle ou en terrasse : la réservation se fait en ligne.</p>
+    <p class="fin-actions" data-anime><a href="/reserver" class="bouton" data-libelle="Réserver">Réserver une table</a> <a href="/le-lieu" class="bouton bouton--contour" data-libelle="Le lieu">Le lieu</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-marque"><img src="/assets/images/logo-h-clair.png" alt="" width="56" height="56"><strong>Les Jardins de l&#39;Hacienda</strong></p>
+      <p>Restaurant et lieu de réception, à 15 km de Metz</p>
+      <p>6 Vathier Haye, 54580 Moineville<br><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <p class="pied-reseaux"><a href="https://www.facebook.com/lesjardinsdelhacienda54" target="_blank" rel="noopener">Facebook (nouvel onglet)</a> <a href="https://www.instagram.com/lesjardinsdel.hacienda/" target="_blank" rel="noopener">Instagram (nouvel onglet)</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-carte" data-libelle="La carte" aria-current="page">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : réservations et formulaires simulés.</p><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>© Les Jardins de l&#39;Hacienda</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33618212810">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

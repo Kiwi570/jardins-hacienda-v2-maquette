@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le lieu : salle, cheminée, terrasse et piscine</title>
+<meta name="description" content="Une salle claire et sa cheminée, une terrasse sous les paillotes, une piscine entourée de palmiers : Les Jardins de l&#39;Hacienda, en pleine nature, ouverts toute l&#39;année.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jardins-hacienda-v2-maquette.vercel.app/le-lieu">
+<style>:root{--fond:#F2EFE9;--texte:#1C1A17;--voile-fond:#1F3E8C;--ouverture-fond:#F2EFE9;--menu-fond:#1F3E8C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<script>try{var hh=+new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',hour:'numeric',hourCycle:'h23'}).format(new Date());if(hh>=18||hh<7)document.documentElement.setAttribute('data-moment','soir')}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/gloock.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F2EFE9">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Les Jardins de l&#39;Hacienda">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Le lieu : salle, cheminée, terrasse et piscine">
+<meta property="og:description" content="Une salle claire et sa cheminée, une terrasse sous les paillotes, une piscine entourée de palmiers : Les Jardins de l&#39;Hacienda, en pleine nature, ouverts toute l&#39;année.">
+<meta property="og:url" content="https://jardins-hacienda-v2-maquette.vercel.app/le-lieu">
+<meta property="og:image" content="https://jardins-hacienda-v2-maquette.vercel.app/assets/partage/le-lieu-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La salle des Jardins de l&#39;Hacienda">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Les Jardins de l'Hacienda","description":"Restaurant traditionnel et lieu de réception avec terrasse et piscine, à Moineville, près de Metz.","telephone":"+33 6 18 21 28 10","address":{"@type":"PostalAddress","streetAddress":"6 Vathier Haye","postalCode":"54580","addressLocality":"Moineville","addressCountry":"FR"},"servesCuisine":"Cuisine traditionnelle de saison","acceptsReservations":true,"sameAs":["https://www.facebook.com/lesjardinsdelhacienda54","https://www.instagram.com/lesjardinsdel.hacienda/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persienne" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-h-clair.png" alt="" width="64" height="64"><span data-voile-libelle>Le lieu</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-h.png" alt="" width="96" height="96" data-ouverture-objet>
+  <p class="ouverture-nom">Les Jardins de l&#39;Hacienda</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Restaurant &amp; réceptions · Moineville</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-h.png" alt="" width="40" height="40"><span>Les Jardins de l&#39;Hacienda</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu" aria-current="page">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-carte" class="menu-lien" data-libelle="La carte">La carte</a></li><li style="--i:2"><a href="/le-lieu" class="menu-lien" data-libelle="Le lieu" aria-current="page">Le lieu</a></li><li style="--i:3"><a href="/receptions" class="menu-lien" data-libelle="Réceptions">Réceptions</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33618212810">Appeler 06 18 21 28 10</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="lieu-ouv page-ouv" id="debut" data-ambiance="soir">
+  <svg class="lieu-palmes lieu-palmes--g" viewBox="0 0 300 300" data-visuel aria-hidden="true"><path d="M150 165 Q91.6 142.0 33.1 170.6 M136.0 160.2 q-5.9 5.6 -11.8 18.8 M136.0 160.2 q-6.4 -5.5 -12.8 -18.2 M129.6 158.5 q-6.5 6.7 -13.0 22.2 M129.6 158.5 q-8.2 -5.9 -16.5 -19.8 M123.1 157.2 q-6.8 7.5 -13.7 25.1 M123.1 157.2 q-10.0 -6.1 -20.0 -20.3 M116.7 156.1 q-6.9 8.2 -13.9 27.4 M116.7 156.1 q-11.6 -6.0 -23.2 -20.1 M110.3 155.3 q-6.8 8.8 -13.7 29.3 M110.3 155.3 q-13.0 -5.8 -26.0 -19.3 M103.8 154.9 q-6.6 9.2 -13.1 30.7 M103.8 154.9 q-14.1 -5.4 -28.3 -17.9 M97.4 154.8 q-6.2 9.5 -12.3 31.6 M97.4 154.8 q-14.9 -4.8 -29.9 -16.1 M91.0 154.9 q-5.7 9.6 -11.3 32.0 M91.0 154.9 q-15.4 -4.2 -30.9 -14.1 M84.6 155.4 q-5.1 9.5 -10.1 31.8 M84.6 155.4 q-15.6 -3.6 -31.1 -11.9 M78.1 156.2 q-4.4 9.3 -8.8 31.0 M78.1 156.2 q-15.4 -2.9 -30.7 -9.6 M71.7 157.4 q-3.7 8.9 -7.4 29.6 M71.7 157.4 q-14.8 -2.2 -29.6 -7.4 M65.3 158.8 q-3.0 8.3 -6.0 27.5 M65.3 158.8 q-13.8 -1.6 -27.7 -5.4 M58.9 160.5 q-2.3 7.5 -4.7 24.8 M58.9 160.5 q-12.5 -1.1 -25.0 -3.6 M52.4 162.6 q-1.7 6.4 -3.4 21.4 M52.4 162.6 q-10.8 -0.6 -21.6 -2.1 M46.0 164.9 q-1.1 5.1 -2.2 17.1 M46.0 164.9 q-8.6 -0.3 -17.2 -0.9 M39.6 167.6 q-0.6 3.4 -1.2 11.4 M39.6 167.6 q-5.7 -0.0 -11.5 -0.1 M33.1 170.6 q-0.0 0.0 -0.0 0.0 M33.1 170.6 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q92.8 120.5 35.7 121.0 M136.3 155.0 q-7.8 4.7 -15.7 15.8 M136.3 155.0 q0.6 -6.7 1.3 -22.2 M130.0 150.8 q-8.9 5.6 -17.7 18.6 M130.0 150.8 q-0.1 -7.7 -0.2 -25.7 M123.7 146.9 q-9.6 6.3 -19.2 21.1 M123.7 146.9 q-1.1 -8.5 -2.2 -28.5 M117.4 143.3 q-10.1 7.0 -20.2 23.2 M117.4 143.3 q-2.3 -9.1 -4.6 -30.4 M111.1 139.9 q-10.3 7.5 -20.7 24.9 M111.1 139.9 q-3.6 -9.5 -7.1 -31.6 M104.8 136.9 q-10.4 7.9 -20.7 26.2 M104.8 136.9 q-4.9 -9.6 -9.8 -32.0 M98.6 134.1 q-10.2 8.1 -20.4 27.2 M98.6 134.1 q-6.2 -9.5 -12.3 -31.6 M92.3 131.5 q-9.8 8.3 -19.6 27.6 M92.3 131.5 q-7.3 -9.2 -14.7 -30.6 M86.0 129.3 q-9.3 8.3 -18.6 27.7 M86.0 129.3 q-8.3 -8.7 -16.7 -28.9 M79.7 127.3 q-8.6 8.2 -17.2 27.2 M79.7 127.3 q-9.1 -8.0 -18.2 -26.6 M73.4 125.6 q-7.8 7.9 -15.6 26.2 M73.4 125.6 q-9.5 -7.1 -19.0 -23.8 M67.1 124.1 q-6.9 7.4 -13.8 24.6 M67.1 124.1 q-9.6 -6.2 -19.2 -20.7 M60.8 123.0 q-5.9 6.7 -11.7 22.4 M60.8 123.0 q-9.2 -5.2 -18.5 -17.3 M54.5 122.1 q-4.8 5.8 -9.5 19.5 M54.5 122.1 q-8.4 -4.1 -16.8 -13.7 M48.3 121.4 q-3.6 4.7 -7.1 15.7 M48.3 121.4 q-7.0 -3.0 -14.1 -9.9 M42.0 121.1 q-2.2 3.2 -4.4 10.6 M42.0 121.1 q-4.9 -1.8 -9.8 -6.0 M35.7 121.0 q-0.0 0.0 -0.0 0.0 M35.7 121.0 q-0.0 -0.0 -0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q105.1 102.5 60.1 72.0 M139.2 150.5 q-9.4 3.5 -18.9 11.8 M139.2 150.5 q7.2 -5.1 14.3 -17.0 M134.3 144.1 q-10.8 4.2 -21.7 13.9 M134.3 144.1 q8.0 -6.0 16.1 -20.1 M129.3 137.9 q-11.9 4.7 -23.9 15.7 M129.3 137.9 q8.6 -6.8 17.2 -22.8 M124.4 132.0 q-12.8 5.2 -25.5 17.2 M124.4 132.0 q8.9 -7.5 17.8 -25.1 M119.4 126.2 q-13.3 5.5 -26.6 18.4 M119.4 126.2 q8.9 -8.1 17.9 -27.0 M114.5 120.6 q-13.6 5.8 -27.3 19.4 M114.5 120.6 q8.8 -8.5 17.5 -28.5 M109.6 115.2 q-13.7 6.0 -27.4 20.0 M109.6 115.2 q8.4 -8.9 16.8 -29.5 M104.6 110.0 q-13.6 6.1 -27.1 20.4 M104.6 110.0 q7.8 -9.0 15.7 -30.1 M99.7 105.0 q-13.2 6.1 -26.3 20.4 M99.7 105.0 q7.1 -9.0 14.2 -30.1 M94.7 100.2 q-12.6 6.0 -25.2 20.1 M94.7 100.2 q6.3 -8.9 12.6 -29.6 M89.8 95.6 q-11.8 5.8 -23.5 19.4 M89.8 95.6 q5.3 -8.6 10.7 -28.5 M84.8 91.2 q-10.7 5.5 -21.5 18.3 M84.8 91.2 q4.3 -8.0 8.7 -26.8 M79.9 86.9 q-9.5 5.0 -19.0 16.7 M79.9 86.9 q3.3 -7.3 6.6 -24.4 M74.9 82.9 q-8.0 4.4 -16.1 14.6 M74.9 82.9 q2.3 -6.4 4.6 -21.2 M70.0 79.1 q-6.3 3.5 -12.6 11.8 M70.0 79.1 q1.4 -5.1 2.8 -17.0 M65.1 75.4 q-4.1 2.4 -8.2 8.0 M65.1 75.4 q0.6 -3.4 1.2 -11.4 M60.1 72.0 q-0.0 0.0 -0.0 0.0 M60.1 72.0 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q133.7 112.1 117.5 73.6 M146.1 152.5 q-10.7 1.9 -21.4 6.2 M146.1 152.5 q10.5 -2.3 20.9 -7.5 M144.3 146.9 q-12.3 2.2 -24.7 7.3 M144.3 146.9 q12.1 -2.7 24.2 -8.9 M142.5 141.4 q-13.7 2.4 -27.3 8.2 M142.5 141.4 q13.4 -3.0 26.7 -10.0 M140.7 136.0 q-14.7 2.7 -29.4 8.9 M140.7 136.0 q14.4 -3.3 28.7 -10.9 M138.9 130.7 q-15.5 2.9 -30.9 9.5 M138.9 130.7 q15.1 -3.5 30.2 -11.7 M137.2 125.5 q-16.0 3.0 -31.9 10.0 M137.2 125.5 q15.5 -3.7 31.1 -12.3 M135.4 120.3 q-16.2 3.1 -32.4 10.3 M135.4 120.3 q15.7 -3.8 31.5 -12.7 M133.6 115.2 q-16.1 3.1 -32.3 10.4 M133.6 115.2 q15.7 -3.9 31.4 -12.9 M131.8 110.3 q-15.8 3.1 -31.7 10.4 M131.8 110.3 q15.4 -3.9 30.7 -12.9 M130.0 105.4 q-15.3 3.0 -30.5 10.1 M130.0 105.4 q14.8 -3.8 29.6 -12.7 M128.2 100.6 q-14.4 2.9 -28.9 9.8 M128.2 100.6 q14.0 -3.7 27.9 -12.2 M126.4 95.9 q-13.3 2.7 -26.7 9.2 M126.4 95.9 q12.9 -3.5 25.7 -11.5 M124.6 91.2 q-11.9 2.5 -23.9 8.3 M124.6 91.2 q11.5 -3.2 23.0 -10.5 M122.8 86.7 q-10.2 2.2 -20.4 7.3 M122.8 86.7 q9.8 -2.8 19.6 -9.2 M121.1 82.2 q-8.1 1.8 -16.2 5.9 M121.1 82.2 q7.8 -2.2 15.5 -7.5 M119.3 77.9 q-5.4 1.2 -10.8 4.0 M119.3 77.9 q5.1 -1.5 10.3 -5.1 M117.5 73.6 q-0.0 0.0 -0.0 0.0 M117.5 73.6 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q156.9 107.6 163.8 55.7 M151.7 151.3 q-11.0 -0.8 -22.1 -2.8 M151.7 151.3 q11.0 0.8 22.1 2.6 M152.4 145.1 q-12.8 -1.0 -25.5 -3.3 M152.4 145.1 q12.8 0.9 25.5 3.0 M153.2 138.9 q-14.2 -1.1 -28.3 -3.6 M153.2 138.9 q14.2 1.0 28.3 3.4 M153.9 132.7 q-15.2 -1.2 -30.5 -3.9 M153.9 132.7 q15.3 1.1 30.5 3.6 M154.7 126.6 q-16.1 -1.2 -32.1 -4.2 M154.7 126.6 q16.1 1.2 32.1 3.8 M155.5 120.5 q-16.6 -1.3 -33.2 -4.3 M155.5 120.5 q16.6 1.2 33.2 4.0 M156.2 114.5 q-16.8 -1.3 -33.7 -4.4 M156.2 114.5 q16.9 1.2 33.7 4.1 M157.0 108.5 q-16.8 -1.3 -33.6 -4.4 M157.0 108.5 q16.8 1.2 33.7 4.1 M157.7 102.5 q-16.5 -1.3 -33.0 -4.4 M157.7 102.5 q16.5 1.2 33.1 4.0 M158.5 96.5 q-15.9 -1.3 -31.9 -4.3 M158.5 96.5 q16.0 1.2 31.9 3.9 M159.2 90.6 q-15.1 -1.2 -30.2 -4.1 M159.2 90.6 q15.1 1.1 30.2 3.7 M160.0 84.7 q-14.0 -1.1 -27.9 -3.8 M160.0 84.7 q14.0 1.0 28.0 3.5 M160.8 78.8 q-12.5 -1.0 -25.1 -3.4 M160.8 78.8 q12.5 0.9 25.1 3.1 M161.5 73.0 q-10.7 -0.9 -21.5 -2.9 M161.5 73.0 q10.8 0.8 21.5 2.7 M162.3 67.2 q-8.5 -0.7 -17.1 -2.3 M162.3 67.2 q8.6 0.6 17.1 2.2 M163.0 61.5 q-5.7 -0.5 -11.4 -1.6 M163.0 61.5 q5.7 0.4 11.4 1.4 M163.8 55.7 q-0.0 -0.0 -0.0 -0.0 M163.8 55.7 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q184.3 99.3 218.5 58.1 M158.2 149.6 q-9.1 -3.8 -18.2 -12.8 M158.2 149.6 q10.1 2.8 20.1 9.5 M162.0 142.8 q-10.4 -4.5 -20.8 -15.1 M162.0 142.8 q11.6 3.3 23.2 11.1 M165.8 136.1 q-11.4 -5.1 -22.8 -17.1 M165.8 136.1 q12.8 3.8 25.6 12.5 M169.5 129.6 q-12.2 -5.6 -24.3 -18.8 M169.5 129.6 q13.8 4.1 27.5 13.7 M173.3 123.2 q-12.6 -6.1 -25.3 -20.2 M173.3 123.2 q14.4 4.4 28.9 14.7 M177.1 116.9 q-12.9 -6.4 -25.8 -21.3 M177.1 116.9 q14.8 4.6 29.7 15.4 M180.8 110.8 q-12.9 -6.6 -25.8 -22.1 M180.8 110.8 q15.0 4.8 30.0 15.9 M184.6 104.9 q-12.7 -6.8 -25.3 -22.6 M184.6 104.9 q14.9 4.8 29.8 16.1 M188.4 99.1 q-12.2 -6.8 -24.4 -22.6 M188.4 99.1 q14.6 4.8 29.2 16.1 M192.2 93.5 q-11.6 -6.7 -23.2 -22.3 M192.2 93.5 q14.0 4.7 28.0 15.8 M195.9 88.0 q-10.7 -6.5 -21.5 -21.6 M195.9 88.0 q13.2 4.6 26.4 15.2 M199.7 82.6 q-9.7 -6.1 -19.4 -20.4 M199.7 82.6 q12.1 4.3 24.3 14.3 M203.5 77.4 q-8.5 -5.6 -17.0 -18.7 M203.5 77.4 q10.8 3.9 21.6 13.1 M207.2 72.4 q-7.1 -4.9 -14.2 -16.4 M207.2 72.4 q9.2 3.4 18.4 11.4 M211.0 67.5 q-5.5 -4.0 -10.9 -13.4 M211.0 67.5 q7.3 2.8 14.6 9.2 M214.8 62.7 q-3.5 -2.7 -7.0 -9.1 M214.8 62.7 q4.8 1.9 9.6 6.2 M218.5 58.1 q-0.0 -0.0 -0.0 -0.0 M218.5 58.1 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q195.2 118.2 240.4 111.2 M160.8 154.3 q-4.1 -6.2 -8.2 -20.7 M160.8 154.3 q8.6 4.2 17.3 14.0 M165.8 149.8 q-4.1 -7.3 -8.1 -24.4 M165.8 149.8 q9.8 5.0 19.7 16.6 M170.8 145.6 q-3.7 -8.3 -7.4 -27.6 M170.8 145.6 q10.7 5.7 21.4 18.9 M175.8 141.5 q-3.0 -9.0 -6.1 -30.1 M175.8 141.5 q11.3 6.2 22.7 20.8 M180.7 137.8 q-2.1 -9.6 -4.3 -32.1 M180.7 137.8 q11.7 6.7 23.4 22.4 M185.7 134.2 q-1.0 -10.0 -2.1 -33.4 M185.7 134.2 q11.8 7.1 23.6 23.7 M190.7 130.9 q0.2 -10.2 0.4 -33.9 M190.7 130.9 q11.7 7.4 23.4 24.6 M195.6 127.8 q1.5 -10.1 3.0 -33.8 M195.6 127.8 q11.4 7.5 22.7 25.1 M200.6 125.0 q2.8 -9.9 5.6 -32.9 M200.6 125.0 q10.9 7.6 21.7 25.3 M205.6 122.5 q4.0 -9.4 8.0 -31.2 M205.6 122.5 q10.2 7.5 20.3 25.0 M210.6 120.1 q5.0 -8.6 10.0 -28.8 M210.6 120.1 q9.3 7.2 18.6 24.1 M215.5 118.0 q5.7 -7.7 11.5 -25.8 M215.5 118.0 q8.3 6.8 16.6 22.8 M220.5 116.2 q6.1 -6.6 12.2 -22.1 M220.5 116.2 q7.1 6.3 14.3 20.9 M225.5 114.5 q6.0 -5.4 12.0 -18.0 M225.5 114.5 q5.8 5.5 11.7 18.3 M230.4 113.2 q5.4 -4.0 10.7 -13.5 M230.4 113.2 q4.4 4.4 8.8 14.8 M235.4 112.0 q3.9 -2.5 7.9 -8.4 M235.4 112.0 q2.8 3.0 5.6 10.0 M240.4 111.2 q0.0 -0.0 0.0 -0.0 M240.4 111.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q212.8 130.9 275.5 146.2 M165.1 157.5 q3.6 -6.3 7.2 -21.0 M165.1 157.5 q6.8 5.3 13.6 17.6 M172.0 154.6 q5.1 -7.1 10.1 -23.7 M172.0 154.6 q7.6 6.2 15.2 20.7 M178.9 151.9 q6.6 -7.6 13.2 -25.3 M178.9 151.9 q8.1 7.0 16.3 23.4 M185.8 149.6 q8.1 -7.8 16.2 -26.1 M185.8 149.6 q8.4 7.7 16.9 25.7 M192.7 147.5 q9.6 -7.8 19.1 -26.1 M192.7 147.5 q8.5 8.3 17.0 27.5 M199.6 145.8 q10.9 -7.6 21.7 -25.4 M199.6 145.8 q8.4 8.7 16.8 28.9 M206.5 144.3 q11.9 -7.2 23.9 -24.2 M206.5 144.3 q8.1 8.9 16.2 29.8 M213.4 143.1 q12.7 -6.7 25.5 -22.4 M213.4 143.1 q7.7 9.1 15.4 30.2 M220.3 142.3 q13.2 -6.1 26.5 -20.2 M220.3 142.3 q7.1 9.0 14.3 30.1 M227.2 141.7 q13.4 -5.3 26.8 -17.8 M227.2 141.7 q6.5 8.8 12.9 29.5 M234.1 141.5 q13.2 -4.6 26.4 -15.2 M234.1 141.5 q5.7 8.5 11.4 28.2 M241.0 141.5 q12.6 -3.8 25.2 -12.5 M241.0 141.5 q4.9 7.9 9.8 26.4 M247.9 141.9 q11.6 -3.0 23.3 -9.9 M247.9 141.9 q4.1 7.2 8.1 23.9 M254.8 142.5 q10.2 -2.2 20.4 -7.4 M254.8 142.5 q3.2 6.2 6.4 20.7 M261.7 143.4 q8.3 -1.5 16.5 -5.0 M261.7 143.4 q2.3 5.0 4.6 16.6 M268.6 144.7 q5.6 -0.8 11.1 -2.8 M268.6 144.7 q1.4 3.3 2.8 11.1 M275.5 146.2 q0.0 -0.0 0.0 -0.0 M275.5 146.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q222.8 155.2 295.6 197.2 M167.5 163.4 q9.3 -3.6 18.7 -12.0 M167.5 163.4 q4.4 6.1 8.8 20.4 M175.5 163.1 q11.2 -3.8 22.4 -12.7 M175.5 163.1 q4.8 7.2 9.6 23.9 M183.5 163.2 q12.8 -3.8 25.6 -12.7 M183.5 163.2 q5.0 8.0 9.9 26.8 M191.5 163.6 q14.1 -3.6 28.2 -12.2 M191.5 163.6 q5.0 8.7 10.0 29.1 M199.5 164.3 q15.2 -3.4 30.3 -11.3 M199.5 164.3 q4.8 9.3 9.7 30.9 M207.5 165.3 q15.9 -3.0 31.9 -10.1 M207.5 165.3 q4.6 9.6 9.2 32.1 M215.5 166.6 q16.4 -2.6 32.8 -8.7 M215.5 166.6 q4.3 9.9 8.5 32.9 M223.6 168.3 q16.6 -2.2 33.1 -7.3 M223.6 168.3 q3.9 9.9 7.7 33.0 M231.6 170.2 q16.4 -1.7 32.8 -5.8 M231.6 170.2 q3.4 9.8 6.8 32.6 M239.6 172.5 q15.9 -1.3 31.9 -4.3 M239.6 172.5 q2.9 9.5 5.8 31.6 M247.6 175.1 q15.2 -0.9 30.3 -2.9 M247.6 175.1 q2.4 9.0 4.8 30.1 M255.6 178.0 q14.1 -0.5 28.1 -1.7 M255.6 178.0 q1.9 8.4 3.8 27.9 M263.6 181.2 q12.6 -0.2 25.3 -0.6 M263.6 181.2 q1.4 7.5 2.9 25.1 M271.6 184.7 q10.8 0.1 21.7 0.2 M271.6 184.7 q1.0 6.5 2.0 21.6 M279.6 188.6 q8.6 0.2 17.2 0.7 M279.6 188.6 q0.6 5.2 1.2 17.2 M287.6 192.7 q5.7 0.2 11.4 0.8 M287.6 192.7 q0.3 3.4 0.6 11.5 M295.6 197.2 q0.0 0.0 0.0 0.0 M295.6 197.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q204.7 174.0 259.4 231.2 M163.1 167.9 q11.0 -1.1 21.9 -3.7 M163.1 167.9 q2.2 6.5 4.4 21.8 M169.1 169.6 q12.8 -0.9 25.5 -3.0 M169.1 169.6 q2.2 7.6 4.4 25.3 M175.2 171.7 q14.2 -0.6 28.5 -2.1 M175.2 171.7 q2.1 8.5 4.1 28.2 M181.2 174.0 q15.4 -0.3 30.7 -0.9 M181.2 174.0 q1.8 9.2 3.6 30.5 M187.2 176.7 q16.2 0.1 32.4 0.4 M187.2 176.7 q1.5 9.7 2.9 32.2 M193.2 179.6 q16.7 0.5 33.4 1.7 M193.2 179.6 q1.1 10.0 2.2 33.4 M199.2 182.9 q16.9 0.9 33.8 2.9 M199.2 182.9 q0.7 10.2 1.4 33.9 M205.3 186.4 q16.8 1.2 33.7 4.1 M205.3 186.4 q0.3 10.2 0.6 33.9 M211.3 190.2 q16.5 1.5 32.9 5.1 M211.3 190.2 q-0.1 10.0 -0.2 33.3 M217.3 194.3 q15.8 1.7 31.6 5.8 M217.3 194.3 q-0.4 9.7 -0.8 32.2 M223.3 198.7 q14.9 1.9 29.8 6.4 M223.3 198.7 q-0.7 9.1 -1.4 30.4 M229.3 203.4 q13.7 2.0 27.4 6.6 M229.3 203.4 q-0.9 8.4 -1.9 28.1 M235.3 208.4 q12.2 2.0 24.4 6.5 M235.3 208.4 q-1.1 7.6 -2.1 25.2 M241.4 213.6 q10.4 1.8 20.8 6.1 M241.4 213.6 q-1.1 6.5 -2.2 21.6 M247.4 219.2 q8.2 1.6 16.4 5.2 M247.4 219.2 q-1.0 5.1 -2.1 17.1 M253.4 225.1 q5.4 1.1 10.9 3.7 M253.4 225.1 q-0.8 3.4 -1.6 11.4 M259.4 231.2 q0.0 0.0 0.0 0.0 M259.4 231.2 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+  <svg class="lieu-palmes lieu-palmes--d" viewBox="0 0 300 300" data-visuel aria-hidden="true"><g transform="translate(300 0) scale(-1 1)"><path d="M150 165 Q91.6 142.0 33.1 170.6 M136.0 160.2 q-5.9 5.6 -11.8 18.8 M136.0 160.2 q-6.4 -5.5 -12.8 -18.2 M129.6 158.5 q-6.5 6.7 -13.0 22.2 M129.6 158.5 q-8.2 -5.9 -16.5 -19.8 M123.1 157.2 q-6.8 7.5 -13.7 25.1 M123.1 157.2 q-10.0 -6.1 -20.0 -20.3 M116.7 156.1 q-6.9 8.2 -13.9 27.4 M116.7 156.1 q-11.6 -6.0 -23.2 -20.1 M110.3 155.3 q-6.8 8.8 -13.7 29.3 M110.3 155.3 q-13.0 -5.8 -26.0 -19.3 M103.8 154.9 q-6.6 9.2 -13.1 30.7 M103.8 154.9 q-14.1 -5.4 -28.3 -17.9 M97.4 154.8 q-6.2 9.5 -12.3 31.6 M97.4 154.8 q-14.9 -4.8 -29.9 -16.1 M91.0 154.9 q-5.7 9.6 -11.3 32.0 M91.0 154.9 q-15.4 -4.2 -30.9 -14.1 M84.6 155.4 q-5.1 9.5 -10.1 31.8 M84.6 155.4 q-15.6 -3.6 -31.1 -11.9 M78.1 156.2 q-4.4 9.3 -8.8 31.0 M78.1 156.2 q-15.4 -2.9 -30.7 -9.6 M71.7 157.4 q-3.7 8.9 -7.4 29.6 M71.7 157.4 q-14.8 -2.2 -29.6 -7.4 M65.3 158.8 q-3.0 8.3 -6.0 27.5 M65.3 158.8 q-13.8 -1.6 -27.7 -5.4 M58.9 160.5 q-2.3 7.5 -4.7 24.8 M58.9 160.5 q-12.5 -1.1 -25.0 -3.6 M52.4 162.6 q-1.7 6.4 -3.4 21.4 M52.4 162.6 q-10.8 -0.6 -21.6 -2.1 M46.0 164.9 q-1.1 5.1 -2.2 17.1 M46.0 164.9 q-8.6 -0.3 -17.2 -0.9 M39.6 167.6 q-0.6 3.4 -1.2 11.4 M39.6 167.6 q-5.7 -0.0 -11.5 -0.1 M33.1 170.6 q-0.0 0.0 -0.0 0.0 M33.1 170.6 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q92.8 120.5 35.7 121.0 M136.3 155.0 q-7.8 4.7 -15.7 15.8 M136.3 155.0 q0.6 -6.7 1.3 -22.2 M130.0 150.8 q-8.9 5.6 -17.7 18.6 M130.0 150.8 q-0.1 -7.7 -0.2 -25.7 M123.7 146.9 q-9.6 6.3 -19.2 21.1 M123.7 146.9 q-1.1 -8.5 -2.2 -28.5 M117.4 143.3 q-10.1 7.0 -20.2 23.2 M117.4 143.3 q-2.3 -9.1 -4.6 -30.4 M111.1 139.9 q-10.3 7.5 -20.7 24.9 M111.1 139.9 q-3.6 -9.5 -7.1 -31.6 M104.8 136.9 q-10.4 7.9 -20.7 26.2 M104.8 136.9 q-4.9 -9.6 -9.8 -32.0 M98.6 134.1 q-10.2 8.1 -20.4 27.2 M98.6 134.1 q-6.2 -9.5 -12.3 -31.6 M92.3 131.5 q-9.8 8.3 -19.6 27.6 M92.3 131.5 q-7.3 -9.2 -14.7 -30.6 M86.0 129.3 q-9.3 8.3 -18.6 27.7 M86.0 129.3 q-8.3 -8.7 -16.7 -28.9 M79.7 127.3 q-8.6 8.2 -17.2 27.2 M79.7 127.3 q-9.1 -8.0 -18.2 -26.6 M73.4 125.6 q-7.8 7.9 -15.6 26.2 M73.4 125.6 q-9.5 -7.1 -19.0 -23.8 M67.1 124.1 q-6.9 7.4 -13.8 24.6 M67.1 124.1 q-9.6 -6.2 -19.2 -20.7 M60.8 123.0 q-5.9 6.7 -11.7 22.4 M60.8 123.0 q-9.2 -5.2 -18.5 -17.3 M54.5 122.1 q-4.8 5.8 -9.5 19.5 M54.5 122.1 q-8.4 -4.1 -16.8 -13.7 M48.3 121.4 q-3.6 4.7 -7.1 15.7 M48.3 121.4 q-7.0 -3.0 -14.1 -9.9 M42.0 121.1 q-2.2 3.2 -4.4 10.6 M42.0 121.1 q-4.9 -1.8 -9.8 -6.0 M35.7 121.0 q-0.0 0.0 -0.0 0.0 M35.7 121.0 q-0.0 -0.0 -0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q105.1 102.5 60.1 72.0 M139.2 150.5 q-9.4 3.5 -18.9 11.8 M139.2 150.5 q7.2 -5.1 14.3 -17.0 M134.3 144.1 q-10.8 4.2 -21.7 13.9 M134.3 144.1 q8.0 -6.0 16.1 -20.1 M129.3 137.9 q-11.9 4.7 -23.9 15.7 M129.3 137.9 q8.6 -6.8 17.2 -22.8 M124.4 132.0 q-12.8 5.2 -25.5 17.2 M124.4 132.0 q8.9 -7.5 17.8 -25.1 M119.4 126.2 q-13.3 5.5 -26.6 18.4 M119.4 126.2 q8.9 -8.1 17.9 -27.0 M114.5 120.6 q-13.6 5.8 -27.3 19.4 M114.5 120.6 q8.8 -8.5 17.5 -28.5 M109.6 115.2 q-13.7 6.0 -27.4 20.0 M109.6 115.2 q8.4 -8.9 16.8 -29.5 M104.6 110.0 q-13.6 6.1 -27.1 20.4 M104.6 110.0 q7.8 -9.0 15.7 -30.1 M99.7 105.0 q-13.2 6.1 -26.3 20.4 M99.7 105.0 q7.1 -9.0 14.2 -30.1 M94.7 100.2 q-12.6 6.0 -25.2 20.1 M94.7 100.2 q6.3 -8.9 12.6 -29.6 M89.8 95.6 q-11.8 5.8 -23.5 19.4 M89.8 95.6 q5.3 -8.6 10.7 -28.5 M84.8 91.2 q-10.7 5.5 -21.5 18.3 M84.8 91.2 q4.3 -8.0 8.7 -26.8 M79.9 86.9 q-9.5 5.0 -19.0 16.7 M79.9 86.9 q3.3 -7.3 6.6 -24.4 M74.9 82.9 q-8.0 4.4 -16.1 14.6 M74.9 82.9 q2.3 -6.4 4.6 -21.2 M70.0 79.1 q-6.3 3.5 -12.6 11.8 M70.0 79.1 q1.4 -5.1 2.8 -17.0 M65.1 75.4 q-4.1 2.4 -8.2 8.0 M65.1 75.4 q0.6 -3.4 1.2 -11.4 M60.1 72.0 q-0.0 0.0 -0.0 0.0 M60.1 72.0 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q133.7 112.1 117.5 73.6 M146.1 152.5 q-10.7 1.9 -21.4 6.2 M146.1 152.5 q10.5 -2.3 20.9 -7.5 M144.3 146.9 q-12.3 2.2 -24.7 7.3 M144.3 146.9 q12.1 -2.7 24.2 -8.9 M142.5 141.4 q-13.7 2.4 -27.3 8.2 M142.5 141.4 q13.4 -3.0 26.7 -10.0 M140.7 136.0 q-14.7 2.7 -29.4 8.9 M140.7 136.0 q14.4 -3.3 28.7 -10.9 M138.9 130.7 q-15.5 2.9 -30.9 9.5 M138.9 130.7 q15.1 -3.5 30.2 -11.7 M137.2 125.5 q-16.0 3.0 -31.9 10.0 M137.2 125.5 q15.5 -3.7 31.1 -12.3 M135.4 120.3 q-16.2 3.1 -32.4 10.3 M135.4 120.3 q15.7 -3.8 31.5 -12.7 M133.6 115.2 q-16.1 3.1 -32.3 10.4 M133.6 115.2 q15.7 -3.9 31.4 -12.9 M131.8 110.3 q-15.8 3.1 -31.7 10.4 M131.8 110.3 q15.4 -3.9 30.7 -12.9 M130.0 105.4 q-15.3 3.0 -30.5 10.1 M130.0 105.4 q14.8 -3.8 29.6 -12.7 M128.2 100.6 q-14.4 2.9 -28.9 9.8 M128.2 100.6 q14.0 -3.7 27.9 -12.2 M126.4 95.9 q-13.3 2.7 -26.7 9.2 M126.4 95.9 q12.9 -3.5 25.7 -11.5 M124.6 91.2 q-11.9 2.5 -23.9 8.3 M124.6 91.2 q11.5 -3.2 23.0 -10.5 M122.8 86.7 q-10.2 2.2 -20.4 7.3 M122.8 86.7 q9.8 -2.8 19.6 -9.2 M121.1 82.2 q-8.1 1.8 -16.2 5.9 M121.1 82.2 q7.8 -2.2 15.5 -7.5 M119.3 77.9 q-5.4 1.2 -10.8 4.0 M119.3 77.9 q5.1 -1.5 10.3 -5.1 M117.5 73.6 q-0.0 0.0 -0.0 0.0 M117.5 73.6 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q156.9 107.6 163.8 55.7 M151.7 151.3 q-11.0 -0.8 -22.1 -2.8 M151.7 151.3 q11.0 0.8 22.1 2.6 M152.4 145.1 q-12.8 -1.0 -25.5 -3.3 M152.4 145.1 q12.8 0.9 25.5 3.0 M153.2 138.9 q-14.2 -1.1 -28.3 -3.6 M153.2 138.9 q14.2 1.0 28.3 3.4 M153.9 132.7 q-15.2 -1.2 -30.5 -3.9 M153.9 132.7 q15.3 1.1 30.5 3.6 M154.7 126.6 q-16.1 -1.2 -32.1 -4.2 M154.7 126.6 q16.1 1.2 32.1 3.8 M155.5 120.5 q-16.6 -1.3 -33.2 -4.3 M155.5 120.5 q16.6 1.2 33.2 4.0 M156.2 114.5 q-16.8 -1.3 -33.7 -4.4 M156.2 114.5 q16.9 1.2 33.7 4.1 M157.0 108.5 q-16.8 -1.3 -33.6 -4.4 M157.0 108.5 q16.8 1.2 33.7 4.1 M157.7 102.5 q-16.5 -1.3 -33.0 -4.4 M157.7 102.5 q16.5 1.2 33.1 4.0 M158.5 96.5 q-15.9 -1.3 -31.9 -4.3 M158.5 96.5 q16.0 1.2 31.9 3.9 M159.2 90.6 q-15.1 -1.2 -30.2 -4.1 M159.2 90.6 q15.1 1.1 30.2 3.7 M160.0 84.7 q-14.0 -1.1 -27.9 -3.8 M160.0 84.7 q14.0 1.0 28.0 3.5 M160.8 78.8 q-12.5 -1.0 -25.1 -3.4 M160.8 78.8 q12.5 0.9 25.1 3.1 M161.5 73.0 q-10.7 -0.9 -21.5 -2.9 M161.5 73.0 q10.8 0.8 21.5 2.7 M162.3 67.2 q-8.5 -0.7 -17.1 -2.3 M162.3 67.2 q8.6 0.6 17.1 2.2 M163.0 61.5 q-5.7 -0.5 -11.4 -1.6 M163.0 61.5 q5.7 0.4 11.4 1.4 M163.8 55.7 q-0.0 -0.0 -0.0 -0.0 M163.8 55.7 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q184.3 99.3 218.5 58.1 M158.2 149.6 q-9.1 -3.8 -18.2 -12.8 M158.2 149.6 q10.1 2.8 20.1 9.5 M162.0 142.8 q-10.4 -4.5 -20.8 -15.1 M162.0 142.8 q11.6 3.3 23.2 11.1 M165.8 136.1 q-11.4 -5.1 -22.8 -17.1 M165.8 136.1 q12.8 3.8 25.6 12.5 M169.5 129.6 q-12.2 -5.6 -24.3 -18.8 M169.5 129.6 q13.8 4.1 27.5 13.7 M173.3 123.2 q-12.6 -6.1 -25.3 -20.2 M173.3 123.2 q14.4 4.4 28.9 14.7 M177.1 116.9 q-12.9 -6.4 -25.8 -21.3 M177.1 116.9 q14.8 4.6 29.7 15.4 M180.8 110.8 q-12.9 -6.6 -25.8 -22.1 M180.8 110.8 q15.0 4.8 30.0 15.9 M184.6 104.9 q-12.7 -6.8 -25.3 -22.6 M184.6 104.9 q14.9 4.8 29.8 16.1 M188.4 99.1 q-12.2 -6.8 -24.4 -22.6 M188.4 99.1 q14.6 4.8 29.2 16.1 M192.2 93.5 q-11.6 -6.7 -23.2 -22.3 M192.2 93.5 q14.0 4.7 28.0 15.8 M195.9 88.0 q-10.7 -6.5 -21.5 -21.6 M195.9 88.0 q13.2 4.6 26.4 15.2 M199.7 82.6 q-9.7 -6.1 -19.4 -20.4 M199.7 82.6 q12.1 4.3 24.3 14.3 M203.5 77.4 q-8.5 -5.6 -17.0 -18.7 M203.5 77.4 q10.8 3.9 21.6 13.1 M207.2 72.4 q-7.1 -4.9 -14.2 -16.4 M207.2 72.4 q9.2 3.4 18.4 11.4 M211.0 67.5 q-5.5 -4.0 -10.9 -13.4 M211.0 67.5 q7.3 2.8 14.6 9.2 M214.8 62.7 q-3.5 -2.7 -7.0 -9.1 M214.8 62.7 q4.8 1.9 9.6 6.2 M218.5 58.1 q-0.0 -0.0 -0.0 -0.0 M218.5 58.1 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q195.2 118.2 240.4 111.2 M160.8 154.3 q-4.1 -6.2 -8.2 -20.7 M160.8 154.3 q8.6 4.2 17.3 14.0 M165.8 149.8 q-4.1 -7.3 -8.1 -24.4 M165.8 149.8 q9.8 5.0 19.7 16.6 M170.8 145.6 q-3.7 -8.3 -7.4 -27.6 M170.8 145.6 q10.7 5.7 21.4 18.9 M175.8 141.5 q-3.0 -9.0 -6.1 -30.1 M175.8 141.5 q11.3 6.2 22.7 20.8 M180.7 137.8 q-2.1 -9.6 -4.3 -32.1 M180.7 137.8 q11.7 6.7 23.4 22.4 M185.7 134.2 q-1.0 -10.0 -2.1 -33.4 M185.7 134.2 q11.8 7.1 23.6 23.7 M190.7 130.9 q0.2 -10.2 0.4 -33.9 M190.7 130.9 q11.7 7.4 23.4 24.6 M195.6 127.8 q1.5 -10.1 3.0 -33.8 M195.6 127.8 q11.4 7.5 22.7 25.1 M200.6 125.0 q2.8 -9.9 5.6 -32.9 M200.6 125.0 q10.9 7.6 21.7 25.3 M205.6 122.5 q4.0 -9.4 8.0 -31.2 M205.6 122.5 q10.2 7.5 20.3 25.0 M210.6 120.1 q5.0 -8.6 10.0 -28.8 M210.6 120.1 q9.3 7.2 18.6 24.1 M215.5 118.0 q5.7 -7.7 11.5 -25.8 M215.5 118.0 q8.3 6.8 16.6 22.8 M220.5 116.2 q6.1 -6.6 12.2 -22.1 M220.5 116.2 q7.1 6.3 14.3 20.9 M225.5 114.5 q6.0 -5.4 12.0 -18.0 M225.5 114.5 q5.8 5.5 11.7 18.3 M230.4 113.2 q5.4 -4.0 10.7 -13.5 M230.4 113.2 q4.4 4.4 8.8 14.8 M235.4 112.0 q3.9 -2.5 7.9 -8.4 M235.4 112.0 q2.8 3.0 5.6 10.0 M240.4 111.2 q0.0 -0.0 0.0 -0.0 M240.4 111.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q212.8 130.9 275.5 146.2 M165.1 157.5 q3.6 -6.3 7.2 -21.0 M165.1 157.5 q6.8 5.3 13.6 17.6 M172.0 154.6 q5.1 -7.1 10.1 -23.7 M172.0 154.6 q7.6 6.2 15.2 20.7 M178.9 151.9 q6.6 -7.6 13.2 -25.3 M178.9 151.9 q8.1 7.0 16.3 23.4 M185.8 149.6 q8.1 -7.8 16.2 -26.1 M185.8 149.6 q8.4 7.7 16.9 25.7 M192.7 147.5 q9.6 -7.8 19.1 -26.1 M192.7 147.5 q8.5 8.3 17.0 27.5 M199.6 145.8 q10.9 -7.6 21.7 -25.4 M199.6 145.8 q8.4 8.7 16.8 28.9 M206.5 144.3 q11.9 -7.2 23.9 -24.2 M206.5 144.3 q8.1 8.9 16.2 29.8 M213.4 143.1 q12.7 -6.7 25.5 -22.4 M213.4 143.1 q7.7 9.1 15.4 30.2 M220.3 142.3 q13.2 -6.1 26.5 -20.2 M220.3 142.3 q7.1 9.0 14.3 30.1 M227.2 141.7 q13.4 -5.3 26.8 -17.8 M227.2 141.7 q6.5 8.8 12.9 29.5 M234.1 141.5 q13.2 -4.6 26.4 -15.2 M234.1 141.5 q5.7 8.5 11.4 28.2 M241.0 141.5 q12.6 -3.8 25.2 -12.5 M241.0 141.5 q4.9 7.9 9.8 26.4 M247.9 141.9 q11.6 -3.0 23.3 -9.9 M247.9 141.9 q4.1 7.2 8.1 23.9 M254.8 142.5 q10.2 -2.2 20.4 -7.4 M254.8 142.5 q3.2 6.2 6.4 20.7 M261.7 143.4 q8.3 -1.5 16.5 -5.0 M261.7 143.4 q2.3 5.0 4.6 16.6 M268.6 144.7 q5.6 -0.8 11.1 -2.8 M268.6 144.7 q1.4 3.3 2.8 11.1 M275.5 146.2 q0.0 -0.0 0.0 -0.0 M275.5 146.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q222.8 155.2 295.6 197.2 M167.5 163.4 q9.3 -3.6 18.7 -12.0 M167.5 163.4 q4.4 6.1 8.8 20.4 M175.5 163.1 q11.2 -3.8 22.4 -12.7 M175.5 163.1 q4.8 7.2 9.6 23.9 M183.5 163.2 q12.8 -3.8 25.6 -12.7 M183.5 163.2 q5.0 8.0 9.9 26.8 M191.5 163.6 q14.1 -3.6 28.2 -12.2 M191.5 163.6 q5.0 8.7 10.0 29.1 M199.5 164.3 q15.2 -3.4 30.3 -11.3 M199.5 164.3 q4.8 9.3 9.7 30.9 M207.5 165.3 q15.9 -3.0 31.9 -10.1 M207.5 165.3 q4.6 9.6 9.2 32.1 M215.5 166.6 q16.4 -2.6 32.8 -8.7 M215.5 166.6 q4.3 9.9 8.5 32.9 M223.6 168.3 q16.6 -2.2 33.1 -7.3 M223.6 168.3 q3.9 9.9 7.7 33.0 M231.6 170.2 q16.4 -1.7 32.8 -5.8 M231.6 170.2 q3.4 9.8 6.8 32.6 M239.6 172.5 q15.9 -1.3 31.9 -4.3 M239.6 172.5 q2.9 9.5 5.8 31.6 M247.6 175.1 q15.2 -0.9 30.3 -2.9 M247.6 175.1 q2.4 9.0 4.8 30.1 M255.6 178.0 q14.1 -0.5 28.1 -1.7 M255.6 178.0 q1.9 8.4 3.8 27.9 M263.6 181.2 q12.6 -0.2 25.3 -0.6 M263.6 181.2 q1.4 7.5 2.9 25.1 M271.6 184.7 q10.8 0.1 21.7 0.2 M271.6 184.7 q1.0 6.5 2.0 21.6 M279.6 188.6 q8.6 0.2 17.2 0.7 M279.6 188.6 q0.6 5.2 1.2 17.2 M287.6 192.7 q5.7 0.2 11.4 0.8 M287.6 192.7 q0.3 3.4 0.6 11.5 M295.6 197.2 q0.0 0.0 0.0 0.0 M295.6 197.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q204.7 174.0 259.4 231.2 M163.1 167.9 q11.0 -1.1 21.9 -3.7 M163.1 167.9 q2.2 6.5 4.4 21.8 M169.1 169.6 q12.8 -0.9 25.5 -3.0 M169.1 169.6 q2.2 7.6 4.4 25.3 M175.2 171.7 q14.2 -0.6 28.5 -2.1 M175.2 171.7 q2.1 8.5 4.1 28.2 M181.2 174.0 q15.4 -0.3 30.7 -0.9 M181.2 174.0 q1.8 9.2 3.6 30.5 M187.2 176.7 q16.2 0.1 32.4 0.4 M187.2 176.7 q1.5 9.7 2.9 32.2 M193.2 179.6 q16.7 0.5 33.4 1.7 M193.2 179.6 q1.1 10.0 2.2 33.4 M199.2 182.9 q16.9 0.9 33.8 2.9 M199.2 182.9 q0.7 10.2 1.4 33.9 M205.3 186.4 q16.8 1.2 33.7 4.1 M205.3 186.4 q0.3 10.2 0.6 33.9 M211.3 190.2 q16.5 1.5 32.9 5.1 M211.3 190.2 q-0.1 10.0 -0.2 33.3 M217.3 194.3 q15.8 1.7 31.6 5.8 M217.3 194.3 q-0.4 9.7 -0.8 32.2 M223.3 198.7 q14.9 1.9 29.8 6.4 M223.3 198.7 q-0.7 9.1 -1.4 30.4 M229.3 203.4 q13.7 2.0 27.4 6.6 M229.3 203.4 q-0.9 8.4 -1.9 28.1 M235.3 208.4 q12.2 2.0 24.4 6.5 M235.3 208.4 q-1.1 7.6 -2.1 25.2 M241.4 213.6 q10.4 1.8 20.8 6.1 M241.4 213.6 q-1.1 6.5 -2.2 21.6 M247.4 219.2 q8.2 1.6 16.4 5.2 M247.4 219.2 q-1.0 5.1 -2.1 17.1 M253.4 225.1 q5.4 1.1 10.9 3.7 M253.4 225.1 q-0.8 3.4 -1.6 11.4 M259.4 231.2 q0.0 0.0 0.0 0.0 M259.4 231.2 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></g></svg>
+  <div class="conteneur lieu-ouv-texte" data-iris-centre>
+    <p class="surtitre" data-anime="gsap">En pleine nature, ouvert toute l&#39;année</p>
+    <h1 class="titre-page titre-lumiere" data-grille="typo" data-effet="lumiere-lettres" data-texte="Le lieu">Le lieu</h1>
+    <p class="masque-ecran-bas" data-anime="gsap">Une salle claire et sa cheminée, une terrasse sous les paillotes, une piscine entourée de palmiers.</p>
+    <p class="lieu-ouv-actions" data-anime="gsap"><span class="texte-cle" data-info-cle>À 15 km de Metz</span> <a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-action-principale>Réserver une table</a></p>
+  </div>
+</section>
+<section class="arche" id="entrer" data-fx="plein-ecran" style="--fx-longueur: 220svh" data-fx-depart="inset(8% 30% 0% 30% round 999px 999px 0 0)" aria-label="Entrer dans la salle">
+  <div class="arche-collant" data-collant>
+    <figure class="media arche-photo" data-fx-cible style="--cadrage:52% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/salle-large-mobile-640.webp 640w, /assets/images/salle-large-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/salle-large-1280.webp" srcset="/assets/images/salle-large-640.webp 640w, /assets/images/salle-large-1280.webp 1280w, /assets/images/salle-large-1920.webp 1920w" sizes="100vw" alt="La salle du restaurant, tables rondes en verre et fauteuils clairs" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="arche-legende" data-fx-apres><p class="surtitre">La salle</p><p>Un décor élégant et chaleureux, tables de verre et de bois, fauteuils clairs : on y vient en famille comme en tête-à-tête.</p></div>
+  </div>
+</section>
+<section class="espace lumiere" id="cheminee" data-ambiance="soir">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur espace-grille">
+    <div class="espace-texte">
+      <h2 data-anime="lignes">La cheminée</h2>
+      <p data-anime>Le mur de pierre, ses niches à bûches et les peaux de mouton : le coin préféré des soirs d&#39;hiver.</p>
+    </div>
+    <figure class="media espace-photo espace-photo--haute" data-anime="rideau" style="--cadrage:50% 49%">
+  <picture>
+    <img src="/assets/images/mur-buches-784.webp" srcset="/assets/images/mur-buches-480.webp 480w, /assets/images/mur-buches-640.webp 640w, /assets/images/mur-buches-784.webp 784w" sizes="(max-width: 760px) 70vw, 26vw" alt="Le mur de pierre et ses niches à bûches" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <figure class="media espace-photo espace-photo--arche" data-fx="parallaxe" style="--cadrage:49% 34%">
+  <picture>
+    <img src="/assets/images/cheminee-784.webp" srcset="/assets/images/cheminee-480.webp 480w, /assets/images/cheminee-640.webp 640w, /assets/images/cheminee-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Feu de cheminée, peaux de mouton et dessert sur la table" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="espace espace--terrasse lumiere" id="terrasse" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur espace-grille espace-grille--inverse">
+    <figure class="media espace-photo espace-photo--large" data-fx="zoom" style="--cadrage:48% 39%">
+  <picture>
+    <img src="/assets/images/pergola-1600.webp" srcset="/assets/images/pergola-480.webp 480w, /assets/images/pergola-640.webp 640w, /assets/images/pergola-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 46vw" alt="Tables dressées sous la pergola en bois" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="espace-texte">
+      <h2 data-anime="lignes">La terrasse</h2>
+      <p data-anime>Un havre de paix où la nature et la gastronomie se rencontrent, sous les paillotes et la pergola.</p>
+      <figure class="media espace-photo espace-photo--vignette" data-fx="vitesse" style="--cadrage:48% 58%">
+  <picture>
+    <img src="/assets/images/paillote-784.webp" srcset="/assets/images/paillote-480.webp 480w, /assets/images/paillote-640.webp 640w, /assets/images/paillote-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="Une paillote, ses tables blanches et son gazon" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="espace espace--piscine lumiere" id="piscine" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur">
+    <div class="espace-texte espace-texte--centre">
+      <h2 data-anime="lignes">La piscine</h2>
+      <p data-anime>Un oasis de détente : le soleil, l&#39;eau turquoise et les palmiers, à quelques pas de la table.</p>
+      <p class="jardin-hiver" data-anime>Journées festives de juin à septembre, du mardi au jeudi, de 12 h à 19 h.</p>
+    </div>
+    <div class="piscine-mosaique">
+      <figure class="media espace-photo mosaique-a" data-fx="parallaxe" style="--cadrage:45% 60%">
+  <picture>
+    <img src="/assets/images/piscine-large-1280.webp" srcset="/assets/images/piscine-large-640.webp 640w, /assets/images/piscine-large-1280.webp 1280w, /assets/images/piscine-large-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 58vw" alt="La piscine et ses palmiers, vue d&#39;ensemble" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media espace-photo espace-photo--arche mosaique-b" data-anime="rideau" style="--cadrage:45% 64%">
+  <picture>
+    <img src="/assets/images/piscine-paillote-784.webp" srcset="/assets/images/piscine-paillote-480.webp 480w, /assets/images/piscine-paillote-640.webp 640w, /assets/images/piscine-paillote-784.webp 784w" sizes="(max-width: 760px) 44vw, 20vw" alt="Paillote et palmiers au bout de la piscine" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media espace-photo mosaique-c" data-grok data-anime="rideau" style="--cadrage:46% 44%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/piscine-nuit-mobile-640.webp 640w" sizes="(max-width: 760px) 60vw, 26vw">
+    <img src="/assets/images/grok/piscine-nuit-1280.webp" srcset="/assets/images/grok/piscine-nuit-640.webp 640w, /assets/images/grok/piscine-nuit-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="La piscine" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="espace espace--fresque lumiere" id="fresque" data-ambiance="matin">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur espace-grille">
+    <div class="espace-texte">
+      <h2 data-anime="lignes">Bienvenue à la maison</h2>
+      <p data-anime>Le H de l&#39;Hacienda, peint au milieu des fleurs : on le croise en arrivant.</p>
+      <p class="fin-actions fin-actions--gauche" data-anime><a href="/reserver" class="bouton" data-libelle="Réserver">Réserver une table</a> <a href="/contact" class="bouton bouton--contour" data-libelle="Contact">Accès et contact</a></p>
+    </div>
+    <figure class="media espace-photo espace-photo--haute" data-fx="zoom" style="--cadrage:48% 47%">
+  <picture>
+    <img src="/assets/images/fresque-784.webp" srcset="/assets/images/fresque-480.webp 480w, /assets/images/fresque-640.webp 640w, /assets/images/fresque-784.webp 784w" sizes="(max-width: 760px) 70vw, 28vw" alt="Le H de l&#39;Hacienda peint au milieu de fleurs tropicales" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-marque"><img src="/assets/images/logo-h-clair.png" alt="" width="56" height="56"><strong>Les Jardins de l&#39;Hacienda</strong></p>
+      <p>Restaurant et lieu de réception, à 15 km de Metz</p>
+      <p>6 Vathier Haye, 54580 Moineville<br><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <p class="pied-reseaux"><a href="https://www.facebook.com/lesjardinsdelhacienda54" target="_blank" rel="noopener">Facebook (nouvel onglet)</a> <a href="https://www.instagram.com/lesjardinsdel.hacienda/" target="_blank" rel="noopener">Instagram (nouvel onglet)</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu" aria-current="page">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : réservations et formulaires simulés.</p><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>© Les Jardins de l&#39;Hacienda</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33618212810">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

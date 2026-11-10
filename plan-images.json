@@ -1,0 +1,416 @@
+[
+ {
+  "source": "recu/logo-sombre.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "Les Jardins de l'Hacienda"
+ },
+ {
+  "source": "recu/restaurant-17.jpg",
+  "nom": "salle-midi",
+  "role": "galerie",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "La salle du restaurant baignée de soleil à midi"
+ },
+ {
+  "source": "recu/restaurant-25.jpg",
+  "nom": "salle-soir",
+  "role": "galerie",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "Coin de la salle le soir, mur de pierre, bûches et peaux de mouton"
+ },
+ {
+  "source": "recu/whatsapp-image-2025-01.jpg",
+  "nom": "chef",
+  "role": "portrait",
+  "ratio": "4:5",
+  "alt": "Le chef Régis Clauss au bord de la piscine"
+ },
+ {
+  "source": "recu/restaurant-15.jpg",
+  "nom": "assiette-1",
+  "role": "vignette",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "cadrage": [
+   36,
+   47
+  ],
+  "alt": ""
+ },
+ {
+  "source": "recu/restaurant-jardins-hacienda-5.jpg",
+  "nom": "assiette-2",
+  "role": "vignette",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "alt": ""
+ },
+ {
+  "source": "recu/restaurant-jardins-hacienda-6.jpg",
+  "nom": "assiette-3",
+  "role": "vignette",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "alt": ""
+ },
+ {
+  "source": "recu/restaurant-33.jpg",
+  "nom": "assiette-4",
+  "role": "vignette",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "alt": ""
+ },
+ {
+  "source": "recu/terrasse-15.jpg",
+  "nom": "piscine-jour",
+  "role": "section-fond",
+  "ratio": "3:2",
+  "alt": "La piscine, les paillotes et les palmiers en plein soleil"
+ },
+ {
+  "source": "recu/terrasse-13.jpg",
+  "nom": "piscine-palmier",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Palmier et paillote au bord de l'eau turquoise"
+ },
+ {
+  "source": "recu/terrasse-28.jpg",
+  "nom": "cocktails",
+  "role": "portrait",
+  "ratio": "4:5",
+  "alt": "Trois cocktails glacés servis au bord de la piscine"
+ },
+ {
+  "source": "recu/pool-party.webp",
+  "nom": "broche",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Viande rôtie à la broche pendant le Grand Buffet"
+ },
+ {
+  "source": "recu/mariages-4.png",
+  "nom": "brasero",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Le brasero allumé devant les paillotes"
+ },
+ {
+  "source": "recu/restaurant-plat-deguster.png",
+  "nom": "cheminee-plat",
+  "role": "section-fond",
+  "ratio": "3:2",
+  "alt": "Une assiette du chef servie devant la cheminée allumée"
+ },
+ {
+  "source": "recu/restaurant-12.jpg",
+  "nom": "cheminee-dessert",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Dessert en coupe sur une table en bois, le feu de cheminée derrière"
+ },
+ {
+  "source": "recu/restaurant-24.jpg",
+  "nom": "noel-salle",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Mur de pierre, bûches et décor de Noël dans la salle"
+ },
+ {
+  "source": "recu/restaurant-22.jpg",
+  "nom": "sylvestre-salle",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "La salle décorée pour les fêtes, sapin et cheminée"
+ },
+ {
+  "source": "recu/gravlax-saumon-maison.jpg",
+  "nom": "emporter",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Gravlax de saumon maison, à emporter pour les fêtes"
+ },
+ {
+  "source": "recu/mariages-6.png",
+  "source_mobile": "recu/mariages-2.jpg",
+  "nom": "mariage-table",
+  "role": "ouverture",
+  "mobile": "9:16",
+  "alt": "Table de mariage dressée, chemin de table orange et bouquets"
+ },
+ {
+  "source": "recu/terrasse-3.jpg",
+  "source_mobile": "recu/terrasse-9.jpg",
+  "nom": "enseigne",
+  "role": "ouverture",
+  "mobile": "9:16",
+  "zone_texte": "bas",
+  "alt": "L'enseigne des Jardins de l'Hacienda sur le ciel bleu"
+ },
+ {
+  "source": "recu/restaurant-31.jpg",
+  "source_mobile": "recu/restaurant-16.jpg",
+  "nom": "salle-large",
+  "role": "ouverture",
+  "mobile": "9:16",
+  "alt": "La salle du restaurant, tables rondes en verre et fauteuils clairs"
+ },
+ {
+  "source": "recu/restaurant-28.jpg",
+  "nom": "cheminee",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Feu de cheminée, peaux de mouton et dessert sur la table"
+ },
+ {
+  "source": "recu/restaurant-20.jpg",
+  "nom": "mur-buches",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Le mur de pierre et ses niches à bûches"
+ },
+ {
+  "source": "recu/terrasse-14.jpg",
+  "nom": "paillote",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Une paillote, ses tables blanches et son gazon"
+ },
+ {
+  "source": "recu/mariages-7.jpg",
+  "nom": "pergola",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Tables dressées sous la pergola en bois"
+ },
+ {
+  "source": "recu/terrasse-8.jpg",
+  "nom": "piscine-large",
+  "role": "section-fond",
+  "ratio": "3:2",
+  "cadrage": [
+   45,
+   60
+  ],
+  "alt": "La piscine et ses palmiers, vue d'ensemble"
+ },
+ {
+  "source": "recu/terrasse-22.jpg",
+  "nom": "fresque",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Le H de l'Hacienda peint au milieu de fleurs tropicales"
+ },
+ {
+  "source": "recu/terrasse-11.jpg",
+  "nom": "piscine-paillote",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Paillote et palmiers au bout de la piscine"
+ },
+ {
+  "source": "recu/restaurant-jardins-hacienda.jpg",
+  "nom": "plat-1",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Une assiette du chef : viande glacée, purée et légumes"
+ },
+ {
+  "source": "recu/restaurant-jardins-hacienda-2.jpg",
+  "nom": "plat-2",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Une assiette du chef : salade colorée et fleurs"
+ },
+ {
+  "source": "recu/restaurant-19.jpg",
+  "nom": "plat-3",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Une assiette du chef : poisson en millefeuille, sauce blanche"
+ },
+ {
+  "source": "recu/restaurant-18.jpg",
+  "nom": "plat-4",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Une assiette du chef : viande, chou et morilles"
+ },
+ {
+  "source": "recu/restaurant-23.jpg",
+  "nom": "dessert-1",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Un dessert en verre, fruits rouges"
+ },
+ {
+  "source": "recu/mariages-16.jpg",
+  "nom": "maries",
+  "role": "portrait",
+  "ratio": "4:5",
+  "cadrage": [
+   60,
+   45
+  ],
+  "alt": "Des mariés lèvent leur verre au bord de la piscine"
+ },
+ {
+  "source": "recu/mariages-11.jpg",
+  "nom": "maries-piscine",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Des mariés devant la piscine et les palmiers"
+ },
+ {
+  "source": "recu/mariages-8.png",
+  "nom": "table-fleurs",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Verres et fleurs rouges sur une table de fête"
+ },
+ {
+  "source": "recu/pool-party-9.webp",
+  "nom": "pool-party",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "La piscine un jour de pool party"
+ },
+ {
+  "source": "recu/mariages-3.jpg",
+  "nom": "table-bapteme",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Table dressée en blanc et rouge sous les palmes"
+ },
+ {
+  "source": "recu/pool-party-2.webp",
+  "nom": "buffet-fleurs",
+  "role": "produit",
+  "ratio": "3:2",
+  "alt": "Plateau de légumes et de fleurs comestibles"
+ },
+ {
+  "source": "recu/mariages-12.jpg",
+  "nom": "gateau",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "alt": "Gâteau et fleurs pour une réception"
+ },
+ {
+  "source": "recu/grok/mur-chaux.jpg",
+  "source_mobile": "recu/grok/mur-chaux-mobile.jpg",
+  "nom": "grok/mur-chaux",
+  "role": "ouverture",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "page": "Accueil et La carte",
+  "emplacement": "fond du titre peint et de la carte",
+  "priorite": "Indispensable",
+  "alt": "",
+  "consigne_scene": "A large sunlit whitewashed lime plaster wall with a soft irregular hand-troweled texture, crossed diagonally by the crisp parallel shadows of half-open wooden louvered shutters, the faint shadow of a palm frond at one edge, the left two thirds calm and evenly lit for text, warm late-morning light"
+ },
+ {
+  "source": "recu/grok/table-midi.jpg",
+  "source_mobile": "recu/grok/table-midi-mobile.jpg",
+  "nom": "grok/table-midi",
+  "role": "ouverture",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "page": "Réserver",
+  "emplacement": "ouverture",
+  "priorite": "Indispensable",
+  "alt": "",
+  "consigne_scene": "Top-down view of an empty restaurant table dressed with a white linen tablecloth, two empty white plates, folded linen napkins, clear wine glasses and simple cutlery, a small terracotta pot with a sprig of rosemary, hard midday light with the striped shadows of louvered shutters falling across the cloth, the left half of the frame calm with plain linen"
+ },
+ {
+  "source": "recu/grok/piscine-nuit.jpg",
+  "source_mobile": "recu/grok/piscine-nuit-mobile.jpg",
+  "nom": "grok/piscine-nuit",
+  "role": "section-fond",
+  "mobile": "9:16",
+  "zone_texte": "haut",
+  "page": "Le lieu",
+  "emplacement": "la piscine le soir",
+  "priorite": "Conseillée",
+  "alt": "",
+  "consigne_scene": "An outdoor swimming pool at blue hour surrounded by palm trees in large terracotta pots and a few paper lanterns, calm turquoise water reflecting warm lights, empty white loungers, a whitewashed wall with blue shutters in the background, the upper part of the sky calm"
+ },
+ {
+  "source": "recu/grok/fete-soir.jpg",
+  "source_mobile": "recu/grok/fete-soir-mobile.jpg",
+  "nom": "grok/fete-soir",
+  "role": "section-fond",
+  "mobile": "9:16",
+  "zone_texte": "bas",
+  "page": "Réceptions",
+  "emplacement": "fond de la soirée de fête",
+  "priorite": "Conseillée",
+  "alt": "",
+  "consigne_scene": "A festive outdoor evening reception in a garden with palm trees, strings of warm lights and colourful cut-paper garlands overhead, blurred silhouettes of guests in motion seen from behind, warm bokeh, the lower third darker and calm"
+ },
+ {
+  "source": "recu/grok/lin-ombre.jpg",
+  "nom": "grok/lin-ombre",
+  "role": "section-fond",
+  "zone_texte": "gauche",
+  "page": "La carte",
+  "emplacement": "fond des rubriques",
+  "priorite": "Conseillée",
+  "alt": "",
+  "consigne_scene": "Very close view of a white linen tablecloth with a fine weave, crossed by soft striped shadows of louvered shutters, nothing in sharp focus, calm and bright"
+ },
+ {
+  "source": "recu/grok/chaise-persiennes.jpg",
+  "nom": "grok/chaise-persiennes",
+  "role": "404",
+  "zone_texte": "gauche",
+  "page": "404",
+  "emplacement": "ouverture",
+  "priorite": "Conseillée",
+  "alt": "",
+  "consigne_scene": "A single empty painted wooden chair on terracotta tiles in front of closed cobalt blue wooden louvered shutters on a whitewashed wall, soft afternoon light, a gentle touch of humour, the left part of the frame calm"
+ },
+ {
+  "source": "recu/terrasse-7.jpg",
+  "nom": "fenetre-midi",
+  "role": "galerie",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "La piscine turquoise, les palmiers et les paillotes à midi"
+ },
+ {
+  "source": "recu/piscine.webp",
+  "nom": "piscine-plongee",
+  "role": "section-fond",
+  "ratio": "3:2",
+  "alt": "La piscine entourée de palmiers et de transats blancs"
+ }
+]

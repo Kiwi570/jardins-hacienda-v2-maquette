@@ -1,0 +1,202 @@
+{
+ "mission": "reveillon2",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.3,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 13153,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre · 79 €",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "79 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "79 €",
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "attendre 3500",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 6.8,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 13153,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre · 79 €",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "79 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "79 €",
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "cliquer Menu de Noël",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 9,
+   "adresse": "/#en-ce-moment",
+   "y": 6652,
+   "hauteurPage": 13153,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "79 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "79 €",
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "attendre 1500",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 10.5,
+   "adresse": "/#en-ce-moment",
+   "y": 6652,
+   "hauteurPage": 13153,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "79 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "79 €",
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 11.7,
+   "adresse": "/#en-ce-moment",
+   "y": 7369,
+   "hauteurPage": 13153,
+   "titres": [
+    "h3 Saint-Sylvestre"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "79 €",
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-4.png"
+  }
+ ]
+}

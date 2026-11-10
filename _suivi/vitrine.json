@@ -1,0 +1,221 @@
+{
+ "explication": "Vitrine du projet : des ouvertures de la bibliothèque à dépasser, jamais à imiter (ni leur idée, ni leur mise en page).",
+ "activite": [
+  "restauration"
+ ],
+ "metier": "restaurant traditionnel et lieu de réception avec piscine",
+ "besoin": [
+  "réserver",
+  "agenda",
+  "vendre"
+ ],
+ "ton": [
+  "chaleureux"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "jardins-hacienda-maquette",
+ "ecartees": [
+  "jardins-hacienda-maquette"
+ ],
+ "ouvertures": [
+  {
+   "rang": 1,
+   "id": "ateliersources-maquette/ouverture",
+   "maquette": "ateliersources-maquette",
+   "client": "lieu de stages et de retraites au bord d'une rivière",
+   "metier": "lieu de stages et de retraites",
+   "activite": [
+    "hébergement",
+    "bien-être"
+   ],
+   "pourquoi": [
+    "même métier",
+    "besoin réserver, agenda",
+    "clair et sombre alternés (46 % sombre)",
+    "webgl"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 46,
+   "note_section": 5,
+   "note_maquette": 88,
+   "titre": "Photo sous l'eau vive",
+   "description": "Héros plein écran dont la photo est rendue en WebGL sous une eau vive qui ondule ; l'eau se clarifie à mesure qu'on défile, le curseur et le toucher y déposent des ronds, puis le titre se révèle ligne par ligne. Sans WebGL ou en mode calme, la photo seule s'affiche, sans second téléchargement.",
+   "familles": [
+    "webgl"
+   ],
+   "plan": null,
+   "module": "eau-qui-refracte",
+   "fiche": "sections/ateliersources-maquette/ouverture.json",
+   "capture": "medias/ateliersources-maquette/ouverture-p1440.jpg",
+   "video": "medias/ateliersources-maquette/ouverture-p720.mp4",
+   "en_ligne": "https://ateliersources-maquette.vercel.app"
+  },
+  {
+   "rang": 2,
+   "id": "winsbike-atelier/hero",
+   "maquette": "winsbike-atelier",
+   "client": "distributeur de pièces, outils et protections vélo avec magasin et atelier de réparation",
+   "metier": "pièces et atelier vélo",
+   "activite": [
+    "commerce",
+    "auto-moto"
+   ],
+   "pourquoi": [
+    "même métier",
+    "besoin vendre, réserver, agenda",
+    "style sombre (91 % sombre)",
+    "3d",
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "lumiere": "sombre",
+   "part_sombre": 91,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Cadre irisé sur métal liquide",
+   "description": "Fond de métal liquide anodisé en WebGL (OGL) derrière un cadre de vélo détouré qui entre en rotation 3D et suit le pointeur ; pastilles de teintes qui recolorent le métal et annoncent le nombre de produits de cette couleur avec un lien filtré vers la boutique. Titre en lettres montantes (SplitText), parallaxe au défilement, dégradé CSS sans WebGL.",
+   "familles": [
+    "3d",
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/winsbike-atelier/hero.json",
+   "capture": "medias/winsbike-atelier/hero-p1440.jpg",
+   "video": "medias/winsbike-atelier/hero-p720.mp4",
+   "en_ligne": "https://winsbike-atelier.vercel.app"
+  },
+  {
+   "rang": 3,
+   "id": "pizzalyght-maquette/hero",
+   "maquette": "pizzalyght-maquette",
+   "client": "pizzeria artisanale à trois adresses en Guyane (Cayenne, Kourou, Saint-Laurent), à emporter et en livraison",
+   "metier": "pizzeria",
+   "activite": [
+    "restauration"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin vendre, réserver, agenda",
+    "ambiance chaleureux",
+    "style sombre (100 % sombre)",
+    "webgl",
+    "particules"
+   ],
+   "lumiere": "sombre",
+   "part_sombre": 100,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Pizza qui cuit sur les braises",
+   "description": "Titre condensé à trois lignes, vraie photo de pizza qui tourne dans un anneau de texte et passe de crue à dorée en WebGL (OGL) avec l'air chaud qui ondule, braises en canvas 2D ; heure de Guyane et statut ouvert ou fermé des trois adresses en bas. Cuisson en CSS sur tactile et sans WebGL.",
+   "familles": [
+    "webgl",
+    "particules"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/pizzalyght-maquette/hero.json",
+   "capture": "medias/pizzalyght-maquette/hero-p1440.jpg",
+   "video": "medias/pizzalyght-maquette/hero-p720.mp4",
+   "en_ligne": "https://pizzalyght-maquette.vercel.app"
+  },
+  {
+   "rang": 4,
+   "id": "chateau-haut-piquat-maquette/oenotourisme-ohero",
+   "maquette": "chateau-haut-piquat-maquette",
+   "client": "château viticole en Lussac Saint-Émilion : vins, boutique en ligne, visites et événements, site bilingue",
+   "metier": "château viticole, vigneron",
+   "activite": [
+    "commerce",
+    "tourisme"
+   ],
+   "pourquoi": [
+    "activité proche",
+    "besoin vendre, réserver",
+    "ambiance chaleureux",
+    "clair et sombre alternés (50 % sombre)",
+    "masque"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 50,
+   "note_section": 5,
+   "note_maquette": 86,
+   "titre": "Passer l’archeThrough the arch",
+   "description": "Passer l'arche : épinglée, on avance sous l'arche vers l'allée du château",
+   "familles": [
+    "masque"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/chateau-haut-piquat-maquette/oenotourisme-ohero.json",
+   "capture": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p1440.jpg",
+   "video": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p720.mp4",
+   "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app/oenotourisme"
+  },
+  {
+   "rang": 5,
+   "id": "pausephoto65-maquette/ouverture",
+   "maquette": "pausephoto65-maquette",
+   "client": "photographe portraitiste et d'événements à Tarbes (Hautes-Pyrénées) : séances, saisons, mariages, baptêmes",
+   "metier": "photographe",
+   "activite": [
+    "culture",
+    "commerce"
+   ],
+   "pourquoi": [
+    "activité proche",
+    "besoin réserver",
+    "ambiance chaleureux",
+    "style clair (10 % sombre)",
+    "objet-manipulable"
+   ],
+   "lumiere": "clair",
+   "part_sombre": 10,
+   "note_section": 5,
+   "note_maquette": 84,
+   "titre": "Faites unepause.",
+   "description": "« Faites une pause. » : pluie de tirages photo qui tombent autour du titre, à attraper",
+   "familles": [
+    "objet-manipulable"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/pausephoto65-maquette/ouverture.json",
+   "capture": "medias/pausephoto65-maquette/ouverture-p1440.jpg",
+   "video": "medias/pausephoto65-maquette/ouverture-p720.mp4",
+   "en_ligne": "https://pausephoto65-maquette.vercel.app"
+  },
+  {
+   "rang": 6,
+   "id": "tiki-cassis-maquette/hero",
+   "maquette": "tiki-cassis-maquette",
+   "client": "balades et privatisations en bateau traditionnel dans les calanques, au départ du port de Cassis",
+   "metier": "balades en bateau",
+   "activite": [
+    "tourisme"
+   ],
+   "pourquoi": [
+    "même métier",
+    "besoin agenda",
+    "ambiance chaleureux",
+    "clair et sombre alternés (42 % sombre)"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 42,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Héros vidéo des calanques",
+   "description": "Vidéo du bateau dans les calanques en plein écran, titre en serif, heure réelle du prochain coucher ou lever du soleil à Cassis, profondeur au pointeur (vidéo et titre glissent en sens opposé) et vague qui avance au défilement.",
+   "familles": [],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/tiki-cassis-maquette/hero.json",
+   "capture": "medias/tiki-cassis-maquette/hero-p1440.jpg",
+   "video": "medias/tiki-cassis-maquette/hero-p720.mp4",
+   "en_ligne": "https://tiki-cassis-maquette.vercel.app"
+  }
+ ]
+}

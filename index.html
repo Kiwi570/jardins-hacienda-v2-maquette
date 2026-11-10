@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les Jardins de l&#39;Hacienda : restaurant, terrasse et piscine près de Metz</title>
+<meta name="description" content="Restaurant traditionnel et lieu de réception à Moineville, à 15 km de Metz : la cuisine de saison du chef Régis Clauss, la terrasse, la piscine et le coin du feu.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jardins-hacienda-v2-maquette.vercel.app/">
+<style>:root{--fond:#F2EFE9;--texte:#1C1A17;--voile-fond:#1F3E8C;--ouverture-fond:#F2EFE9;--menu-fond:#1F3E8C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<script>try{var hh=+new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',hour:'numeric',hourCycle:'h23'}).format(new Date());if(hh>=18||hh<7)document.documentElement.setAttribute('data-moment','soir')}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/gloock.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F2EFE9">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Les Jardins de l&#39;Hacienda">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Les Jardins de l&#39;Hacienda : restaurant, terrasse et piscine près de Metz">
+<meta property="og:description" content="Restaurant traditionnel et lieu de réception à Moineville, à 15 km de Metz : la cuisine de saison du chef Régis Clauss, la terrasse, la piscine et le coin du feu.">
+<meta property="og:url" content="https://jardins-hacienda-v2-maquette.vercel.app/">
+<meta property="og:image" content="https://jardins-hacienda-v2-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Les Jardins de l&#39;Hacienda : la salle du restaurant au soleil de midi">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Les Jardins de l'Hacienda","description":"Restaurant traditionnel et lieu de réception avec terrasse et piscine, à Moineville, près de Metz.","telephone":"+33 6 18 21 28 10","address":{"@type":"PostalAddress","streetAddress":"6 Vathier Haye","postalCode":"54580","addressLocality":"Moineville","addressCountry":"FR"},"servesCuisine":"Cuisine traditionnelle de saison","acceptsReservations":true,"sameAs":["https://www.facebook.com/lesjardinsdelhacienda54","https://www.instagram.com/lesjardinsdel.hacienda/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persienne" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-h-clair.png" alt="" width="64" height="64"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-h.png" alt="" width="96" height="96" data-ouverture-objet>
+  <p class="ouverture-nom">Les Jardins de l&#39;Hacienda</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Restaurant &amp; réceptions · Moineville</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-h.png" alt="" width="40" height="40"><span>Les Jardins de l&#39;Hacienda</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/la-carte" class="menu-lien" data-libelle="La carte">La carte</a></li><li style="--i:2"><a href="/le-lieu" class="menu-lien" data-libelle="Le lieu">Le lieu</a></li><li style="--i:3"><a href="/receptions" class="menu-lien" data-libelle="Réceptions">Réceptions</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33618212810">Appeler 06 18 21 28 10</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv lumiere" id="debut" data-ambiance="midi">
+  <figure class="media ouv-mur" data-grok style="--cadrage:81% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/mur-chaux-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/mur-chaux-1280.webp" srcset="/assets/images/grok/mur-chaux-640.webp 640w, /assets/images/grok/mur-chaux-1280.webp 1280w" sizes="100vw" alt="" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="ouv-grille conteneur">
+    <div class="ouv-texte">
+      <p class="surtitre ouv-surtitre masque-ecran-tres-bas" data-anime="gsap">Restaurant et lieu de réception · Moineville, à 15 km de Metz</p>
+      <h1 class="pochoir" data-grille="typo" data-effet="pochoir"><span class="pochoir-texte">Les Jardins de l&#39;Hacienda</span></h1>
+      <p class="ouv-intro masque-ecran-bas" data-anime="gsap">La cuisine de saison du chef Régis Clauss, une terrasse sous les palmiers, une piscine, et le coin du feu quand vient le soir.</p>
+      <p class="ouv-actions" data-anime="gsap">
+        <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une table</a>
+        <a href="/la-carte" class="bouton bouton--contour masque-ecran-tres-bas" data-libelle="La carte">Voir la carte</a>
+      </p>
+      <p class="ouv-info" data-info-cle data-anime="gsap"><span class="ouv-info-label">Prochain rendez-vous</span>
+        <a href="#en-ce-moment" data-sans-transition data-prochain>Menu de Noël, vendredi 25 décembre · 79 €</a></p>
+    </div>
+    <div class="fenetre" data-iris-centre data-grille="manipuler" data-effet="persiennes" data-souris tabindex="0" role="slider"
+      aria-label="Ouverture des persiennes" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82" aria-valuetext="Ouverture des persiennes : 82 %">
+      <div class="fenetre-vue">
+        <figure class="media fenetre-photo fenetre-photo--midi" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/fenetre-midi-1200.webp" srcset="/assets/images/fenetre-midi-480.webp 480w, /assets/images/fenetre-midi-800.webp 800w, /assets/images/fenetre-midi-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 44vw" alt="La piscine turquoise, les palmiers et les paillotes à midi" width="1200" height="1500" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+        <figure class="media fenetre-photo fenetre-photo--soir" style="--cadrage:58% 51%">
+  <picture>
+    <img src="/assets/images/salle-soir-1200.webp" srcset="/assets/images/salle-soir-480.webp 480w, /assets/images/salle-soir-800.webp 800w, /assets/images/salle-soir-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 44vw" alt="Coin de la salle le soir, mur de pierre, bûches et peaux de mouton" width="1200" height="1500" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+        <span class="fenetre-lumiere" aria-hidden="true"></span>
+      </div>
+      <div class="persiennes" aria-hidden="true"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span></div>
+      <span class="fenetre-aide" aria-hidden="true"><span class="fenetre-aide-souris">Faites glisser pour ouvrir les persiennes</span><span class="fenetre-aide-doigt">Glissez du doigt pour ouvrir</span></span>
+    </div>
+  </div>
+</section>
+<section class="assiette service lumiere" id="cuisine" data-ambiance="midi" aria-labelledby="cuisine-titre">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="assiette__cadre conteneur">
+    <div class="assiette__texte" data-tient>
+      <p class="heure" data-anime><span class="heure-chiffre">12 h</span><span class="heure-mot">La cuisine</span></p>
+      <h2 class="assiette__titre" id="cuisine-titre" data-anime="lignes">Régis Clauss, l&#39;âme de notre cuisine</h2>
+      <div class="service-chef">
+        <figure class="media service-chef-photo" style="--cadrage:50% 51%">
+  <picture>
+    <img src="/assets/images/chef-784.webp" srcset="/assets/images/chef-480.webp 480w, /assets/images/chef-640.webp 640w, /assets/images/chef-784.webp 784w" sizes="120px" alt="Le chef Régis Clauss au bord de la piscine" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="assiette__intro">Une signature entre tradition et créativité : le chef sublime les produits de saison et réinvente sa carte chaque semaine. Ses suggestions s&#39;écrivent à l&#39;ardoise et s&#39;annoncent à table.</p>
+      </div>
+    </div>
+    <div class="assiette__scene table" data-tient data-grille="scene" data-effet="assiette" role="group" aria-label="Illustration du service : quatre assiettes du chef arrivent sur la table">
+      <div class="assiette__plat nappe" aria-hidden="true"></div>
+      <div class="assiette__element couvert" data-de="0.04" data-a="0.24" style="--ox:30%;--oy:31%;--d:41%;--vrille:-14deg;--hauteur:.1"><button type="button" class="couvert-bouton" data-effet="assiettes-a-toucher" aria-pressed="false" aria-label="Faire tourner l&#39;assiette 1"><img src="/assets/images/assiette-1-640.webp" srcset="/assets/images/assiette-1-320.webp 320w, /assets/images/assiette-1-640.webp 640w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="640" height="640" loading="lazy" decoding="async"></button></div><div class="assiette__element couvert" data-de="0.24" data-a="0.46" style="--ox:71%;--oy:30%;--d:44%;--vrille:10deg;--hauteur:.1"><button type="button" class="couvert-bouton" data-effet="assiettes-a-toucher" aria-pressed="false" aria-label="Faire tourner l&#39;assiette 2"><img src="/assets/images/assiette-2-640.webp" srcset="/assets/images/assiette-2-320.webp 320w, /assets/images/assiette-2-640.webp 640w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="640" height="640" loading="lazy" decoding="async"></button></div><div class="assiette__element couvert" data-de="0.46" data-a="0.68" style="--ox:31%;--oy:70%;--d:40%;--vrille:-8deg;--hauteur:.1"><button type="button" class="couvert-bouton" data-effet="assiettes-a-toucher" aria-pressed="false" aria-label="Faire tourner l&#39;assiette 3"><img src="/assets/images/assiette-3-640.webp" srcset="/assets/images/assiette-3-320.webp 320w, /assets/images/assiette-3-640.webp 640w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="640" height="640" loading="lazy" decoding="async"></button></div><div class="assiette__element couvert" data-de="0.68" data-a="0.88" style="--ox:70%;--oy:70%;--d:38%;--vrille:12deg;--hauteur:.1"><button type="button" class="couvert-bouton" data-effet="assiettes-a-toucher" aria-pressed="false" aria-label="Faire tourner l&#39;assiette 4"><img src="/assets/images/assiette-4-640.webp" srcset="/assets/images/assiette-4-320.webp 320w, /assets/images/assiette-4-640.webp 640w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="640" height="640" loading="lazy" decoding="async"></button></div>
+      <div class="assiette__element" data-geste="pluie" data-de=".86" data-a="1" aria-hidden="true"><svg viewBox="0 0 1000 1000" aria-hidden="true"><g class="assiette__grain" style="--r:0.00"><circle cx="300.0" cy="310.0" r="3.6" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.02"><circle cx="783.0" cy="234.7" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.04"><circle cx="311.1" cy="690.0" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.07"><circle cx="642.0" cy="774.2" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.09"><circle cx="301.4" cy="330.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.11"><circle cx="795.9" cy="384.0" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.13"><circle cx="302.7" cy="670.7" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.15"><circle cx="606.3" cy="636.3" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.17"><circle cx="316.9" cy="347.7" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.20"><circle cx="839.9" cy="358.1" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.22"><circle cx="358.0" cy="684.6" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.24"><circle cx="571.4" cy="668.1" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.26"><circle cx="245.2" cy="339.0" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.28"><circle cx="653.0" cy="454.3" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.30"><circle cx="365.6" cy="656.5" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.33"><circle cx="726.7" cy="550.7" r="3.6" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.35"><circle cx="244.9" cy="371.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.37"><circle cx="710.0" cy="301.8" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.39"><circle cx="370.5" cy="767.6" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.41"><circle cx="698.0" cy="689.0" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.43"><circle cx="218.6" cy="246.3" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.46"><circle cx="718.3" cy="322.5" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.48"><circle cx="408.0" cy="751.9" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.50"><circle cx="729.4" cy="692.7" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.52"><circle cx="181.9" cy="272.2" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.54"><circle cx="667.8" cy="318.9" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.57"><circle cx="256.5" cy="819.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.59"><circle cx="740.9" cy="672.2" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.61"><circle cx="334.9" cy="169.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.63"><circle cx="661.1" cy="347.8" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.65"><circle cx="300.0" cy="850.9" r="3.6" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.67"><circle cx="742.3" cy="754.1" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.70"><circle cx="281.8" cy="145.7" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.72"><circle cx="642.5" cy="239.6" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.74"><circle cx="306.6" cy="700.0" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.76"><circle cx="774.7" cy="746.1" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.78"><circle cx="313.6" cy="307.6" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.80"><circle cx="605.2" cy="258.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.83"><circle cx="287.9" cy="708.2" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.85"><circle cx="650.0" cy="794.5" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.87"><circle cx="329.7" cy="292.6" r="2.4" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.89"><circle cx="751.1" cy="171.5" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.91"><circle cx="276.8" cy="728.4" r="3.6" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.93"><circle cx="683.3" cy="825.0" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.96"><circle cx="331.0" cy="355.6" r="2.4" fill="#fbf7ef" stroke="#cfc6b6" stroke-width=".8"/></g><g class="assiette__grain" style="--r:0.98"><circle cx="703.1" cy="143.1" r="3.6" fill="#6f8f3a" stroke="#4f6a28" stroke-width=".8"/></g></svg></div>
+    </div>
+    <ol class="assiette__etapes" data-tient>
+      <li data-de="0.00"><div><strong>Entrées</strong><span><span data-prix>de 9 à 21 €</span> · 5 propositions</span></div></li><li data-de="0.20"><div><strong>Plats</strong><span><span data-prix>de 21 à 26 €</span> · 5 propositions</span></div></li><li data-de="0.42"><div><strong>À partager</strong><span><span data-prix>de 12 à 45 €</span> · 4 planches pour 4 personnes</span></div></li><li data-de="0.64"><div><strong>Desserts</strong><span><span data-prix>de 9 à 11 €</span> · 5 propositions</span></div></li>
+      <li class="service-lien"><a href="/la-carte" class="bouton bouton--contour" data-libelle="La carte">Toute la carte</a></li>
+    </ol>
+  </div>
+</section>
+<section class="jardin lumiere" id="jardin" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="jardin-grille conteneur">
+    <div class="jardin-scene" data-effet="jardin-plans" data-souris>
+      <div class="plan plan--fond" data-plan="0.12"><figure class="media plan-photo" style="--cadrage:53% 62%">
+  <picture>
+    <img src="/assets/images/piscine-jour-1280.webp" srcset="/assets/images/piscine-jour-640.webp 640w, /assets/images/piscine-jour-1280.webp 1280w, /assets/images/piscine-jour-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 52vw" alt="La piscine, les paillotes et les palmiers en plein soleil" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="reflets" aria-hidden="true"></span></div>
+      <div class="plan plan--milieu" data-plan="0.32"><figure class="media plan-photo" style="--cadrage:52% 56%">
+  <picture>
+    <img src="/assets/images/piscine-palmier-784.webp" srcset="/assets/images/piscine-palmier-480.webp 480w, /assets/images/piscine-palmier-640.webp 640w, /assets/images/piscine-palmier-784.webp 784w" sizes="(max-width: 760px) 40vw, 18vw" alt="Palmier et paillote au bord de l&#39;eau turquoise" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="plan plan--devant" data-plan="0.58"><figure class="media plan-photo" style="--cadrage:56% 65%">
+  <picture>
+    <img src="/assets/images/cocktails-784.webp" srcset="/assets/images/cocktails-480.webp 480w, /assets/images/cocktails-640.webp 640w, /assets/images/cocktails-784.webp 784w" sizes="(max-width: 760px) 34vw, 14vw" alt="Trois cocktails glacés servis au bord de la piscine" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <svg class="plan plan--palme plan--palme-g" data-plan="0.9" viewBox="0 0 300 300" aria-hidden="true"><use href="#palme"/></svg>
+      <svg class="plan plan--palme plan--palme-d" data-plan="0.75" viewBox="0 0 300 300" aria-hidden="true"><use href="#palme" transform="translate(300 0) scale(-1 1)"/></svg>
+    </div>
+    <div class="jardin-texte">
+      <p class="heure" data-anime><span class="heure-chiffre">14 h 30</span><span class="heure-mot">Le jardin</span></p>
+      <h2 data-anime="lignes">Des palmiers, des cocktails, des sourires</h2>
+      <p data-anime>De juin à septembre, les journées festives ont lieu du mardi au jeudi, de 12 h à 19 h : on déjeune jusqu&#39;à 14 h 30, puis la piscine, les extérieurs et les espaces de détente restent à vous jusqu&#39;à 19 h, avec boissons et petite restauration l&#39;après-midi.</p>
+      <p class="jardin-hiver" data-anime>Journées festives : de juin à septembre.</p>
+      <ul class="liste-pratique" data-anime="cascade"><li>Vestiaires et douches avant la baignade</li><li>Bar seul : dès 15 h 30, selon les places, avec un droit d&#39;entrée</li><li>Tenue correcte exigée</li></ul>
+      <p data-anime><a href="/le-lieu#piscine" class="bouton bouton--contour" data-libelle="Le lieu">Découvrir le lieu</a></p>
+    </div>
+  </div>
+  <svg width="0" height="0" class="defs" aria-hidden="true"><defs><g id="palme"><path d="M150 165 Q91.6 142.0 33.1 170.6 M136.0 160.2 q-5.9 5.6 -11.8 18.8 M136.0 160.2 q-6.4 -5.5 -12.8 -18.2 M129.6 158.5 q-6.5 6.7 -13.0 22.2 M129.6 158.5 q-8.2 -5.9 -16.5 -19.8 M123.1 157.2 q-6.8 7.5 -13.7 25.1 M123.1 157.2 q-10.0 -6.1 -20.0 -20.3 M116.7 156.1 q-6.9 8.2 -13.9 27.4 M116.7 156.1 q-11.6 -6.0 -23.2 -20.1 M110.3 155.3 q-6.8 8.8 -13.7 29.3 M110.3 155.3 q-13.0 -5.8 -26.0 -19.3 M103.8 154.9 q-6.6 9.2 -13.1 30.7 M103.8 154.9 q-14.1 -5.4 -28.3 -17.9 M97.4 154.8 q-6.2 9.5 -12.3 31.6 M97.4 154.8 q-14.9 -4.8 -29.9 -16.1 M91.0 154.9 q-5.7 9.6 -11.3 32.0 M91.0 154.9 q-15.4 -4.2 -30.9 -14.1 M84.6 155.4 q-5.1 9.5 -10.1 31.8 M84.6 155.4 q-15.6 -3.6 -31.1 -11.9 M78.1 156.2 q-4.4 9.3 -8.8 31.0 M78.1 156.2 q-15.4 -2.9 -30.7 -9.6 M71.7 157.4 q-3.7 8.9 -7.4 29.6 M71.7 157.4 q-14.8 -2.2 -29.6 -7.4 M65.3 158.8 q-3.0 8.3 -6.0 27.5 M65.3 158.8 q-13.8 -1.6 -27.7 -5.4 M58.9 160.5 q-2.3 7.5 -4.7 24.8 M58.9 160.5 q-12.5 -1.1 -25.0 -3.6 M52.4 162.6 q-1.7 6.4 -3.4 21.4 M52.4 162.6 q-10.8 -0.6 -21.6 -2.1 M46.0 164.9 q-1.1 5.1 -2.2 17.1 M46.0 164.9 q-8.6 -0.3 -17.2 -0.9 M39.6 167.6 q-0.6 3.4 -1.2 11.4 M39.6 167.6 q-5.7 -0.0 -11.5 -0.1 M33.1 170.6 q-0.0 0.0 -0.0 0.0 M33.1 170.6 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q92.8 120.5 35.7 121.0 M136.3 155.0 q-7.8 4.7 -15.7 15.8 M136.3 155.0 q0.6 -6.7 1.3 -22.2 M130.0 150.8 q-8.9 5.6 -17.7 18.6 M130.0 150.8 q-0.1 -7.7 -0.2 -25.7 M123.7 146.9 q-9.6 6.3 -19.2 21.1 M123.7 146.9 q-1.1 -8.5 -2.2 -28.5 M117.4 143.3 q-10.1 7.0 -20.2 23.2 M117.4 143.3 q-2.3 -9.1 -4.6 -30.4 M111.1 139.9 q-10.3 7.5 -20.7 24.9 M111.1 139.9 q-3.6 -9.5 -7.1 -31.6 M104.8 136.9 q-10.4 7.9 -20.7 26.2 M104.8 136.9 q-4.9 -9.6 -9.8 -32.0 M98.6 134.1 q-10.2 8.1 -20.4 27.2 M98.6 134.1 q-6.2 -9.5 -12.3 -31.6 M92.3 131.5 q-9.8 8.3 -19.6 27.6 M92.3 131.5 q-7.3 -9.2 -14.7 -30.6 M86.0 129.3 q-9.3 8.3 -18.6 27.7 M86.0 129.3 q-8.3 -8.7 -16.7 -28.9 M79.7 127.3 q-8.6 8.2 -17.2 27.2 M79.7 127.3 q-9.1 -8.0 -18.2 -26.6 M73.4 125.6 q-7.8 7.9 -15.6 26.2 M73.4 125.6 q-9.5 -7.1 -19.0 -23.8 M67.1 124.1 q-6.9 7.4 -13.8 24.6 M67.1 124.1 q-9.6 -6.2 -19.2 -20.7 M60.8 123.0 q-5.9 6.7 -11.7 22.4 M60.8 123.0 q-9.2 -5.2 -18.5 -17.3 M54.5 122.1 q-4.8 5.8 -9.5 19.5 M54.5 122.1 q-8.4 -4.1 -16.8 -13.7 M48.3 121.4 q-3.6 4.7 -7.1 15.7 M48.3 121.4 q-7.0 -3.0 -14.1 -9.9 M42.0 121.1 q-2.2 3.2 -4.4 10.6 M42.0 121.1 q-4.9 -1.8 -9.8 -6.0 M35.7 121.0 q-0.0 0.0 -0.0 0.0 M35.7 121.0 q-0.0 -0.0 -0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q105.1 102.5 60.1 72.0 M139.2 150.5 q-9.4 3.5 -18.9 11.8 M139.2 150.5 q7.2 -5.1 14.3 -17.0 M134.3 144.1 q-10.8 4.2 -21.7 13.9 M134.3 144.1 q8.0 -6.0 16.1 -20.1 M129.3 137.9 q-11.9 4.7 -23.9 15.7 M129.3 137.9 q8.6 -6.8 17.2 -22.8 M124.4 132.0 q-12.8 5.2 -25.5 17.2 M124.4 132.0 q8.9 -7.5 17.8 -25.1 M119.4 126.2 q-13.3 5.5 -26.6 18.4 M119.4 126.2 q8.9 -8.1 17.9 -27.0 M114.5 120.6 q-13.6 5.8 -27.3 19.4 M114.5 120.6 q8.8 -8.5 17.5 -28.5 M109.6 115.2 q-13.7 6.0 -27.4 20.0 M109.6 115.2 q8.4 -8.9 16.8 -29.5 M104.6 110.0 q-13.6 6.1 -27.1 20.4 M104.6 110.0 q7.8 -9.0 15.7 -30.1 M99.7 105.0 q-13.2 6.1 -26.3 20.4 M99.7 105.0 q7.1 -9.0 14.2 -30.1 M94.7 100.2 q-12.6 6.0 -25.2 20.1 M94.7 100.2 q6.3 -8.9 12.6 -29.6 M89.8 95.6 q-11.8 5.8 -23.5 19.4 M89.8 95.6 q5.3 -8.6 10.7 -28.5 M84.8 91.2 q-10.7 5.5 -21.5 18.3 M84.8 91.2 q4.3 -8.0 8.7 -26.8 M79.9 86.9 q-9.5 5.0 -19.0 16.7 M79.9 86.9 q3.3 -7.3 6.6 -24.4 M74.9 82.9 q-8.0 4.4 -16.1 14.6 M74.9 82.9 q2.3 -6.4 4.6 -21.2 M70.0 79.1 q-6.3 3.5 -12.6 11.8 M70.0 79.1 q1.4 -5.1 2.8 -17.0 M65.1 75.4 q-4.1 2.4 -8.2 8.0 M65.1 75.4 q0.6 -3.4 1.2 -11.4 M60.1 72.0 q-0.0 0.0 -0.0 0.0 M60.1 72.0 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q133.7 112.1 117.5 73.6 M146.1 152.5 q-10.7 1.9 -21.4 6.2 M146.1 152.5 q10.5 -2.3 20.9 -7.5 M144.3 146.9 q-12.3 2.2 -24.7 7.3 M144.3 146.9 q12.1 -2.7 24.2 -8.9 M142.5 141.4 q-13.7 2.4 -27.3 8.2 M142.5 141.4 q13.4 -3.0 26.7 -10.0 M140.7 136.0 q-14.7 2.7 -29.4 8.9 M140.7 136.0 q14.4 -3.3 28.7 -10.9 M138.9 130.7 q-15.5 2.9 -30.9 9.5 M138.9 130.7 q15.1 -3.5 30.2 -11.7 M137.2 125.5 q-16.0 3.0 -31.9 10.0 M137.2 125.5 q15.5 -3.7 31.1 -12.3 M135.4 120.3 q-16.2 3.1 -32.4 10.3 M135.4 120.3 q15.7 -3.8 31.5 -12.7 M133.6 115.2 q-16.1 3.1 -32.3 10.4 M133.6 115.2 q15.7 -3.9 31.4 -12.9 M131.8 110.3 q-15.8 3.1 -31.7 10.4 M131.8 110.3 q15.4 -3.9 30.7 -12.9 M130.0 105.4 q-15.3 3.0 -30.5 10.1 M130.0 105.4 q14.8 -3.8 29.6 -12.7 M128.2 100.6 q-14.4 2.9 -28.9 9.8 M128.2 100.6 q14.0 -3.7 27.9 -12.2 M126.4 95.9 q-13.3 2.7 -26.7 9.2 M126.4 95.9 q12.9 -3.5 25.7 -11.5 M124.6 91.2 q-11.9 2.5 -23.9 8.3 M124.6 91.2 q11.5 -3.2 23.0 -10.5 M122.8 86.7 q-10.2 2.2 -20.4 7.3 M122.8 86.7 q9.8 -2.8 19.6 -9.2 M121.1 82.2 q-8.1 1.8 -16.2 5.9 M121.1 82.2 q7.8 -2.2 15.5 -7.5 M119.3 77.9 q-5.4 1.2 -10.8 4.0 M119.3 77.9 q5.1 -1.5 10.3 -5.1 M117.5 73.6 q-0.0 0.0 -0.0 0.0 M117.5 73.6 q0.0 -0.0 0.0 -0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q156.9 107.6 163.8 55.7 M151.7 151.3 q-11.0 -0.8 -22.1 -2.8 M151.7 151.3 q11.0 0.8 22.1 2.6 M152.4 145.1 q-12.8 -1.0 -25.5 -3.3 M152.4 145.1 q12.8 0.9 25.5 3.0 M153.2 138.9 q-14.2 -1.1 -28.3 -3.6 M153.2 138.9 q14.2 1.0 28.3 3.4 M153.9 132.7 q-15.2 -1.2 -30.5 -3.9 M153.9 132.7 q15.3 1.1 30.5 3.6 M154.7 126.6 q-16.1 -1.2 -32.1 -4.2 M154.7 126.6 q16.1 1.2 32.1 3.8 M155.5 120.5 q-16.6 -1.3 -33.2 -4.3 M155.5 120.5 q16.6 1.2 33.2 4.0 M156.2 114.5 q-16.8 -1.3 -33.7 -4.4 M156.2 114.5 q16.9 1.2 33.7 4.1 M157.0 108.5 q-16.8 -1.3 -33.6 -4.4 M157.0 108.5 q16.8 1.2 33.7 4.1 M157.7 102.5 q-16.5 -1.3 -33.0 -4.4 M157.7 102.5 q16.5 1.2 33.1 4.0 M158.5 96.5 q-15.9 -1.3 -31.9 -4.3 M158.5 96.5 q16.0 1.2 31.9 3.9 M159.2 90.6 q-15.1 -1.2 -30.2 -4.1 M159.2 90.6 q15.1 1.1 30.2 3.7 M160.0 84.7 q-14.0 -1.1 -27.9 -3.8 M160.0 84.7 q14.0 1.0 28.0 3.5 M160.8 78.8 q-12.5 -1.0 -25.1 -3.4 M160.8 78.8 q12.5 0.9 25.1 3.1 M161.5 73.0 q-10.7 -0.9 -21.5 -2.9 M161.5 73.0 q10.8 0.8 21.5 2.7 M162.3 67.2 q-8.5 -0.7 -17.1 -2.3 M162.3 67.2 q8.6 0.6 17.1 2.2 M163.0 61.5 q-5.7 -0.5 -11.4 -1.6 M163.0 61.5 q5.7 0.4 11.4 1.4 M163.8 55.7 q-0.0 -0.0 -0.0 -0.0 M163.8 55.7 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q184.3 99.3 218.5 58.1 M158.2 149.6 q-9.1 -3.8 -18.2 -12.8 M158.2 149.6 q10.1 2.8 20.1 9.5 M162.0 142.8 q-10.4 -4.5 -20.8 -15.1 M162.0 142.8 q11.6 3.3 23.2 11.1 M165.8 136.1 q-11.4 -5.1 -22.8 -17.1 M165.8 136.1 q12.8 3.8 25.6 12.5 M169.5 129.6 q-12.2 -5.6 -24.3 -18.8 M169.5 129.6 q13.8 4.1 27.5 13.7 M173.3 123.2 q-12.6 -6.1 -25.3 -20.2 M173.3 123.2 q14.4 4.4 28.9 14.7 M177.1 116.9 q-12.9 -6.4 -25.8 -21.3 M177.1 116.9 q14.8 4.6 29.7 15.4 M180.8 110.8 q-12.9 -6.6 -25.8 -22.1 M180.8 110.8 q15.0 4.8 30.0 15.9 M184.6 104.9 q-12.7 -6.8 -25.3 -22.6 M184.6 104.9 q14.9 4.8 29.8 16.1 M188.4 99.1 q-12.2 -6.8 -24.4 -22.6 M188.4 99.1 q14.6 4.8 29.2 16.1 M192.2 93.5 q-11.6 -6.7 -23.2 -22.3 M192.2 93.5 q14.0 4.7 28.0 15.8 M195.9 88.0 q-10.7 -6.5 -21.5 -21.6 M195.9 88.0 q13.2 4.6 26.4 15.2 M199.7 82.6 q-9.7 -6.1 -19.4 -20.4 M199.7 82.6 q12.1 4.3 24.3 14.3 M203.5 77.4 q-8.5 -5.6 -17.0 -18.7 M203.5 77.4 q10.8 3.9 21.6 13.1 M207.2 72.4 q-7.1 -4.9 -14.2 -16.4 M207.2 72.4 q9.2 3.4 18.4 11.4 M211.0 67.5 q-5.5 -4.0 -10.9 -13.4 M211.0 67.5 q7.3 2.8 14.6 9.2 M214.8 62.7 q-3.5 -2.7 -7.0 -9.1 M214.8 62.7 q4.8 1.9 9.6 6.2 M218.5 58.1 q-0.0 -0.0 -0.0 -0.0 M218.5 58.1 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q195.2 118.2 240.4 111.2 M160.8 154.3 q-4.1 -6.2 -8.2 -20.7 M160.8 154.3 q8.6 4.2 17.3 14.0 M165.8 149.8 q-4.1 -7.3 -8.1 -24.4 M165.8 149.8 q9.8 5.0 19.7 16.6 M170.8 145.6 q-3.7 -8.3 -7.4 -27.6 M170.8 145.6 q10.7 5.7 21.4 18.9 M175.8 141.5 q-3.0 -9.0 -6.1 -30.1 M175.8 141.5 q11.3 6.2 22.7 20.8 M180.7 137.8 q-2.1 -9.6 -4.3 -32.1 M180.7 137.8 q11.7 6.7 23.4 22.4 M185.7 134.2 q-1.0 -10.0 -2.1 -33.4 M185.7 134.2 q11.8 7.1 23.6 23.7 M190.7 130.9 q0.2 -10.2 0.4 -33.9 M190.7 130.9 q11.7 7.4 23.4 24.6 M195.6 127.8 q1.5 -10.1 3.0 -33.8 M195.6 127.8 q11.4 7.5 22.7 25.1 M200.6 125.0 q2.8 -9.9 5.6 -32.9 M200.6 125.0 q10.9 7.6 21.7 25.3 M205.6 122.5 q4.0 -9.4 8.0 -31.2 M205.6 122.5 q10.2 7.5 20.3 25.0 M210.6 120.1 q5.0 -8.6 10.0 -28.8 M210.6 120.1 q9.3 7.2 18.6 24.1 M215.5 118.0 q5.7 -7.7 11.5 -25.8 M215.5 118.0 q8.3 6.8 16.6 22.8 M220.5 116.2 q6.1 -6.6 12.2 -22.1 M220.5 116.2 q7.1 6.3 14.3 20.9 M225.5 114.5 q6.0 -5.4 12.0 -18.0 M225.5 114.5 q5.8 5.5 11.7 18.3 M230.4 113.2 q5.4 -4.0 10.7 -13.5 M230.4 113.2 q4.4 4.4 8.8 14.8 M235.4 112.0 q3.9 -2.5 7.9 -8.4 M235.4 112.0 q2.8 3.0 5.6 10.0 M240.4 111.2 q0.0 -0.0 0.0 -0.0 M240.4 111.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q212.8 130.9 275.5 146.2 M165.1 157.5 q3.6 -6.3 7.2 -21.0 M165.1 157.5 q6.8 5.3 13.6 17.6 M172.0 154.6 q5.1 -7.1 10.1 -23.7 M172.0 154.6 q7.6 6.2 15.2 20.7 M178.9 151.9 q6.6 -7.6 13.2 -25.3 M178.9 151.9 q8.1 7.0 16.3 23.4 M185.8 149.6 q8.1 -7.8 16.2 -26.1 M185.8 149.6 q8.4 7.7 16.9 25.7 M192.7 147.5 q9.6 -7.8 19.1 -26.1 M192.7 147.5 q8.5 8.3 17.0 27.5 M199.6 145.8 q10.9 -7.6 21.7 -25.4 M199.6 145.8 q8.4 8.7 16.8 28.9 M206.5 144.3 q11.9 -7.2 23.9 -24.2 M206.5 144.3 q8.1 8.9 16.2 29.8 M213.4 143.1 q12.7 -6.7 25.5 -22.4 M213.4 143.1 q7.7 9.1 15.4 30.2 M220.3 142.3 q13.2 -6.1 26.5 -20.2 M220.3 142.3 q7.1 9.0 14.3 30.1 M227.2 141.7 q13.4 -5.3 26.8 -17.8 M227.2 141.7 q6.5 8.8 12.9 29.5 M234.1 141.5 q13.2 -4.6 26.4 -15.2 M234.1 141.5 q5.7 8.5 11.4 28.2 M241.0 141.5 q12.6 -3.8 25.2 -12.5 M241.0 141.5 q4.9 7.9 9.8 26.4 M247.9 141.9 q11.6 -3.0 23.3 -9.9 M247.9 141.9 q4.1 7.2 8.1 23.9 M254.8 142.5 q10.2 -2.2 20.4 -7.4 M254.8 142.5 q3.2 6.2 6.4 20.7 M261.7 143.4 q8.3 -1.5 16.5 -5.0 M261.7 143.4 q2.3 5.0 4.6 16.6 M268.6 144.7 q5.6 -0.8 11.1 -2.8 M268.6 144.7 q1.4 3.3 2.8 11.1 M275.5 146.2 q0.0 -0.0 0.0 -0.0 M275.5 146.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M150 165 Q222.8 155.2 295.6 197.2 M167.5 163.4 q9.3 -3.6 18.7 -12.0 M167.5 163.4 q4.4 6.1 8.8 20.4 M175.5 163.1 q11.2 -3.8 22.4 -12.7 M175.5 163.1 q4.8 7.2 9.6 23.9 M183.5 163.2 q12.8 -3.8 25.6 -12.7 M183.5 163.2 q5.0 8.0 9.9 26.8 M191.5 163.6 q14.1 -3.6 28.2 -12.2 M191.5 163.6 q5.0 8.7 10.0 29.1 M199.5 164.3 q15.2 -3.4 30.3 -11.3 M199.5 164.3 q4.8 9.3 9.7 30.9 M207.5 165.3 q15.9 -3.0 31.9 -10.1 M207.5 165.3 q4.6 9.6 9.2 32.1 M215.5 166.6 q16.4 -2.6 32.8 -8.7 M215.5 166.6 q4.3 9.9 8.5 32.9 M223.6 168.3 q16.6 -2.2 33.1 -7.3 M223.6 168.3 q3.9 9.9 7.7 33.0 M231.6 170.2 q16.4 -1.7 32.8 -5.8 M231.6 170.2 q3.4 9.8 6.8 32.6 M239.6 172.5 q15.9 -1.3 31.9 -4.3 M239.6 172.5 q2.9 9.5 5.8 31.6 M247.6 175.1 q15.2 -0.9 30.3 -2.9 M247.6 175.1 q2.4 9.0 4.8 30.1 M255.6 178.0 q14.1 -0.5 28.1 -1.7 M255.6 178.0 q1.9 8.4 3.8 27.9 M263.6 181.2 q12.6 -0.2 25.3 -0.6 M263.6 181.2 q1.4 7.5 2.9 25.1 M271.6 184.7 q10.8 0.1 21.7 0.2 M271.6 184.7 q1.0 6.5 2.0 21.6 M279.6 188.6 q8.6 0.2 17.2 0.7 M279.6 188.6 q0.6 5.2 1.2 17.2 M287.6 192.7 q5.7 0.2 11.4 0.8 M287.6 192.7 q0.3 3.4 0.6 11.5 M295.6 197.2 q0.0 0.0 0.0 0.0 M295.6 197.2 q0.0 0.0 0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"/><path d="M150 165 Q204.7 174.0 259.4 231.2 M163.1 167.9 q11.0 -1.1 21.9 -3.7 M163.1 167.9 q2.2 6.5 4.4 21.8 M169.1 169.6 q12.8 -0.9 25.5 -3.0 M169.1 169.6 q2.2 7.6 4.4 25.3 M175.2 171.7 q14.2 -0.6 28.5 -2.1 M175.2 171.7 q2.1 8.5 4.1 28.2 M181.2 174.0 q15.4 -0.3 30.7 -0.9 M181.2 174.0 q1.8 9.2 3.6 30.5 M187.2 176.7 q16.2 0.1 32.4 0.4 M187.2 176.7 q1.5 9.7 2.9 32.2 M193.2 179.6 q16.7 0.5 33.4 1.7 M193.2 179.6 q1.1 10.0 2.2 33.4 M199.2 182.9 q16.9 0.9 33.8 2.9 M199.2 182.9 q0.7 10.2 1.4 33.9 M205.3 186.4 q16.8 1.2 33.7 4.1 M205.3 186.4 q0.3 10.2 0.6 33.9 M211.3 190.2 q16.5 1.5 32.9 5.1 M211.3 190.2 q-0.1 10.0 -0.2 33.3 M217.3 194.3 q15.8 1.7 31.6 5.8 M217.3 194.3 q-0.4 9.7 -0.8 32.2 M223.3 198.7 q14.9 1.9 29.8 6.4 M223.3 198.7 q-0.7 9.1 -1.4 30.4 M229.3 203.4 q13.7 2.0 27.4 6.6 M229.3 203.4 q-0.9 8.4 -1.9 28.1 M235.3 208.4 q12.2 2.0 24.4 6.5 M235.3 208.4 q-1.1 7.6 -2.1 25.2 M241.4 213.6 q10.4 1.8 20.8 6.1 M241.4 213.6 q-1.1 6.5 -2.2 21.6 M247.4 219.2 q8.2 1.6 16.4 5.2 M247.4 219.2 q-1.0 5.1 -2.1 17.1 M253.4 225.1 q5.4 1.1 10.9 3.7 M253.4 225.1 q-0.8 3.4 -1.6 11.4 M259.4 231.2 q0.0 0.0 0.0 0.0 M259.4 231.2 q-0.0 0.0 -0.0 0.0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></g></defs></svg>
+</section>
+<section class="plongee" id="plongee" data-scene data-ambiance="apres-midi" aria-label="Plongée dans la piscine">
+  <div class="plongee-collant" data-collant>
+    <figure class="media plongee-photo" style="--cadrage:48% 50%">
+  <picture>
+    <img src="/assets/images/piscine-plongee-1280.webp" srcset="/assets/images/piscine-plongee-640.webp 640w, /assets/images/piscine-plongee-1280.webp 1280w, /assets/images/piscine-plongee-1920.webp 1920w" sizes="100vw" alt="La piscine entourée de palmiers et de transats blancs" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="plongee-mur" aria-hidden="true"><span class="plongee-trou" data-effet="plongee-piscine"></span></div>
+    <p class="plongee-mot" aria-hidden="true">Plongez.</p>
+  </div>
+</section>
+<section class="buffet lumiere" id="grand-buffet" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="buffet-grille conteneur">
+    <div class="buffet-texte">
+      <p class="heure" data-anime><span class="heure-chiffre">Dimanche</span><span class="heure-mot">Le Grand Buffet</span></p>
+      <h2 data-anime="lignes">Le brasero s’allume</h2>
+      <p data-anime>De 12 h à 18 h, avec un DJ set : buffet froid et chaud, brasero, viande à la broche et gourmandises sucrées. Le buffet est servi de 13 h à 15 h 30, la piscine est accessible dès 14 h 30.</p>
+      <p class="buffet-prix" data-anime><strong data-prix>50 € par personne</strong></p>
+      <p data-anime><a href="/reserver?service=midi" class="bouton" data-libelle="Réserver">Réserver un dimanche</a></p>
+    </div>
+    <figure class="media buffet-photo buffet-photo--a" data-fx="zoom" style="--cadrage:44% 48%">
+  <picture>
+    <img src="/assets/images/broche-1600.webp" srcset="/assets/images/broche-480.webp 480w, /assets/images/broche-640.webp 640w, /assets/images/broche-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 34vw" alt="Viande rôtie à la broche pendant le Grand Buffet" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <figure class="media buffet-photo buffet-photo--b" data-fx="vitesse" style="--cadrage:53% 56%">
+  <picture>
+    <img src="/assets/images/brasero-1600.webp" srcset="/assets/images/brasero-480.webp 480w, /assets/images/brasero-640.webp 640w, /assets/images/brasero-1600.webp 1600w" sizes="(max-width: 760px) 60vw, 22vw" alt="Le brasero allumé devant les paillotes" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="soir lumiere" id="cheminee" data-ambiance="soir">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <canvas class="braises" data-effet="braises" data-audit-ignorer aria-hidden="true"></canvas>
+  <div class="soir-grille conteneur">
+    <figure class="media soir-photo" data-fx="parallaxe" style="--cadrage:51% 69%">
+  <picture>
+    <img src="/assets/images/cheminee-plat-1280.webp" srcset="/assets/images/cheminee-plat-640.webp 640w, /assets/images/cheminee-plat-1280.webp 1280w, /assets/images/cheminee-plat-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 50vw" alt="Une assiette du chef servie devant la cheminée allumée" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="soir-texte">
+      <p class="heure" data-anime><span class="heure-chiffre">19 h</span><span class="heure-mot">Le coin du feu</span></p>
+      <h2 data-anime="lignes">Au creux de la cheminée</h2>
+      <p data-anime>Bonne humeur, bons plats et le feu qui crépite : quand le jour tombe, la salle se resserre autour de la cheminée. Le restaurant reste ouvert toute l&#39;année.</p>
+      <p data-anime><a href="/reserver?service=soir" class="bouton bouton--clair" data-libelle="Réserver">Réserver pour le soir</a></p>
+      <figure class="media soir-vignette" data-anime="rideau" style="--cadrage:43% 44%">
+  <picture>
+    <img src="/assets/images/cheminee-dessert-784.webp" srcset="/assets/images/cheminee-dessert-480.webp 480w, /assets/images/cheminee-dessert-640.webp 640w, /assets/images/cheminee-dessert-784.webp 784w" sizes="(max-width: 760px) 40vw, 14vw" alt="Dessert en coupe sur une table en bois, le feu de cheminée derrière" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="moment" id="en-ce-moment" data-ambiance="nuit">
+  <div class="conteneur">
+    <p class="surtitre" data-anime>En ce moment</p>
+    <h2 data-anime="lettres">Les fêtes à l&#39;Hacienda</h2>
+    <p class="moment-intro" data-anime>Toutes les réservations se font en ligne.</p>
+    <ul class="billets" data-anime="cascade">
+      <li class="billet" data-date="2026-12-25" id="noel">
+        <figure class="media billet-photo" style="--cadrage:53% 35%">
+  <picture>
+    <img src="/assets/images/noel-salle-784.webp" srcset="/assets/images/noel-salle-480.webp 480w, /assets/images/noel-salle-640.webp 640w, /assets/images/noel-salle-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Mur de pierre, bûches et décor de Noël dans la salle" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="billet-corps">
+          <p class="billet-compte" data-compte aria-live="off">Vendredi 25 décembre</p>
+          <h3>Menu de Noël</h3>
+          <p class="billet-quand">Vendredi 25 décembre · Au déjeuner</p>
+          <p class="billet-prix"><strong data-prix>79 €</strong> par personne, hors boissons</p>
+          <p class="billet-menu-titre">Au menu</p><ul class="billet-menu"><li>Coupe de bienvenue</li><li>Huître tiède au sabayon de champagne</li><li>Foie gras poêlé sur poire pochée au vin moelleux</li><li>Suprême de chapon farci à la truffe, purée de châtaigne</li><li>Coque en chocolat, tiramisu mangue passion</li></ul>
+          <p><a href="/reserver?date=2026-12-25&amp;service=midi" class="bouton bouton--clair" data-libelle="Réserver">Réserver</a></p>
+        </div>
+      </li><li class="billet" data-date="2026-12-31" id="saint-sylvestre">
+        <figure class="media billet-photo" style="--cadrage:50% 31%">
+  <picture>
+    <img src="/assets/images/sylvestre-salle-1600.webp" srcset="/assets/images/sylvestre-salle-480.webp 480w, /assets/images/sylvestre-salle-640.webp 640w, /assets/images/sylvestre-salle-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 30vw" alt="La salle décorée pour les fêtes, sapin et cheminée" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="billet-corps">
+          <p class="billet-compte" data-compte aria-live="off">Jeudi 31 décembre</p>
+          <h3>Saint-Sylvestre</h3>
+          <p class="billet-quand">Jeudi 31 décembre · Soirée animée par DJ Laurent Geymet</p>
+          <p class="billet-prix"><strong data-prix>120 €</strong> le menu, 170 € avec l&#39;accord mets et vins</p>
+          <p class="billet-menu-titre">Au menu</p><ul class="billet-menu"><li>Bouchée gourmande et coupe de Champagne</li><li>Velours de foie gras, éclats de truffe noire</li><li>Esturgeon poché, sauce citronnée au caviar, lentilles noires Béluga</li><li>Filet de bœuf aux morilles, jus réduit infusé au café</li><li>Sablé breton au yuzu, crémeux de yuzu et meringue brûlée</li></ul>
+          <p><a href="/reserver?date=2026-12-31&amp;service=soir" class="bouton bouton--clair" data-libelle="Réserver">Réserver</a></p>
+        </div>
+      </li>
+      <li class="billet billet--emporter" data-date="2026-12-31" id="a-emporter">
+        <figure class="media billet-photo" style="--cadrage:46% 51%">
+  <picture>
+    <img src="/assets/images/emporter-1600.webp" srcset="/assets/images/emporter-480.webp 480w, /assets/images/emporter-640.webp 640w, /assets/images/emporter-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 30vw" alt="Gravlax de saumon maison, à emporter pour les fêtes" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="billet-corps">
+          <p class="billet-compte">Huit spécialités maison</p>
+          <h3>À emporter pour les fêtes</h3>
+          <p class="billet-quand">Retrait du 5 au 31 décembre, pendant les heures d&#39;ouverture du restaurant.</p>
+          <ul class="billet-produits"><li><span>Escargots à la crème d&#39;ail</span> <span data-prix>18 €</span></li><li><span>Tourte aux escargots</span> <span data-prix>32 €</span></li><li><span>Tourte aux grenouilles</span> <span data-prix>32 €</span></li><li><span>Pâté lorrain</span> <span data-prix>28 € le kilo</span></li><li><span>Foie gras de canard maison</span> <span data-prix>36 €</span></li><li><span>Gravlax de saumon maison</span> <span data-prix>22 €</span></li><li><span>Tataki de bœuf</span> <span data-prix>25 €</span></li><li><span>Tataki de thon</span> <span data-prix>25 €</span></li></ul>
+          <p><a class="bouton bouton--clair" href="tel:+33618212810">Commander par téléphone</a></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="grands" id="grands-jours" data-fx="plein-ecran" style="--fx-longueur: 210svh" data-fx-depart="inset(22% 32% 16% 32% round 999px 999px 0 0)">
+  <div class="grands-collant" data-collant>
+    <figure class="media grands-photo" data-fx-cible style="--cadrage:48% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/mariage-table-mobile-640.webp 640w, /assets/images/mariage-table-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/mariage-table-1280.webp" srcset="/assets/images/mariage-table-640.webp 640w, /assets/images/mariage-table-1280.webp 1280w, /assets/images/mariage-table-1920.webp 1920w" sizes="100vw" alt="Table de mariage dressée, chemin de table orange et bouquets" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <svg class="guirlande" viewBox="0 0 1200 140" preserveAspectRatio="none" data-effet="papel-picado" aria-hidden="true"><path d="M0 12 Q 600 52 1200 12" stroke="#F2EFE9" stroke-width="2" fill="none"/><g transform="translate(10.9 15.5)"><g class="fanion" style="--i:0"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(96.6 25.3)"><g class="fanion" style="--i:1"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(182.3 33.5)"><g class="fanion" style="--i:2"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#D9682B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(268.0 40.0)"><g class="fanion" style="--i:3"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#23453A"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(353.7 44.9)"><g class="fanion" style="--i:4"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E7B7C8"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(439.4 48.2)"><g class="fanion" style="--i:5"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#F2EFE9"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(525.1 49.8)"><g class="fanion" style="--i:6"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(610.9 49.8)"><g class="fanion" style="--i:7"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(696.6 48.2)"><g class="fanion" style="--i:8"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#D9682B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(782.3 44.9)"><g class="fanion" style="--i:9"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#23453A"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(868.0 40.0)"><g class="fanion" style="--i:10"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E7B7C8"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(953.7 33.5)"><g class="fanion" style="--i:11"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#F2EFE9"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(1039.4 25.3)"><g class="fanion" style="--i:12"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(1125.1 15.5)"><g class="fanion" style="--i:13"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g></svg>
+    <p class="grands-mots grands-mots--g" data-mot="g" aria-hidden="true" data-audit-ignorer>Mariage · Baptême</p>
+    <p class="grands-mots grands-mots--d" data-mot="d" aria-hidden="true" data-audit-ignorer>Anniversaire · Pot de départ</p>
+    <div class="grands-texte" data-fx-apres>
+      <p class="surtitre">Les grands jours</p>
+      <h2>Un instant magique avec vos proches</h2>
+      <p>Célébrez le plus beau jour de votre vie dans un cadre idyllique, au bord de l&#39;eau ou au coin du feu.</p>
+      <p><a href="/receptions" class="bouton bouton--clair" data-libelle="Réceptions">Préparer une réception</a></p>
+    </div>
+  </div>
+</section>
+<section class="venir lumiere" id="venir" data-ambiance="matin">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="venir-grille conteneur">
+    <div>
+      <p class="surtitre" data-anime>Nous trouver</p>
+      <h2 data-anime="lignes">En pleine nature, à 15 km de Metz</h2>
+      <p data-anime>À Moineville, à portée de Nancy, de Thionville et du Luxembourg.</p>
+      <p class="venir-adresse" data-anime><strong>6 Vathier Haye, 54580 Moineville</strong><br><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <p class="venir-actions" data-anime><a href="/reserver" class="bouton" data-libelle="Réserver">Réserver une table</a> <a href="/contact" class="bouton bouton--contour" data-libelle="Contact">Accès et contact</a></p>
+    </div>
+    <figure class="venir-plan" data-visuel>
+  <svg viewBox="0 0 520 420" role="img" aria-label="Plan schématique : Moineville, à 15 km de Metz" data-fx="trace">
+    <path d="M40 60 C 140 40, 220 120, 300 140 S 460 120, 490 200" fill="none" stroke="currentColor" stroke-opacity=".18" stroke-width="22" stroke-linecap="round"/>
+    <path data-fx-trait d="M420 330 C 360 300, 330 250, 300 220 S 220 160, 150 140" fill="none" stroke="#1F3E8C" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="420" cy="330" r="12" fill="#1F3E8C"/><circle cx="150" cy="140" r="16" fill="#D9682B"/>
+    <text x="436" y="364" font-size="22" fill="currentColor">Metz</text>
+    <text x="96" y="110" font-size="22" fill="currentColor" font-weight="700">Moineville</text>
+    <text x="300" y="296" font-size="20" fill="#1F3E8C" font-weight="700">15 km</text>
+  </svg>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-marque"><img src="/assets/images/logo-h-clair.png" alt="" width="56" height="56"><strong>Les Jardins de l&#39;Hacienda</strong></p>
+      <p>Restaurant et lieu de réception, à 15 km de Metz</p>
+      <p>6 Vathier Haye, 54580 Moineville<br><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <p class="pied-reseaux"><a href="https://www.facebook.com/lesjardinsdelhacienda54" target="_blank" rel="noopener">Facebook (nouvel onglet)</a> <a href="https://www.instagram.com/lesjardinsdel.hacienda/" target="_blank" rel="noopener">Instagram (nouvel onglet)</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : réservations et formulaires simulés.</p><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>© Les Jardins de l&#39;Hacienda</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33618212810">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

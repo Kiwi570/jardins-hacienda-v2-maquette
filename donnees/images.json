@@ -1,0 +1,3400 @@
+{
+ "logo": {
+  "nom": "logo",
+  "source": "recu/logo-sombre.png",
+  "role": "logo",
+  "alt": "Les Jardins de l'Hacienda",
+  "grok": false,
+  "mention": null,
+  "empreinte": "01ad4c60d7dc66a6",
+  "ratio": null,
+  "largeurs": [
+   240,
+   480
+  ],
+  "mobile": null,
+  "cadrage": null,
+  "sujet": null,
+  "zones_calmes": null,
+  "zone_texte": null,
+  "recadrage": null,
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "logo-240.webp",
+   "logo-480.webp"
+  ],
+  "poids": {
+   "logo-240.webp": 14114,
+   "logo-480.webp": 31076
+  },
+  "media": "c.media({ nom: 'logo', alt: \"Les Jardins de l'Hacienda\", sizes: '240px' })"
+ },
+ "salle-midi": {
+  "nom": "salle-midi",
+  "source": "recu/restaurant-17.jpg",
+  "role": "galerie",
+  "alt": "La salle du restaurant baignée de soleil à midi",
+  "grok": false,
+  "mention": null,
+  "empreinte": "3cc8bcad5cea9cd7",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "50% 44%",
+  "sujet": {
+   "x": 25,
+   "y": 30,
+   "l": 50,
+   "h": 28.2
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.34,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.32,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.28,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.24,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1334,
+   "height": 1668,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "salle-midi-480.webp",
+   "salle-midi-800.webp",
+   "salle-midi-1200.webp"
+  ],
+  "poids": {
+   "salle-midi-480.webp": 31942,
+   "salle-midi-800.webp": 63310,
+   "salle-midi-1200.webp": 107058
+  },
+  "media": "c.media({ nom: 'salle-midi', alt: \"La salle du restaurant baignée de soleil à midi\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+ },
+ "salle-soir": {
+  "nom": "salle-soir",
+  "source": "recu/restaurant-25.jpg",
+  "role": "galerie",
+  "alt": "Coin de la salle le soir, mur de pierre, bûches et peaux de mouton",
+  "grok": false,
+  "mention": null,
+  "empreinte": "9f2779502fda3728",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "58% 51%",
+  "sujet": {
+   "x": 0,
+   "y": 34.8,
+   "l": 97.7,
+   "h": 65.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.43,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.25,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.13,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.07,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 332,
+   "width": 1334,
+   "height": 1668,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "salle-soir-480.webp",
+   "salle-soir-800.webp",
+   "salle-soir-1200.webp"
+  ],
+  "poids": {
+   "salle-soir-480.webp": 36122,
+   "salle-soir-800.webp": 79866,
+   "salle-soir-1200.webp": 141304
+  },
+  "media": "c.media({ nom: 'salle-soir', alt: \"Coin de la salle le soir, mur de pierre, bûches et peaux de mouton\", cadrage: '58% 51%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+ },
+ "chef": {
+  "nom": "chef",
+  "source": "recu/whatsapp-image-2025-01.jpg",
+  "role": "portrait",
+  "alt": "Le chef Régis Clauss au bord de la piscine",
+  "grok": false,
+  "mention": null,
+  "empreinte": "bd5259bd4d3fac51",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 51%",
+  "sujet": {
+   "x": 10,
+   "y": 29.2,
+   "l": 81.7,
+   "h": 70.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.26,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.24,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.05,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 13,
+   "top": 0,
+   "width": 768,
+   "height": 960,
+   "source": [
+    1280,
+    960
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "chef-480.webp",
+   "chef-640.webp",
+   "chef-784.webp"
+  ],
+  "poids": {
+   "chef-480.webp": 42718,
+   "chef-640.webp": 59920,
+   "chef-784.webp": 75324
+  },
+  "media": "c.media({ nom: 'chef', alt: \"Le chef Régis Clauss au bord de la piscine\", cadrage: '50% 51%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+ },
+ "assiette-1": {
+  "nom": "assiette-1",
+  "source": "recu/restaurant-15.jpg",
+  "role": "vignette",
+  "alt": "",
+  "grok": false,
+  "mention": null,
+  "empreinte": "ea839651798b01d9",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "mobile": null,
+  "cadrage": "50% 47%",
+  "sujet": {
+   "x": 5.5,
+   "y": 4.5,
+   "l": 94.5,
+   "h": 90.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.24,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.12,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.01,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 53,
+   "top": 0,
+   "width": 1334,
+   "height": 1334,
+   "source": [
+    2000,
+    1334
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "assiette-1-320.webp",
+   "assiette-1-640.webp"
+  ],
+  "poids": {
+   "assiette-1-320.webp": 16104,
+   "assiette-1-640.webp": 52582
+  },
+  "media": "c.media({ nom: 'assiette-1', alt: \"\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "assiette-2": {
+  "nom": "assiette-2",
+  "source": "recu/restaurant-jardins-hacienda-5.jpg",
+  "role": "vignette",
+  "alt": "",
+  "grok": false,
+  "mention": null,
+  "empreinte": "312c73d919d3c953",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "mobile": null,
+  "cadrage": "50% 46%",
+  "sujet": {
+   "x": 0,
+   "y": 6.7,
+   "l": 100,
+   "h": 93.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 332,
+   "top": 0,
+   "width": 1184,
+   "height": 1184,
+   "source": [
+    1776,
+    1184
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "assiette-2-320.webp",
+   "assiette-2-640.webp"
+  ],
+  "poids": {
+   "assiette-2-320.webp": 26550,
+   "assiette-2-640.webp": 83956
+  },
+  "media": "c.media({ nom: 'assiette-2', alt: \"\", cadrage: '50% 46%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "assiette-3": {
+  "nom": "assiette-3",
+  "source": "recu/restaurant-jardins-hacienda-6.jpg",
+  "role": "vignette",
+  "alt": "",
+  "grok": false,
+  "mention": null,
+  "empreinte": "d1f245f7ab274b71",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "mobile": null,
+  "cadrage": "50% 44%",
+  "sujet": {
+   "x": 0,
+   "y": 3.8,
+   "l": 100,
+   "h": 96
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.01,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 314,
+   "top": 0,
+   "width": 1184,
+   "height": 1184,
+   "source": [
+    1776,
+    1184
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "assiette-3-320.webp",
+   "assiette-3-640.webp"
+  ],
+  "poids": {
+   "assiette-3-320.webp": 28626,
+   "assiette-3-640.webp": 89884
+  },
+  "media": "c.media({ nom: 'assiette-3', alt: \"\", cadrage: '50% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "assiette-4": {
+  "nom": "assiette-4",
+  "source": "recu/restaurant-33.jpg",
+  "role": "vignette",
+  "alt": "",
+  "grok": false,
+  "mention": null,
+  "empreinte": "ff4796bb93645d93",
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640
+  ],
+  "mobile": null,
+  "cadrage": "50% 48%",
+  "sujet": {
+   "x": 0,
+   "y": 3.3,
+   "l": 100,
+   "h": 91.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.1,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.08,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.05,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.03,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 260,
+   "top": 0,
+   "width": 1184,
+   "height": 1184,
+   "source": [
+    1776,
+    1184
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "assiette-4-320.webp",
+   "assiette-4-640.webp"
+  ],
+  "poids": {
+   "assiette-4-320.webp": 23942,
+   "assiette-4-640.webp": 75502
+  },
+  "media": "c.media({ nom: 'assiette-4', alt: \"\", cadrage: '50% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "piscine-jour": {
+  "nom": "piscine-jour",
+  "source": "recu/terrasse-15.jpg",
+  "role": "section-fond",
+  "alt": "La piscine, les paillotes et les palmiers en plein soleil",
+  "grok": false,
+  "mention": null,
+  "empreinte": "bb20b6e1f3ff4dff",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "53% 62%",
+  "sujet": {
+   "x": 27.8,
+   "y": 48.5,
+   "l": 51.6,
+   "h": 26.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.84,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.22,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.16,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.15,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 3,
+   "top": 0,
+   "width": 1997,
+   "height": 1331,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "piscine-jour-640.webp",
+   "piscine-jour-1280.webp",
+   "piscine-jour-1920.webp"
+  ],
+  "poids": {
+   "piscine-jour-640.webp": 48094,
+   "piscine-jour-1280.webp": 170754,
+   "piscine-jour-1920.webp": 279092
+  },
+  "media": "c.media({ nom: 'piscine-jour', alt: \"La piscine, les paillotes et les palmiers en plein soleil\", cadrage: '53% 62%', sizes: '100vw' })"
+ },
+ "piscine-palmier": {
+  "nom": "piscine-palmier",
+  "source": "recu/terrasse-13.jpg",
+  "role": "carte-service",
+  "alt": "Palmier et paillote au bord de l'eau turquoise",
+  "grok": false,
+  "mention": null,
+  "empreinte": "55b47cde25e17bd8",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "52% 56%",
+  "sujet": {
+   "x": 16.2,
+   "y": 33.7,
+   "l": 73.5,
+   "h": 39.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.93,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.19,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.18,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.12,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 3,
+   "width": 1331,
+   "height": 1997,
+   "source": [
+    1331,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "piscine-palmier-480.webp",
+   "piscine-palmier-640.webp",
+   "piscine-palmier-784.webp"
+  ],
+  "poids": {
+   "piscine-palmier-480.webp": 55992,
+   "piscine-palmier-640.webp": 93460,
+   "piscine-palmier-784.webp": 135350
+  },
+  "media": "c.media({ nom: 'piscine-palmier', alt: \"Palmier et paillote au bord de l'eau turquoise\", cadrage: '52% 56%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "cocktails": {
+  "nom": "cocktails",
+  "source": "recu/terrasse-28.jpg",
+  "role": "portrait",
+  "alt": "Trois cocktails glacés servis au bord de la piscine",
+  "grok": false,
+  "mention": null,
+  "empreinte": "be91dbb940b540a8",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "56% 65%",
+  "sujet": {
+   "x": 8.6,
+   "y": 45.7,
+   "l": 91.4,
+   "h": 51.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.43,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.15,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.03,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 2000,
+   "source": [
+    1600,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "cocktails-480.webp",
+   "cocktails-640.webp",
+   "cocktails-784.webp"
+  ],
+  "poids": {
+   "cocktails-480.webp": 38158,
+   "cocktails-640.webp": 59358,
+   "cocktails-784.webp": 78372
+  },
+  "media": "c.media({ nom: 'cocktails', alt: \"Trois cocktails glacés servis au bord de la piscine\", cadrage: '56% 65%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+ },
+ "broche": {
+  "nom": "broche",
+  "source": "recu/pool-party.webp",
+  "role": "produit",
+  "alt": "Viande rôtie à la broche pendant le Grand Buffet",
+  "grok": false,
+  "mention": null,
+  "empreinte": "823995a2e8e71d25",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "44% 48%",
+  "sujet": {
+   "x": 10.5,
+   "y": 37.7,
+   "l": 72.2,
+   "h": 28.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.49,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.23,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.18,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.13,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1280,
+   "height": 853,
+   "source": [
+    1280,
+    853
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,25 fois (source de 1280 px après recadrage)"
+  ],
+  "fichiers": [
+   "broche-480.webp",
+   "broche-640.webp",
+   "broche-1600.webp"
+  ],
+  "poids": {
+   "broche-480.webp": 26066,
+   "broche-640.webp": 41470,
+   "broche-1600.webp": 137292
+  },
+  "media": "c.media({ nom: 'broche', alt: \"Viande rôtie à la broche pendant le Grand Buffet\", cadrage: '44% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "brasero": {
+  "nom": "brasero",
+  "source": "recu/mariages-4.png",
+  "role": "produit",
+  "alt": "Le brasero allumé devant les paillotes",
+  "grok": false,
+  "mention": null,
+  "empreinte": "87e2de4d55698174",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "53% 56%",
+  "sujet": {
+   "x": 39.6,
+   "y": 41.2,
+   "l": 25,
+   "h": 32.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.24,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.2,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.2,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.19,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 3,
+   "top": 0,
+   "width": 1997,
+   "height": 1331,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "brasero-480.webp",
+   "brasero-640.webp",
+   "brasero-1600.webp"
+  ],
+  "poids": {
+   "brasero-480.webp": 34556,
+   "brasero-640.webp": 58094,
+   "brasero-1600.webp": 278542
+  },
+  "media": "c.media({ nom: 'brasero', alt: \"Le brasero allumé devant les paillotes\", cadrage: '53% 56%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "cheminee-plat": {
+  "nom": "cheminee-plat",
+  "source": "recu/restaurant-plat-deguster.png",
+  "role": "section-fond",
+  "alt": "Une assiette du chef servie devant la cheminée allumée",
+  "grok": false,
+  "mention": null,
+  "empreinte": "86b54892d8136bfa",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "51% 69%",
+  "sujet": {
+   "x": 16.3,
+   "y": 57.8,
+   "l": 68.6,
+   "h": 36.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.51,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.21,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.19,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.07,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 21,
+   "width": 1358,
+   "height": 905,
+   "source": [
+    1358,
+    926
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,41 fois (source de 1358 px après recadrage)"
+  ],
+  "fichiers": [
+   "cheminee-plat-640.webp",
+   "cheminee-plat-1280.webp",
+   "cheminee-plat-1920.webp"
+  ],
+  "poids": {
+   "cheminee-plat-640.webp": 35172,
+   "cheminee-plat-1280.webp": 81712,
+   "cheminee-plat-1920.webp": 128458
+  },
+  "media": "c.media({ nom: 'cheminee-plat', alt: \"Une assiette du chef servie devant la cheminée allumée\", cadrage: '51% 69%', sizes: '100vw' })"
+ },
+ "cheminee-dessert": {
+  "nom": "cheminee-dessert",
+  "source": "recu/restaurant-12.jpg",
+  "role": "carte-service",
+  "alt": "Dessert en coupe sur une table en bois, le feu de cheminée derrière",
+  "grok": false,
+  "mention": null,
+  "empreinte": "48839722a59970ef",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "43% 44%",
+  "sujet": {
+   "x": 12.4,
+   "y": 21.5,
+   "l": 60,
+   "h": 64.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.38,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.34,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.28,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.19,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "cheminee-dessert-480.webp",
+   "cheminee-dessert-640.webp",
+   "cheminee-dessert-784.webp"
+  ],
+  "poids": {
+   "cheminee-dessert-480.webp": 33982,
+   "cheminee-dessert-640.webp": 52528,
+   "cheminee-dessert-784.webp": 71510
+  },
+  "media": "c.media({ nom: 'cheminee-dessert', alt: \"Dessert en coupe sur une table en bois, le feu de cheminée derrière\", cadrage: '43% 44%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "noel-salle": {
+  "nom": "noel-salle",
+  "source": "recu/restaurant-24.jpg",
+  "role": "carte-service",
+  "alt": "Mur de pierre, bûches et décor de Noël dans la salle",
+  "grok": false,
+  "mention": null,
+  "empreinte": "9fce4fee8a12757c",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "53% 35%",
+  "sujet": {
+   "x": 38.2,
+   "y": 19.1,
+   "l": 28.4,
+   "h": 36.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.48,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.3,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.24,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.22,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 1,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "noel-salle-480.webp",
+   "noel-salle-640.webp",
+   "noel-salle-784.webp"
+  ],
+  "poids": {
+   "noel-salle-480.webp": 55316,
+   "noel-salle-640.webp": 87398,
+   "noel-salle-784.webp": 118824
+  },
+  "media": "c.media({ nom: 'noel-salle', alt: \"Mur de pierre, bûches et décor de Noël dans la salle\", cadrage: '53% 35%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "sylvestre-salle": {
+  "nom": "sylvestre-salle",
+  "source": "recu/restaurant-22.jpg",
+  "role": "produit",
+  "alt": "La salle décorée pour les fêtes, sapin et cheminée",
+  "grok": false,
+  "mention": null,
+  "empreinte": "bbc094a816f110ab",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "50% 31%",
+  "sujet": {
+   "x": 20.6,
+   "y": 13.2,
+   "l": 55.9,
+   "h": 33.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.26,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.2,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.19,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.14,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 2000,
+   "height": 1333,
+   "source": [
+    2000,
+    1334
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "sylvestre-salle-480.webp",
+   "sylvestre-salle-640.webp",
+   "sylvestre-salle-1600.webp"
+  ],
+  "poids": {
+   "sylvestre-salle-480.webp": 30636,
+   "sylvestre-salle-640.webp": 50904,
+   "sylvestre-salle-1600.webp": 202304
+  },
+  "media": "c.media({ nom: 'sylvestre-salle', alt: \"La salle décorée pour les fêtes, sapin et cheminée\", cadrage: '50% 31%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "emporter": {
+  "nom": "emporter",
+  "source": "recu/gravlax-saumon-maison.jpg",
+  "role": "produit",
+  "alt": "Gravlax de saumon maison, à emporter pour les fêtes",
+  "grok": false,
+  "mention": null,
+  "empreinte": "5433704e5b223326",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "46% 51%",
+  "sujet": {
+   "x": 0,
+   "y": 16.6,
+   "l": 100,
+   "h": 83.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.4,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.32,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.19,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.16,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 2000,
+   "height": 1333,
+   "source": [
+    2000,
+    1333
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "emporter-480.webp",
+   "emporter-640.webp",
+   "emporter-1600.webp"
+  ],
+  "poids": {
+   "emporter-480.webp": 16374,
+   "emporter-640.webp": 25582,
+   "emporter-1600.webp": 86816
+  },
+  "media": "c.media({ nom: 'emporter', alt: \"Gravlax de saumon maison, à emporter pour les fêtes\", cadrage: '46% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "mariage-table": {
+  "nom": "mariage-table",
+  "source": "recu/mariages-6.png",
+  "role": "ouverture",
+  "alt": "Table de mariage dressée, chemin de table orange et bouquets",
+  "grok": false,
+  "mention": null,
+  "empreinte": "79cc61995ff7342f",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 63%"
+  },
+  "cadrage": "48% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.02,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 63,
+   "width": 2000,
+   "height": 1125,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "mariage-table-640.webp",
+   "mariage-table-1280.webp",
+   "mariage-table-1920.webp",
+   "mariage-table-mobile-640.webp",
+   "mariage-table-mobile-1080.webp"
+  ],
+  "poids": {
+   "mariage-table-640.webp": 36664,
+   "mariage-table-1280.webp": 89938,
+   "mariage-table-1920.webp": 152556,
+   "mariage-table-mobile-640.webp": 76104,
+   "mariage-table-mobile-1080.webp": 144124
+  },
+  "media": "c.media({ nom: 'mariage-table', alt: \"Table de mariage dressée, chemin de table orange et bouquets\", cadrage: '48% 50%', cadrageMobile: '50% 63%', sizes: '100vw', priorite: true })"
+ },
+ "enseigne": {
+  "nom": "enseigne",
+  "source": "recu/terrasse-3.jpg",
+  "role": "ouverture",
+  "alt": "L'enseigne des Jardins de l'Hacienda sur le ciel bleu",
+  "grok": false,
+  "mention": null,
+  "empreinte": "64e3d6e9da55d3b3",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 66%"
+  },
+  "cadrage": "50% 70%",
+  "sujet": {
+   "x": 0,
+   "y": 29.9,
+   "l": 100,
+   "h": 64.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.93,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.17,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.15,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "bas",
+  "recadrage": {
+   "left": 0,
+   "top": 209,
+   "width": 2000,
+   "height": 1125,
+   "source": [
+    2000,
+    1334
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "enseigne-640.webp",
+   "enseigne-1280.webp",
+   "enseigne-1920.webp",
+   "enseigne-mobile-640.webp",
+   "enseigne-mobile-1080.webp"
+  ],
+  "poids": {
+   "enseigne-640.webp": 22690,
+   "enseigne-1280.webp": 72328,
+   "enseigne-1920.webp": 138706,
+   "enseigne-mobile-640.webp": 134108,
+   "enseigne-mobile-1080.webp": 284476
+  },
+  "media": "c.media({ nom: 'enseigne', alt: \"L'enseigne des Jardins de l'Hacienda sur le ciel bleu\", cadrage: '50% 70%', cadrageMobile: '50% 66%', sizes: '100vw', priorite: true })"
+ },
+ "salle-large": {
+  "nom": "salle-large",
+  "source": "recu/restaurant-31.jpg",
+  "role": "ouverture",
+  "alt": "La salle du restaurant, tables rondes en verre et fauteuils clairs",
+  "grok": false,
+  "mention": null,
+  "empreinte": "86018f83148dc329",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 53%"
+  },
+  "cadrage": "52% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.12,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 105,
+   "width": 2000,
+   "height": 1125,
+   "source": [
+    2000,
+    1334
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "salle-large-640.webp",
+   "salle-large-1280.webp",
+   "salle-large-1920.webp",
+   "salle-large-mobile-640.webp",
+   "salle-large-mobile-1080.webp"
+  ],
+  "poids": {
+   "salle-large-640.webp": 38332,
+   "salle-large-1280.webp": 122590,
+   "salle-large-1920.webp": 210880,
+   "salle-large-mobile-640.webp": 90384,
+   "salle-large-mobile-1080.webp": 190224
+  },
+  "media": "c.media({ nom: 'salle-large', alt: \"La salle du restaurant, tables rondes en verre et fauteuils clairs\", cadrage: '52% 50%', cadrageMobile: '50% 53%', sizes: '100vw', priorite: true })"
+ },
+ "cheminee": {
+  "nom": "cheminee",
+  "source": "recu/restaurant-28.jpg",
+  "role": "carte-service",
+  "alt": "Feu de cheminée, peaux de mouton et dessert sur la table",
+  "grok": false,
+  "mention": null,
+  "empreinte": "c6ae742c45b2654f",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "49% 34%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.6,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.11,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.08,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "cheminee-480.webp",
+   "cheminee-640.webp",
+   "cheminee-784.webp"
+  ],
+  "poids": {
+   "cheminee-480.webp": 39060,
+   "cheminee-640.webp": 59856,
+   "cheminee-784.webp": 80028
+  },
+  "media": "c.media({ nom: 'cheminee', alt: \"Feu de cheminée, peaux de mouton et dessert sur la table\", cadrage: '49% 34%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "mur-buches": {
+  "nom": "mur-buches",
+  "source": "recu/restaurant-20.jpg",
+  "role": "carte-service",
+  "alt": "Le mur de pierre et ses niches à bûches",
+  "grok": false,
+  "mention": null,
+  "empreinte": "ba5d7e3608229066",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 49%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.6,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "mur-buches-480.webp",
+   "mur-buches-640.webp",
+   "mur-buches-784.webp"
+  ],
+  "poids": {
+   "mur-buches-480.webp": 51654,
+   "mur-buches-640.webp": 77960,
+   "mur-buches-784.webp": 105390
+  },
+  "media": "c.media({ nom: 'mur-buches', alt: \"Le mur de pierre et ses niches à bûches\", cadrage: '50% 49%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "paillote": {
+  "nom": "paillote",
+  "source": "recu/terrasse-14.jpg",
+  "role": "carte-service",
+  "alt": "Une paillote, ses tables blanches et son gazon",
+  "grok": false,
+  "mention": null,
+  "empreinte": "703ffc430e7a1426",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "48% 58%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.5,
+   "h": 90.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.46,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1331,
+   "height": 1997,
+   "source": [
+    1331,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "paillote-480.webp",
+   "paillote-640.webp",
+   "paillote-784.webp"
+  ],
+  "poids": {
+   "paillote-480.webp": 64548,
+   "paillote-640.webp": 114408,
+   "paillote-784.webp": 171248
+  },
+  "media": "c.media({ nom: 'paillote', alt: \"Une paillote, ses tables blanches et son gazon\", cadrage: '48% 58%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "pergola": {
+  "nom": "pergola",
+  "source": "recu/mariages-7.jpg",
+  "role": "produit",
+  "alt": "Tables dressées sous la pergola en bois",
+  "grok": false,
+  "mention": null,
+  "empreinte": "579227065b41b212",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "48% 39%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1997,
+   "height": 1331,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "pergola-480.webp",
+   "pergola-640.webp",
+   "pergola-1600.webp"
+  ],
+  "poids": {
+   "pergola-480.webp": 41410,
+   "pergola-640.webp": 66484,
+   "pergola-1600.webp": 244556
+  },
+  "media": "c.media({ nom: 'pergola', alt: \"Tables dressées sous la pergola en bois\", cadrage: '48% 39%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "piscine-large": {
+  "nom": "piscine-large",
+  "source": "recu/terrasse-8.jpg",
+  "role": "section-fond",
+  "alt": "La piscine et ses palmiers, vue d'ensemble",
+  "grok": false,
+  "mention": null,
+  "empreinte": "ade6736833a6bf72",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "45% 60%",
+  "sujet": {
+   "x": 0,
+   "y": 22.7,
+   "l": 100,
+   "h": 72.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.73,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1997,
+   "height": 1331,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "piscine-large-640.webp",
+   "piscine-large-1280.webp",
+   "piscine-large-1920.webp"
+  ],
+  "poids": {
+   "piscine-large-640.webp": 50372,
+   "piscine-large-1280.webp": 176828,
+   "piscine-large-1920.webp": 285992
+  },
+  "media": "c.media({ nom: 'piscine-large', alt: \"La piscine et ses palmiers, vue d'ensemble\", cadrage: '45% 60%', sizes: '100vw' })"
+ },
+ "fresque": {
+  "nom": "fresque",
+  "source": "recu/terrasse-22.jpg",
+  "role": "carte-service",
+  "alt": "Le H de l'Hacienda peint au milieu de fleurs tropicales",
+  "grok": false,
+  "mention": null,
+  "empreinte": "bd8e53f925a980ea",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "48% 47%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.5,
+   "h": 96.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1333,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "fresque-480.webp",
+   "fresque-640.webp",
+   "fresque-784.webp"
+  ],
+  "poids": {
+   "fresque-480.webp": 103974,
+   "fresque-640.webp": 174052,
+   "fresque-784.webp": 245888
+  },
+  "media": "c.media({ nom: 'fresque', alt: \"Le H de l'Hacienda peint au milieu de fleurs tropicales\", cadrage: '48% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "piscine-paillote": {
+  "nom": "piscine-paillote",
+  "source": "recu/terrasse-11.jpg",
+  "role": "carte-service",
+  "alt": "Paillote et palmiers au bout de la piscine",
+  "grok": false,
+  "mention": null,
+  "empreinte": "03c9f4667fa62638",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "45% 64%",
+  "sujet": {
+   "x": 0,
+   "y": 40.5,
+   "l": 95.5,
+   "h": 59.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.96,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.07,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.06,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 3,
+   "width": 1331,
+   "height": 1997,
+   "source": [
+    1331,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "piscine-paillote-480.webp",
+   "piscine-paillote-640.webp",
+   "piscine-paillote-784.webp"
+  ],
+  "poids": {
+   "piscine-paillote-480.webp": 52106,
+   "piscine-paillote-640.webp": 88230,
+   "piscine-paillote-784.webp": 128480
+  },
+  "media": "c.media({ nom: 'piscine-paillote', alt: \"Paillote et palmiers au bout de la piscine\", cadrage: '45% 64%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "plat-1": {
+  "nom": "plat-1",
+  "source": "recu/restaurant-jardins-hacienda.jpg",
+  "role": "carte-service",
+  "alt": "Une assiette du chef : viande glacée, purée et légumes",
+  "grok": false,
+  "mention": null,
+  "empreinte": "f2285ba2503dba5f",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 47%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 54,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1500,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "plat-1-480.webp",
+   "plat-1-640.webp",
+   "plat-1-784.webp"
+  ],
+  "poids": {
+   "plat-1-480.webp": 63068,
+   "plat-1-640.webp": 98302,
+   "plat-1-784.webp": 129844
+  },
+  "media": "c.media({ nom: 'plat-1', alt: \"Une assiette du chef : viande glacée, purée et légumes\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "plat-2": {
+  "nom": "plat-2",
+  "source": "recu/restaurant-jardins-hacienda-2.jpg",
+  "role": "carte-service",
+  "alt": "Une assiette du chef : salade colorée et fleurs",
+  "grok": false,
+  "mention": null,
+  "empreinte": "03c5801f5238cd45",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 99,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1500,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "plat-2-480.webp",
+   "plat-2-640.webp",
+   "plat-2-784.webp"
+  ],
+  "poids": {
+   "plat-2-480.webp": 64614,
+   "plat-2-640.webp": 95672,
+   "plat-2-784.webp": 125564
+  },
+  "media": "c.media({ nom: 'plat-2', alt: \"Une assiette du chef : salade colorée et fleurs\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "plat-3": {
+  "nom": "plat-3",
+  "source": "recu/restaurant-19.jpg",
+  "role": "carte-service",
+  "alt": "Une assiette du chef : poisson en millefeuille, sauce blanche",
+  "grok": false,
+  "mention": null,
+  "empreinte": "30cf247811ce209b",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "53% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.6,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.11,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "plat-3-480.webp",
+   "plat-3-640.webp",
+   "plat-3-784.webp"
+  ],
+  "poids": {
+   "plat-3-480.webp": 32454,
+   "plat-3-640.webp": 47226,
+   "plat-3-784.webp": 61820
+  },
+  "media": "c.media({ nom: 'plat-3', alt: \"Une assiette du chef : poisson en millefeuille, sauce blanche\", cadrage: '53% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "plat-4": {
+  "nom": "plat-4",
+  "source": "recu/restaurant-18.jpg",
+  "role": "carte-service",
+  "alt": "Une assiette du chef : viande, chou et morilles",
+  "grok": false,
+  "mention": null,
+  "empreinte": "62a2838f9b83ff0d",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 53%",
+  "sujet": {
+   "x": 0,
+   "y": 3.1,
+   "l": 95.6,
+   "h": 84.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.13,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.13,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.1,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.1,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "plat-4-480.webp",
+   "plat-4-640.webp",
+   "plat-4-784.webp"
+  ],
+  "poids": {
+   "plat-4-480.webp": 38994,
+   "plat-4-640.webp": 58518,
+   "plat-4-784.webp": 76462
+  },
+  "media": "c.media({ nom: 'plat-4', alt: \"Une assiette du chef : viande, chou et morilles\", cadrage: '50% 53%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "dessert-1": {
+  "nom": "dessert-1",
+  "source": "recu/restaurant-23.jpg",
+  "role": "carte-service",
+  "alt": "Un dessert en verre, fruits rouges",
+  "grok": false,
+  "mention": null,
+  "empreinte": "b3d7dcdff5b5e945",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "44% 44%",
+  "sujet": {
+   "x": 0,
+   "y": 12.5,
+   "l": 77.4,
+   "h": 78.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.42,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.35,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.13,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.07,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1334,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "dessert-1-480.webp",
+   "dessert-1-640.webp",
+   "dessert-1-784.webp"
+  ],
+  "poids": {
+   "dessert-1-480.webp": 29228,
+   "dessert-1-640.webp": 43468,
+   "dessert-1-784.webp": 55444
+  },
+  "media": "c.media({ nom: 'dessert-1', alt: \"Un dessert en verre, fruits rouges\", cadrage: '44% 44%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "maries": {
+  "nom": "maries",
+  "source": "recu/mariages-16.jpg",
+  "role": "portrait",
+  "alt": "Des mariés lèvent leur verre au bord de la piscine",
+  "grok": false,
+  "mention": null,
+  "empreinte": "471008d57c292b8c",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 45%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 600,
+   "top": 0,
+   "width": 1200,
+   "height": 1500,
+   "source": [
+    2000,
+    1500
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "maries-480.webp",
+   "maries-640.webp",
+   "maries-784.webp"
+  ],
+  "poids": {
+   "maries-480.webp": 30576,
+   "maries-640.webp": 46278,
+   "maries-784.webp": 62860
+  },
+  "media": "c.media({ nom: 'maries', alt: \"Des mariés lèvent leur verre au bord de la piscine\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+ },
+ "maries-piscine": {
+  "nom": "maries-piscine",
+  "source": "recu/mariages-11.jpg",
+  "role": "carte-service",
+  "alt": "Des mariés devant la piscine et les palmiers",
+  "grok": false,
+  "mention": null,
+  "empreinte": "930e7c4f19133c24",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "51% 41%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.5,
+   "h": 96.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1333,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "maries-piscine-480.webp",
+   "maries-piscine-640.webp",
+   "maries-piscine-784.webp"
+  ],
+  "poids": {
+   "maries-piscine-480.webp": 39026,
+   "maries-piscine-640.webp": 58636,
+   "maries-piscine-784.webp": 79818
+  },
+  "media": "c.media({ nom: 'maries-piscine', alt: \"Des mariés devant la piscine et les palmiers\", cadrage: '51% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "table-fleurs": {
+  "nom": "table-fleurs",
+  "source": "recu/mariages-8.png",
+  "role": "produit",
+  "alt": "Verres et fleurs rouges sur une table de fête",
+  "grok": false,
+  "mention": null,
+  "empreinte": "85c144297bb6f773",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "48% 57%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1997,
+   "height": 1331,
+   "source": [
+    2000,
+    1331
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "table-fleurs-480.webp",
+   "table-fleurs-640.webp",
+   "table-fleurs-1600.webp"
+  ],
+  "poids": {
+   "table-fleurs-480.webp": 27720,
+   "table-fleurs-640.webp": 41706,
+   "table-fleurs-1600.webp": 139632
+  },
+  "media": "c.media({ nom: 'table-fleurs', alt: \"Verres et fleurs rouges sur une table de fête\", cadrage: '48% 57%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "pool-party": {
+  "nom": "pool-party",
+  "source": "recu/pool-party-9.webp",
+  "role": "produit",
+  "alt": "La piscine un jour de pool party",
+  "grok": false,
+  "mention": null,
+  "empreinte": "4bb9fee23895f079",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ],
+  "mobile": null,
+  "cadrage": "48% 51%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.19,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 918,
+   "height": 612,
+   "source": [
+    918,
+    612
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1600",
+   "918 px de large"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "pool-party-480.webp",
+   "pool-party-640.webp"
+  ],
+  "poids": {
+   "pool-party-480.webp": 29308,
+   "pool-party-640.webp": 47694
+  },
+  "media": "c.media({ nom: 'pool-party', alt: \"La piscine un jour de pool party\", cadrage: '48% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "table-bapteme": {
+  "nom": "table-bapteme",
+  "source": "recu/mariages-3.jpg",
+  "role": "carte-service",
+  "alt": "Table dressée en blanc et rouge sous les palmes",
+  "grok": false,
+  "mention": null,
+  "empreinte": "7024282c8f8eb04e",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "53% 45%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.5,
+   "h": 84.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1333,
+   "height": 2000,
+   "source": [
+    1333,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "table-bapteme-480.webp",
+   "table-bapteme-640.webp",
+   "table-bapteme-784.webp"
+  ],
+  "poids": {
+   "table-bapteme-480.webp": 48334,
+   "table-bapteme-640.webp": 68966,
+   "table-bapteme-784.webp": 89818
+  },
+  "media": "c.media({ nom: 'table-bapteme', alt: \"Table dressée en blanc et rouge sous les palmes\", cadrage: '53% 45%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "buffet-fleurs": {
+  "nom": "buffet-fleurs",
+  "source": "recu/pool-party-2.webp",
+  "role": "produit",
+  "alt": "Plateau de légumes et de fleurs comestibles",
+  "grok": false,
+  "mention": null,
+  "empreinte": "87891283c8cd07f9",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "48% 51%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1280,
+   "height": 853,
+   "source": [
+    1280,
+    853
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,25 fois (source de 1280 px après recadrage)"
+  ],
+  "fichiers": [
+   "buffet-fleurs-480.webp",
+   "buffet-fleurs-640.webp",
+   "buffet-fleurs-1600.webp"
+  ],
+  "poids": {
+   "buffet-fleurs-480.webp": 25402,
+   "buffet-fleurs-640.webp": 37006,
+   "buffet-fleurs-1600.webp": 105474
+  },
+  "media": "c.media({ nom: 'buffet-fleurs', alt: \"Plateau de légumes et de fleurs comestibles\", cadrage: '48% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "gateau": {
+  "nom": "gateau",
+  "source": "recu/mariages-12.jpg",
+  "role": "carte-service",
+  "alt": "Gâteau et fleurs pour une réception",
+  "grok": false,
+  "mention": null,
+  "empreinte": "1b325884cd0e69f7",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "42% 49%",
+  "sujet": {
+   "x": 0,
+   "y": 3,
+   "l": 95.5,
+   "h": 97
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.27,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 3,
+   "width": 1331,
+   "height": 1997,
+   "source": [
+    1331,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "gateau-480.webp",
+   "gateau-640.webp",
+   "gateau-784.webp"
+  ],
+  "poids": {
+   "gateau-480.webp": 55644,
+   "gateau-640.webp": 83180,
+   "gateau-784.webp": 109754
+  },
+  "media": "c.media({ nom: 'gateau', alt: \"Gâteau et fleurs pour une réception\", cadrage: '42% 49%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+ },
+ "grok/mur-chaux": {
+  "nom": "grok/mur-chaux",
+  "source": "recu/grok/mur-chaux.jpg",
+  "role": "ouverture",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "d3ac8d95b23b928f",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640
+   ],
+   "cadrage": "50% 51%"
+  },
+  "cadrage": "81% 50%",
+  "sujet": {
+   "x": 65.6,
+   "y": 0,
+   "l": 34.4,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.9,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.36,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.29,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 24,
+   "width": 1168,
+   "height": 657,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "version téléphone sans 1080 px (source trop petite)",
+   "agrandie 1,1 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/mur-chaux-640.webp",
+   "grok/mur-chaux-1280.webp",
+   "grok/mur-chaux-mobile-640.webp"
+  ],
+  "poids": {
+   "grok/mur-chaux-640.webp": 32064,
+   "grok/mur-chaux-1280.webp": 109574,
+   "grok/mur-chaux-mobile-640.webp": 117248
+  },
+  "media": "c.media({ nom: 'grok/mur-chaux', alt: \"\", cadrage: '81% 50%', cadrageMobile: '50% 51%', sizes: '100vw', priorite: true })"
+ },
+ "grok/table-midi": {
+  "nom": "grok/table-midi",
+  "source": "recu/grok/table-midi.jpg",
+  "role": "ouverture",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "6e5bc6e362c32764",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640
+   ],
+   "cadrage": "50% 45%"
+  },
+  "cadrage": "78% 45%",
+  "sujet": {
+   "x": 37.5,
+   "y": 0,
+   "l": 62.5,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.77,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.19,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1168,
+   "height": 657,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "version téléphone sans 1080 px (source trop petite)",
+   "agrandie 1,1 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/table-midi-640.webp",
+   "grok/table-midi-1280.webp",
+   "grok/table-midi-mobile-640.webp"
+  ],
+  "poids": {
+   "grok/table-midi-640.webp": 21024,
+   "grok/table-midi-1280.webp": 59880,
+   "grok/table-midi-mobile-640.webp": 67642
+  },
+  "media": "c.media({ nom: 'grok/table-midi', alt: \"\", cadrage: '78% 45%', cadrageMobile: '50% 45%', sizes: '100vw', priorite: true })"
+ },
+ "grok/piscine-nuit": {
+  "nom": "grok/piscine-nuit",
+  "source": "recu/grok/piscine-nuit.jpg",
+  "role": "section-fond",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "40961ac49a3fea3a",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640
+   ],
+   "cadrage": "50% 44%"
+  },
+  "cadrage": "46% 44%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 96.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": "haut",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1168,
+   "height": 779,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "version téléphone sans 1080 px (source trop petite)",
+   "agrandie 1,1 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/piscine-nuit-640.webp",
+   "grok/piscine-nuit-1280.webp",
+   "grok/piscine-nuit-mobile-640.webp"
+  ],
+  "poids": {
+   "grok/piscine-nuit-640.webp": 56676,
+   "grok/piscine-nuit-1280.webp": 140872,
+   "grok/piscine-nuit-mobile-640.webp": 62608
+  },
+  "media": "c.media({ nom: 'grok/piscine-nuit', alt: \"\", cadrage: '46% 44%', cadrageMobile: '50% 44%', sizes: '100vw' })"
+ },
+ "grok/fete-soir": {
+  "nom": "grok/fete-soir",
+  "source": "recu/grok/fete-soir.jpg",
+  "role": "section-fond",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "7b29de434659fc08",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640
+   ],
+   "cadrage": "54% 56%"
+  },
+  "cadrage": "66% 35%",
+  "sujet": {
+   "x": 21.9,
+   "y": 0,
+   "l": 75,
+   "h": 59.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.69,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.22,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.01,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": "bas",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1168,
+   "height": 779,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "version téléphone sans 1080 px (source trop petite)",
+   "agrandie 1,1 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/fete-soir-640.webp",
+   "grok/fete-soir-1280.webp",
+   "grok/fete-soir-mobile-640.webp"
+  ],
+  "poids": {
+   "grok/fete-soir-640.webp": 57960,
+   "grok/fete-soir-1280.webp": 134390,
+   "grok/fete-soir-mobile-640.webp": 66872
+  },
+  "media": "c.media({ nom: 'grok/fete-soir', alt: \"\", cadrage: '66% 35%', cadrageMobile: '54% 56%', sizes: '100vw' })"
+ },
+ "grok/lin-ombre": {
+  "nom": "grok/lin-ombre",
+  "source": "recu/grok/lin-ombre.jpg",
+  "role": "section-fond",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "0d4972e3192abbee",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": null,
+  "cadrage": "67% 34%",
+  "sujet": {
+   "x": 21.9,
+   "y": 0,
+   "l": 78.1,
+   "h": 96.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.55,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.44,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.08,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1168,
+   "height": 779,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,1 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/lin-ombre-640.webp",
+   "grok/lin-ombre-1280.webp"
+  ],
+  "poids": {
+   "grok/lin-ombre-640.webp": 20204,
+   "grok/lin-ombre-1280.webp": 55214
+  },
+  "media": "c.media({ nom: 'grok/lin-ombre', alt: \"\", cadrage: '67% 34%', sizes: '100vw' })"
+ },
+ "grok/chaise-persiennes": {
+  "nom": "grok/chaise-persiennes",
+  "source": "recu/grok/chaise-persiennes.jpg",
+  "role": "404",
+  "alt": "",
+  "grok": true,
+  "mention": "Illustration générée",
+  "empreinte": "38b45bf5569e1a0d",
+  "ratio": "16:9",
+  "largeurs": [
+   800,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "53% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.13,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.06,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 40,
+   "width": 1168,
+   "height": 657,
+   "source": [
+    1168,
+    784
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "1168 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,37 fois (source de 1168 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/chaise-persiennes-800.webp",
+   "grok/chaise-persiennes-1600.webp"
+  ],
+  "poids": {
+   "grok/chaise-persiennes-800.webp": 39904,
+   "grok/chaise-persiennes-1600.webp": 103714
+  },
+  "media": "c.media({ nom: 'grok/chaise-persiennes', alt: \"\", cadrage: '53% 50%', sizes: '100vw', ratio: '16 / 9' })"
+ },
+ "fenetre-midi": {
+  "nom": "fenetre-midi",
+  "source": "recu/terrasse-7.jpg",
+  "role": "galerie",
+  "alt": "La piscine turquoise, les palmiers et les paillotes à midi",
+  "grok": false,
+  "mention": null,
+  "empreinte": "1b6c3cd51011d13f",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "50% 52%",
+  "sujet": {
+   "x": 0,
+   "y": 24.8,
+   "l": 95.5,
+   "h": 52.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.93,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.17,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.14,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.12,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 337,
+   "width": 1330,
+   "height": 1663,
+   "source": [
+    1330,
+    2000
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "fenetre-midi-480.webp",
+   "fenetre-midi-800.webp",
+   "fenetre-midi-1200.webp"
+  ],
+  "poids": {
+   "fenetre-midi-480.webp": 56706,
+   "fenetre-midi-800.webp": 141158,
+   "fenetre-midi-1200.webp": 275012
+  },
+  "media": "c.media({ nom: 'fenetre-midi', alt: \"La piscine turquoise, les palmiers et les paillotes à midi\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+ },
+ "piscine-plongee": {
+  "nom": "piscine-plongee",
+  "source": "recu/piscine.webp",
+  "role": "section-fond",
+  "alt": "La piscine entourée de palmiers et de transats blancs",
+  "grok": false,
+  "mention": null,
+  "empreinte": "2d39006f253394a0",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "48% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1280,
+   "height": 853,
+   "source": [
+    1280,
+    853
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,5 fois (source de 1280 px après recadrage)"
+  ],
+  "fichiers": [
+   "piscine-plongee-640.webp",
+   "piscine-plongee-1280.webp",
+   "piscine-plongee-1920.webp"
+  ],
+  "poids": {
+   "piscine-plongee-640.webp": 50574,
+   "piscine-plongee-1280.webp": 126864,
+   "piscine-plongee-1920.webp": 201392
+  },
+  "media": "c.media({ nom: 'piscine-plongee', alt: \"La piscine entourée de palmiers et de transats blancs\", cadrage: '48% 50%', sizes: '100vw' })"
+ }
+}

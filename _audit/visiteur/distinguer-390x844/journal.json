@@ -1,0 +1,776 @@
+{
+ "mission": "distinguer",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 12750,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 6.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 12750,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 7.6,
+   "adresse": "/",
+   "y": 717,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Régis Clauss, l'âme de notre cuisine"
+   ],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 7.6,
+   "adresse": "/",
+   "y": 717,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Régis Clauss, l'âme de notre cuisine"
+   ],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-3.png"
+  },
+  {
+   "k": 4,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 10.6,
+   "adresse": "/",
+   "y": 717,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Régis Clauss, l'âme de notre cuisine"
+   ],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 5,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 11.8,
+   "adresse": "/",
+   "y": 1434,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Faire tourner l'assiette 2",
+    "Faire tourner l'assiette 3",
+    "Faire tourner l'assiette 4",
+    "Toute la carte",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 6,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 11.8,
+   "adresse": "/",
+   "y": 1434,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Faire tourner l'assiette 2",
+    "Faire tourner l'assiette 3",
+    "Faire tourner l'assiette 4",
+    "Toute la carte",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-6.png"
+  },
+  {
+   "k": 7,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 14.8,
+   "adresse": "/",
+   "y": 1434,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Faire tourner l'assiette 1",
+    "Faire tourner l'assiette 2",
+    "Faire tourner l'assiette 3",
+    "Faire tourner l'assiette 4",
+    "Toute la carte",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 8,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 16,
+   "adresse": "/",
+   "y": 2151,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Des palmiers, des cocktails, des sourires"
+   ],
+   "actions": [
+    "Découvrir le lieu",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 9,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 16,
+   "adresse": "/",
+   "y": 2151,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Des palmiers, des cocktails, des sourires"
+   ],
+   "actions": [
+    "Découvrir le lieu",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-9.png"
+  },
+  {
+   "k": 10,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 19,
+   "adresse": "/",
+   "y": 2151,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Des palmiers, des cocktails, des sourires"
+   ],
+   "actions": [
+    "Découvrir le lieu",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 11,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 4,
+   "secondes": 20.2,
+   "adresse": "/",
+   "y": 2868,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 12,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 4,
+   "secondes": 20.2,
+   "adresse": "/",
+   "y": 2868,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-12.png"
+  },
+  {
+   "k": 13,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 4,
+   "secondes": 23.2,
+   "adresse": "/",
+   "y": 2868,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 14,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 24.4,
+   "adresse": "/",
+   "y": 3585,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 15,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 24.4,
+   "adresse": "/",
+   "y": 3585,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-15.png"
+  },
+  {
+   "k": 16,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 27.4,
+   "adresse": "/",
+   "y": 3585,
+   "hauteurPage": 12750,
+   "titres": [],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 17,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 28.5,
+   "adresse": "/",
+   "y": 4302,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Le brasero s’allume"
+   ],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 18,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 28.5,
+   "adresse": "/",
+   "y": 4302,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Le brasero s’allume"
+   ],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-18.png"
+  },
+  {
+   "k": 19,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 31.5,
+   "adresse": "/",
+   "y": 4302,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Le brasero s’allume"
+   ],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 20,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 7,
+   "secondes": 32.8,
+   "adresse": "/",
+   "y": 5019,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Le brasero s’allume"
+   ],
+   "actions": [
+    "Réserver un dimanche",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "50 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 21,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 7,
+   "secondes": 32.8,
+   "adresse": "/",
+   "y": 5019,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Le brasero s’allume"
+   ],
+   "actions": [
+    "Réserver un dimanche",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [
+    "50 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-21.png"
+  }
+ ]
+}

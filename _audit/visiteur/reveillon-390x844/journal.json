@@ -1,0 +1,305 @@
+{
+ "mission": "reveillon",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.3,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 12750,
+   "titres": [
+    "h1 Les Jardins de l'Hacienda"
+   ],
+   "actions": [
+    "Les Jardins de l'Hacienda",
+    "Menu",
+    "Réserver une table",
+    "Voir la carte",
+    "Menu de Noël, vendredi 25 décembre",
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "defiler 9",
+   "resultat": "ok",
+   "gestes": 9,
+   "secondes": 14,
+   "adresse": "/",
+   "y": 6453,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël"
+   ],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 9,
+   "secondes": 14,
+   "adresse": "/",
+   "y": 6453,
+   "hauteurPage": 12750,
+   "titres": [
+    "h2 Les fêtes à l'Hacienda",
+    "h3 Menu de Noël"
+   ],
+   "actions": [
+    "Appeler",
+    "Réserver"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-2.png"
+  },
+  {
+   "k": 3,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 15.2,
+   "adresse": "/",
+   "y": 7170,
+   "hauteurPage": 12750,
+   "titres": [
+    "h3 Menu de Noël",
+    "h3 Saint-Sylvestre"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 15.2,
+   "adresse": "/",
+   "y": 7170,
+   "hauteurPage": 12750,
+   "titres": [
+    "h3 Menu de Noël",
+    "h3 Saint-Sylvestre"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-4.png"
+  },
+  {
+   "k": 5,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 11,
+   "secondes": 16.4,
+   "adresse": "/",
+   "y": 7887,
+   "hauteurPage": 12750,
+   "titres": [
+    "h3 À emporter pour les fêtes"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €",
+    "18 €",
+    "32 €",
+    "28 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 6,
+   "geste": "cliquer Le menu",
+   "resultat": "ok",
+   "gestes": 12,
+   "secondes": 18.5,
+   "adresse": "/",
+   "y": 7887,
+   "hauteurPage": 13020,
+   "titres": [
+    "h3 À emporter pour les fêtes"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 7,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 12,
+   "secondes": 18.5,
+   "adresse": "/",
+   "y": 7887,
+   "hauteurPage": 13020,
+   "titres": [
+    "h3 À emporter pour les fêtes"
+   ],
+   "actions": [
+    "Réserver",
+    "Appeler"
+   ],
+   "prixVus": [
+    "120 €",
+    "170 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "21 €",
+    "26 €",
+    "45 €",
+    "11 €",
+    "50 €",
+    "79 €",
+    "120 €",
+    "170 €"
+   ],
+   "telephones": [
+    "06 18 21 28 10"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-7.png"
+  }
+ ]
+}

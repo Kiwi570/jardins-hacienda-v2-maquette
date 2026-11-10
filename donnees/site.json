@@ -1,0 +1,21 @@
+{
+  "nom": "Les Jardins de l'Hacienda",
+  "adresse": "https://jardins-hacienda-v2-maquette.vercel.app",
+  "siteActuel": "lesjardinsdelhacienda54.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "la-carte", "le-lieu", "receptions", "contact"],
+  "actionEntete": { "page": "reserver" },
+  "couleurs": { "fond": "#F2EFE9", "texte": "#1C1A17", "voile": "#1F3E8C", "theme": "#F2EFE9", "ouverture": "#F2EFE9", "menu": "#1F3E8C" },
+  "formeVoile": "persienne",
+  "contact": {
+    "telephone": "06 18 21 28 10", "telephoneLien": "+33618212810", "email": "",
+    "adresse": "6 Vathier Haye, 54580 Moineville",
+    "facebook": "https://www.facebook.com/lesjardinsdelhacienda54",
+    "instagram": "https://www.instagram.com/lesjardinsdel.hacienda/",
+    "itineraire": "https://www.google.com/maps/dir/?api=1&destination=6+Vathier+Haye+54580+Moineville"
+  },
+  "polices": ["/assets/fonts/gloock.woff2", "/assets/fonts/figtree.woff2"],
+  "imagePartage": "salle-midi-1200.webp",
+  "curseur": false
+}

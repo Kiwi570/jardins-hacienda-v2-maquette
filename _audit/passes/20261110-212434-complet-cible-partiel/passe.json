@@ -1,0 +1,16 @@
+{
+ "id": "20261110-212434-complet-cible-partiel",
+ "date": "2026-11-10T21:28:22.050Z",
+ "niveau": "complet",
+ "pages": "/,/receptions,/reserver",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 3,
+ "aRegarder": 4,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

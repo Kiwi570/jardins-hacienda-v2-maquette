@@ -1,0 +1,1624 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/contact-fr.jpg",
+      "etape": "fichiers",
+      "page": "contact.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/accueil-fr.jpg",
+      "etape": "fichiers",
+      "page": "index.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/la-carte-fr.jpg",
+      "etape": "fichiers",
+      "page": "la-carte.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/le-lieu-fr.jpg",
+      "etape": "fichiers",
+      "page": "le-lieu.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/receptions-fr.jpg",
+      "etape": "fichiers",
+      "page": "receptions.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/reserver-fr.jpg",
+      "etape": "fichiers",
+      "page": "reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "280 × 26 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div.ouv-grille.conteneur:nth-of-type(2) > div.ouv-texte:nth-of-type(1) > p.ouv-info:nth-of-type(4) > a « Menu de Noël, vendredi 25 décembre »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : nested-interactive",
+      "detail": "Interactive controls must not be nested",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".assiette__scene",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "section#debut > div.ouv-grille.conteneur:nth-of-type(2) > div.ouv-texte:nth-of-type(1) > p.ouv-info:nth-of-type(4) « PROCHAIN RENDEZ-VOUS Menu de Noël, vendredi 25 déc »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste sur image",
+      "detail": "2.79:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#debut > div.ouv-grille.conteneur:nth-of-type(2) > div.ouv-texte:nth-of-type(1) > p.surtitre.ouv-surtitre:nth-of-type(1) « RESTAURANT ET LIEU DE RÉCEPTION · MOINEVILLE, À 15 »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste sur image",
+      "detail": "3.74:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.ouv-grille.conteneur:nth-of-type(2) > div.ouv-texte:nth-of-type(1) > p.ouv-info:nth-of-type(4) > span.ouv-info-label « PROCHAIN RENDEZ-VOUS »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste sur image",
+      "detail": "3.37:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.ouv-grille.conteneur:nth-of-type(2) > div.ouv-texte:nth-of-type(1) > p.ouv-info:nth-of-type(4) > span.ouv-info-label « PROCHAIN RENDEZ-VOUS »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#infos « Bon à savoir Journées festives De juin à septembre »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#ecrire « Écrivez-nous Mariage, baptême, anniversaire, pot d »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#plats « Toute la carte Entrées Plats À partager Desserts E »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#reserver-fin « Une table vous attend Midi ou soir, en salle ou en »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "en-tête coupé en haut",
+      "detail": "-65 px",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "body#haut > header « Les Jardins de l'Hacienda Menu »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "en-tête coupé en haut",
+      "detail": "-65 px",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "body#haut > header « Les Jardins de l'Hacienda La carte Le lieu Récepti »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#debut « EN PLEINE NATURE, OUVERT TOUTE L'ANNÉE Le lieu Une »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#debut « EN PLEINE NATURE, OUVERT TOUTE L'ANNÉE Le lieu À 1 »",
+      "lieux": [
+        "1366×768 normal",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste sur image",
+      "detail": "1.00:1 sur les 10 % de la photo les moins favorables (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.lieu-ouv-texte > h1.titre-page.titre-lumiere « Le lieu »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/le-lieu",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "119 × 19 px",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.conteneur.rec-demande-grille:nth-of-type(2) > div > p.texte-cle:nth-of-type(3) > a « 06 18 21 28 10 »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#demande « Parlons de votre fête Dites-nous l'essentiel : la  »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : bouton principal hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.conteneur.rec-ouv-grille > div > p:nth-of-type(4) > a.bouton.bouton--clair « Demander une date »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "232 × 19 px",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.conteneur.resa-ouv-grille:nth-of-type(2) > div.resa-ouv-texte:nth-of-type(1) > p.texte-cle:nth-of-type(3) > a « Une question ? 06 18 21 28 10 »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(1) « Maquette de démonstration : réservations et formul »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(2) « Mentions légales : à compléter · Politique de conf »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.10:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-bas:nth-of-type(2) > p:nth-of-type(3) « © Les Jardins de l'Hacienda »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 calme",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#formulaire « Votre table Le jour Aujourd'hui 10 nov. indisponib »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal",
+        "844×390 normal",
+        "390×844 calme",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans visuel",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#formulaire « Votre table Le jour Ou choisir une date Le service »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".pied-bas > p:nth-child(1) ; .pied-bas > p:nth-child(2) ; .pied-bas > p:nth-child(3)",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "zone tactile sous 44 px",
+      "detail": "40 × 44 px",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "stabilité au chargement (CLS)",
+      "detail": "0.134 (0 visé, 0,05 au plus)",
+      "etape": "films",
+      "page": "/receptions",
+      "taille": "1366×768",
+      "mode": "premier chargement",
+      "selecteur": "div.conteneur.rec-ouv-grille ; figure.media.rec-cadre",
+      "lieux": [
+        "1366×768 premier chargement"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "stabilité au chargement (CLS)",
+      "detail": "0.100 (0 visé, 0,05 au plus)",
+      "etape": "films",
+      "page": "/reserver",
+      "taille": "1366×768",
+      "mode": "premier chargement",
+      "selecteur": "span.rais-bandes",
+      "lieux": [
+        "1366×768 premier chargement"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "transition : élément visible, caché puis réaffiché (flash)",
+      "detail": "",
+      "etape": "films",
+      "page": "/le-lieu → /la-carte",
+      "taille": "1366×768",
+      "mode": "film",
+      "selecteur": "div.carte-ouv-grille.conteneur > div.volets > a.volet.volet--2 « Desserts9 à 11 € »",
+      "lieux": [
+        "1366×768 film",
+        "390×844 film"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "transition : élément visible, caché puis réaffiché (flash)",
+      "detail": "",
+      "etape": "films",
+      "page": "/le-lieu → /la-carte",
+      "taille": "1366×768",
+      "mode": "film",
+      "selecteur": "div.volets > a.volet.volet--2 > figure.media.volet-photo",
+      "lieux": [
+        "1366×768 film",
+        "390×844 film"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "transition : élément visible, caché puis réaffiché (flash)",
+      "detail": "",
+      "etape": "films",
+      "page": "/le-lieu → /la-carte",
+      "taille": "1366×768",
+      "mode": "film",
+      "selecteur": "figure.media.volet-photo > picture > img « Un dessert en verre, fruits rouges »",
+      "lieux": [
+        "1366×768 film",
+        "390×844 film"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "transition : élément visible, caché puis réaffiché (flash)",
+      "detail": "",
+      "etape": "films",
+      "page": "/contact → /la-carte",
+      "taille": "390×844",
+      "mode": "film",
+      "selecteur": "div.volets > a.volet.volet--2 > figure.media.volet-photo",
+      "lieux": [
+        "390×844 film"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "transition : élément visible, caché puis réaffiché (flash)",
+      "detail": "",
+      "etape": "films",
+      "page": "/contact → /la-carte",
+      "taille": "390×844",
+      "mode": "film",
+      "selecteur": "figure.media.volet-photo > picture > img « Un dessert en verre, fruits rouges »",
+      "lieux": [
+        "390×844 film"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du haut pendant le voile",
+      "detail": "bande en rgb(58, 90, 175) à côté du voile en rgb(34, 64, 143), sur 2 image(s) sur 2 (films/bords-voile-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(18, 39, 86) à côté du voile en rgb(28, 56, 125), sur 2 image(s) sur 2 (films/bords-voile-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « Les Jardins de l'Hacienda »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « La carte »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « Le lieu »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « Réceptions »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « Contact »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "selecteur": "a « Réserver »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/contact",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/receptions",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ne tient pas dans l’écran",
+      "detail": "coupé en bas de 164 px (à 50 % de la scène)",
+      "etape": "ecran",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "épinglé",
+      "selecteur": "div.assiette__cadre.conteneur:nth-of-type(2) > div.assiette__scene.table:nth-of-type(2) > div.assiette__element.couvert:nth-of-type(4) > button.couvert-bouton « Faire tourner l'assiette 3 »",
+      "lieux": [
+        "1366×768 épinglé"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ne tient pas dans l’écran",
+      "detail": "coupé en bas de 164 px (à 50 % de la scène)",
+      "etape": "ecran",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "épinglé",
+      "selecteur": "div.assiette__scene.table:nth-of-type(2) > div.assiette__element.couvert:nth-of-type(4) > button.couvert-bouton > img",
+      "lieux": [
+        "1366×768 épinglé"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "fluidité",
+      "detail": "11 % d'images de plus de 50 ms, tâche la plus longue 60 ms",
+      "etape": "fluidite",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "contact.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "receptions.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : objet d’ouverture hors du premier écran",
+      "detail": "358 × 43 px visibles : l’intro et le voile s’ouvrent depuis le centre de l’écran à cette taille",
+      "etape": "grille",
+      "page": "/contact",
+      "taille": "390×844",
+      "lieux": [
+        "390×844"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : objet d’ouverture hors du premier écran",
+      "detail": "358 × 55 px visibles : l’intro et le voile s’ouvrent depuis le centre de l’écran à cette taille",
+      "etape": "grille",
+      "page": "/le-lieu",
+      "taille": "390×844",
+      "lieux": [
+        "390×844"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "identifiant en double",
+      "detail": "id=\"plats\"",
+      "etape": "mesures",
+      "page": "/la-carte",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#plats « Toute la carte Entrées Plats À partager Desserts E »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "premier écran : aucun bouton principal marqué (data-action-principale)",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "1366×768 normal",
+        "390×844 calme",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "typographie française",
+      "detail": "espace insécable manquante avant ou après « : »",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.conteneur.resa-ouv-grille:nth-of-type(2) > div.resa-ouv-texte:nth-of-type(1) > p.resa-fetes.masque-ecran-tres-bas:nth-of-type(4) > span « Les fêtes : »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "au retour arrière, élément qui réapparaît en s’animant",
+      "detail": "",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "selecteur": "div.fenetre > div.fenetre-vue > figure.media.fenetre-photo",
+      "lieux": [
+        "1366×768 retour arrière",
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "au retour arrière, élément qui réapparaît en s’animant",
+      "detail": "",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "selecteur": "figure.media.fenetre-photo > picture > img « Coin de la salle le soir, mur de pierre, »",
+      "lieux": [
+        "1366×768 retour arrière",
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 87 ms (différence 21 %) (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du haut pendant le voile",
+      "detail": "bande en rgb(58, 90, 175) à côté du voile en rgb(34, 64, 143), sur 1 image(s) sur 1 (films/bords-voile-contact-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(18, 39, 86) à côté du voile en rgb(28, 56, 125), sur 1 image(s) sur 1 (films/bords-voile-contact-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du haut pendant le voile",
+      "detail": "bande en rgb(58, 90, 175) à côté du voile en rgb(34, 64, 143), sur 1 image(s) sur 1 (films/bords-voile-le-lieu-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(18, 39, 86) à côté du voile en rgb(28, 56, 125), sur 1 image(s) sur 1 (films/bords-voile-le-lieu-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du haut pendant le voile",
+      "detail": "bande en rgb(58, 90, 175) à côté du voile en rgb(34, 64, 143), sur 1 image(s) sur 1 (films/bords-voile-receptions-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(18, 39, 86) à côté du voile en rgb(28, 56, 125), sur 1 image(s) sur 1 (films/bords-voile-receptions-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du haut pendant le voile",
+      "detail": "bande en rgb(58, 90, 175) à côté du voile en rgb(34, 64, 143), sur 1 image(s) sur 1 (films/bords-voile-reserver-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(18, 39, 86) à côté du voile en rgb(28, 56, 125), sur 1 image(s) sur 1 (films/bords-voile-reserver-1366.png)",
+      "etape": "bords",
+      "page": "/la-carte",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "fluidité",
+      "detail": "8 % d'images de plus de 50 ms",
+      "etape": "fluidite",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "fluidité",
+      "detail": "10 % d'images de plus de 50 ms",
+      "etape": "fluidite",
+      "page": "/contact",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "fluidité",
+      "detail": "6 % d'images de plus de 50 ms",
+      "etape": "fluidite",
+      "page": "/le-lieu",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "fluidité",
+      "detail": "10 % d'images de plus de 50 ms",
+      "etape": "fluidite",
+      "page": "/receptions",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "bords de l’écran /la-carte 1366×768",
+      "raison": "page.click: Timeout 30000ms exceeded. (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "parcours:hauteur",
+      "raison": "page.evaluate: TypeError: Cannot read properties of null (reading 'scrollIntoView')",
+      "etape": "parcours"
+    },
+    {
+      "controle": "fluidite",
+      "raison": "browserContext.close: Target page, context or browser has been closed",
+      "etape": "fluidite"
+    },
+    {
+      "controle": "mouvement",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "mouvement"
+    },
+    {
+      "controle": "vitesse",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "vitesse"
+    },
+    {
+      "controle": "captures",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "captures"
+    },
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 7,
+    "mesures": 42,
+    "films d’ouverture": 12,
+    "films de transition": 12,
+    "bords de l’écran": 5,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 2,
+    "liens vers la page en cours": 6,
+    "changements de hauteur": 5,
+    "mode calme": 12,
+    "bouton du mode calme": 2,
+    "parcours du projet": 1,
+    "tient dans l’écran": 4,
+    "films des épinglages": 1,
+    "fluidité": 11
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 4 étape(s) notée(s), 42 min de travail pour 70 min de budget, 29 min d’attente de l’utilisateur.",
+    "Journal : « aperçu de l'accueil en films (attente de la réponse notée à part) » 9 min pour 5 prévues.",
+    "Audit rapide : étapes lourdes sur /, /contact, /la-carte, /le-lieu, /receptions, /reserver.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Balayage des largeurs : non fait en audit rapide.",
+    "Ouverture / (1366×768) : 2814 ms depuis le premier octet",
+    "Ouverture /contact (1366×768) : 2786 ms depuis le premier octet",
+    "Ouverture /la-carte (1366×768) : 2881 ms depuis le premier octet",
+    "Ouverture /le-lieu (1366×768) : 2676 ms depuis le premier octet",
+    "Ouverture /receptions (1366×768) : 2896 ms depuis le premier octet",
+    "film de l'ouverture /receptions 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /reserver (1366×768) : 2827 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2845 ms depuis le premier octet",
+    "Ouverture /contact (390×844) : 2820 ms depuis le premier octet",
+    "Ouverture /la-carte (390×844) : 2889 ms depuis le premier octet",
+    "Ouverture /le-lieu (390×844) : 2679 ms depuis le premier octet",
+    "Ouverture /receptions (390×844) : 2894 ms depuis le premier octet",
+    "film de l'ouverture /receptions 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /reserver (390×844) : 2824 ms depuis le premier octet",
+    "Bords de l’écran : 382 images d’intro, 6 de voile et 115 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran /contact : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /la-carte : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /receptions : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /reserver : aucune section épinglée ou plein écran.",
+    "Fluidité /reserver 1366×768 (molette) : 2 % d'images lentes sur 129, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1337, tâche la plus longue 0 ms",
+    "Fluidité /contact 390×844 (doigt) : 0 % d'images lentes sur 1340, tâche la plus longue 0 ms",
+    "Fluidité /la-carte 390×844 (doigt) : 0 % d'images lentes sur 1336, tâche la plus longue 0 ms",
+    "Fluidité /le-lieu 390×844 (doigt) : 0 % d'images lentes sur 1337, tâche la plus longue 0 ms",
+    "Fluidité /receptions 390×844 (doigt) : 0 % d'images lentes sur 1415, tâche la plus longue 0 ms"
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 6 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en persienne"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 6 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "présent",
+      "detail": "sur les 6 page(s)"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "présent",
+      "detail": "geste du métier sur /"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /receptions, /reserver"
+    }
+  ]
+}

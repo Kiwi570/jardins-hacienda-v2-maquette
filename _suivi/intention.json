@@ -1,0 +1,80 @@
+{
+  "client": "Les Jardins de l'Hacienda",
+  "site_actuel": "https://www.lesjardinsdelhacienda54.com/",
+  "activite": "restaurant traditionnel et lieu de réception avec piscine, à Moineville (54), à 15 km de Metz",
+  "constat": "Le site actuel montre les lieux (salle, terrasse, piscine) en galeries sans dire comment se passe une journée sur place ; les horaires, les journées festives et le Grand Buffet sont cachés dans des images ou une page « Informations importantes », et la saison d'été affichée date de 2024. Une première maquette existe déjà (jardins-hacienda-maquette, 5 novembre : photo plein cadre, crème et terre cuite, Fraunces, bascule hiver/été) : les trois directions s'en écartent toutes.",
+  "directions": [
+    {
+      "nom": "Les persiennes",
+      "idee": "L'accueil vit une journée à l'Hacienda : le déjeuner du chef à midi, la piscine et les palmiers l'après-midi, le dîner au coin du feu le soir. Le visiteur ouvre des persiennes bleues pour faire entrer la lumière, et toute la page passe du blanc de chaux de midi au cuivre du soir.",
+      "plan": "journee",
+      "palette": ["#F2EFE9", "#1F3E8C", "#E2A23B", "#23453A", "#1A1210"],
+      "polices": ["Gloock", "Figtree"],
+      "grille": {
+        "objet": "persiennes bleues à lames orientables, qu'on tire du doigt ou à la souris pour faire entrer la lumière du moment (élan, retour doux)",
+        "fil": "les rais de lumière des persiennes, qui tournent et changent de couleur de section en section, de midi au soir, avec l'heure qui avance",
+        "voile": "persienne qui se ferme lame par lame, puis s'ouvre sur l'objet de la page suivante",
+        "forme_voile": "propre",
+        "familles": ["ambiance-qui-change", "profondeur", "particules"],
+        "signature": "ambiance-qui-change",
+        "modernes": ["la lumière et la couleur de toute la page changent de midi au soir", "le jardin découpé en plans (palmiers, bassin, bâtisse) qui se décalent en profondeur", "reflets d'eau l'après-midi, braises de la cheminée le soir"]
+      },
+      "modules": ["assiette-qui-se-dresse", "reservation-de-table", "horaires-ouvert-maintenant", "agenda-des-dates"],
+      "sections": [
+        { "role": "ouverture", "reprend": "tiki-cassis-maquette/sky", "plus": "pas un ciel en fond : de vraies persiennes à ouvrir sur la salle du chef ; la lumière qui entre dessine des rais sur le titre, et l'heure réelle du lieu choisit midi ou soir" },
+        { "role": "scène signature", "reprend": "meteofr-maquette/heures", "plus": "la journée festive épinglée (12 h déjeuner, 14 h 30 piscine, 15 h 30 bar, 19 h fin) et le Grand Buffet du dimanche, avec les vraies règles du site ; la lumière tourne pendant qu'on avance" },
+        { "role": "carte", "reprend": "hanamizuki-maquette/table", "plus": "on dresse l'assiette du chef au défilement (geste du métier), avec les vrais plats et prix de la carte, entrées, plats, à partager, desserts" },
+        { "role": "réservation", "reprend": "coupdefood-maquette/contact", "plus": "midi ou soir, salle, terrasse ou cheminée, Noël et Saint-Sylvestre préremplis ; à l'envoi, un carton de table se plie et se pose dans la lumière du moment" }
+      ],
+      "invente": ["persiennes à ouvrir", "rais de lumière qui suivent l'heure", "titre peint au pochoir sur le mur chaulé", "journée festive épinglée", "carton de table qui se pose"]
+    },
+    {
+      "nom": "Le domaine",
+      "idee": "L'accueil est le plan du domaine dessiné, vu d'en haut : la salle et sa cheminée, la terrasse, la piscine et ses palmiers, le jardin des réceptions. On s'y promène du doigt ; chaque lieu est une section, et l'on plonge dedans par sa fenêtre jusqu'à la vraie photo.",
+      "plan": "territoire",
+      "palette": ["#173528", "#EADFC8", "#6EC3BE", "#E66B4E", "#0F1A15"],
+      "polices": ["Bricolage Grotesque", "Instrument Sans"],
+      "grille": {
+        "objet": "le plan du domaine qu'on fait glisser et pivoter du doigt, comme une carte posée sur la table (élan, zoom)",
+        "fil": "l'allée de gravier qui relie les lieux, avec un point lumineux qui avance de lieu en lieu d'une section et d'une page à l'autre",
+        "voile": "vague de la piscine qui monte puis se retire sur le lieu suivant",
+        "forme_voile": "vague",
+        "familles": ["plongee", "recomposition", "particules"],
+        "signature": "plongee",
+        "modernes": ["plongée par la fenêtre de chaque lieu jusqu'à sa photo", "le plan se recompose selon le moment (midi, piscine, soir, réception)", "feuilles de palmier et reflets qui bougent sur le plan"]
+      },
+      "modules": ["plan-de-salle", "transition-vague", "reservation-de-table", "agenda-des-dates"],
+      "sections": [
+        { "role": "ouverture", "reprend": "surffm-maquette/nous-capter-couverture", "plus": "un plan du domaine dessiné qui sert de sommaire ; on le parcourt à la main, pas seulement au défilement" },
+        { "role": "scène signature", "reprend": "winsbike-maquette/top", "plus": "plongée par la fenêtre de chaque lieu jusqu'à la vraie photo (cheminée, terrasse, piscine, réceptions)" },
+        { "role": "réservation", "reprend": "loeilsingulier-maquette/ob-t", "plus": "choisir sa table sur le plan (cheminée, salle, terrasse) ; la réservation plante un repère sur la table choisie" },
+        { "role": "agenda", "reprend": "les-plus-hautes-eaux-maquette/agenda-t-venir", "plus": "Noël, Saint-Sylvestre et les soirées placés sur le plan, là où ils ont lieu, triés à la date du jour" }
+      ],
+      "invente": ["plan du domaine dessiné", "allée de gravier lumineuse", "fenêtres où l'on plonge", "repère planté sur la table", "lettres du titre qui suivent l'allée"]
+    },
+    {
+      "nom": "La table",
+      "idee": "Une seule grande table vue d'en haut reste au centre de l'accueil et change à chaque section : l'assiette du chef à midi, le verre à l'ombre des palmes l'après-midi, les bougies du soir, le Grand Buffet du dimanche, la table d'honneur d'un mariage. Le visiteur tire la nappe pour changer de moment.",
+      "plan": "objet-unique",
+      "palette": ["#121010", "#F7F5F0", "#8FA58A", "#D98C7A", "#B89A5A"],
+      "polices": ["Bodoni Moda", "Hanken Grotesk"],
+      "grille": {
+        "objet": "la nappe qu'on tire du doigt : la table change de service (midi, piscine, soir, fête), avec élan et retour",
+        "fil": "la table elle-même, qui change d'état d'une section et d'une page à l'autre",
+        "voile": "la nappe qui balaie l'écran et retombe sur la page suivante",
+        "forme_voile": "rideau",
+        "familles": ["morphing", "particules", "profondeur"],
+        "signature": "morphing",
+        "modernes": ["les objets de la table se transforment l'un en l'autre (assiette en coupe, bougie en verre)", "fleur de sel, confettis ou braises selon le moment", "couches de la table (nappe, assiettes, verres, ombres de palmes) qui se décalent en profondeur"]
+      },
+      "modules": ["assiette-qui-se-dresse", "reservation-de-table", "horaires-ouvert-maintenant"],
+      "sections": [
+        { "role": "ouverture", "reprend": "pizzalyght-maquette/hero", "plus": "toute la table vue d'en haut, la vraie assiette du chef au centre, et la nappe à tirer" },
+        { "role": "scène signature", "reprend": "aquafit-maquette/gilet", "plus": "la table épinglée change de service au défilement : midi, piscine, soir, dimanche, réception" },
+        { "role": "offre", "reprend": "willowcamp-maquette/facons", "plus": "les façons de venir (déjeuner, Grand Buffet, journée festive, réception) redessinées sur la table" },
+        { "role": "réservation", "reprend": "loeilsingulier-maquette/ob-t", "plus": "la réservation pose un carton à votre nom sur la table" }
+      ],
+      "invente": ["nappe à tirer", "table qui change de service", "monogramme brodé sur la nappe", "carton à votre nom", "confettis des réceptions"]
+    }
+  ]
+}

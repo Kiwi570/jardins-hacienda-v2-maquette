@@ -1,0 +1,29 @@
+{
+  "rubriques": [
+    { "id": "entrees", "nom": "Entrées", "plats": [
+      { "nom": "Foie gras de canard maison", "prix": "21 €" },
+      { "nom": "Risotto de Saint-Jacques au riz noir", "prix": "21 €" },
+      { "nom": "Rouget en vinaigrette", "prix": "18 €" },
+      { "nom": "Œuf cocotte à la bourguignonne", "prix": "14 €" },
+      { "nom": "L'os à moelle", "prix": "9 €" } ] },
+    { "id": "plats", "nom": "Plats", "plats": [
+      { "nom": "Pièce du boucher", "prix": "Prix du marché" },
+      { "nom": "Poisson selon l'arrivage", "prix": "26 €" },
+      { "nom": "Suprême de pintade", "prix": "24 €" },
+      { "nom": "Porc et ail confit", "prix": "24 €" },
+      { "nom": "Dhal aux trois lentilles", "prix": "21 €" } ] },
+    { "id": "partager", "nom": "À partager", "note": "Planches pour 4 personnes", "plats": [
+      { "nom": "La Libanaise", "prix": "45 €" },
+      { "nom": "La Charcuterie", "prix": "45 €" },
+      { "nom": "La Mer", "prix": "45 €" },
+      { "nom": "Houmous", "prix": "12 €" } ] },
+    { "id": "desserts", "nom": "Desserts", "plats": [
+      { "nom": "Le Gourmand", "prix": "11 €" },
+      { "nom": "Crème brûlée à la vanille de l'île Maurice", "prix": "10 €" },
+      { "nom": "Brioche perdue", "prix": "10 €" },
+      { "nom": "Figues rôties au miel", "prix": "10 €" },
+      { "nom": "Tarte aux fruits de saison", "prix": "9 €" } ] }
+  ],
+  "enfant": { "nom": "Menu enfant", "detail": "Jusqu'à 10 ans : un plat et un dessert", "prix": "16 €" },
+  "supplement": "Supplément planche à partager : 10 € par personne, ou 25 € pour deux."
+}

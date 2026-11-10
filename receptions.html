@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réceptions : mariage, baptême, anniversaire, pot de départ</title>
+<meta name="description" content="Célébrez un mariage, un baptême, un anniversaire ou un pot de départ aux Jardins de l&#39;Hacienda, au bord de la piscine ou au coin du feu.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jardins-hacienda-v2-maquette.vercel.app/receptions">
+<style>:root{--fond:#F2EFE9;--texte:#1C1A17;--voile-fond:#1F3E8C;--ouverture-fond:#F2EFE9;--menu-fond:#1F3E8C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<script>try{var hh=+new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',hour:'numeric',hourCycle:'h23'}).format(new Date());if(hh>=18||hh<7)document.documentElement.setAttribute('data-moment','soir')}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/gloock.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F2EFE9">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Les Jardins de l&#39;Hacienda">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Réceptions : mariage, baptême, anniversaire, pot de départ">
+<meta property="og:description" content="Célébrez un mariage, un baptême, un anniversaire ou un pot de départ aux Jardins de l&#39;Hacienda, au bord de la piscine ou au coin du feu.">
+<meta property="og:url" content="https://jardins-hacienda-v2-maquette.vercel.app/receptions">
+<meta property="og:image" content="https://jardins-hacienda-v2-maquette.vercel.app/assets/partage/receptions-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Une table de mariage dressée aux Jardins de l&#39;Hacienda">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Les Jardins de l'Hacienda","description":"Restaurant traditionnel et lieu de réception avec terrasse et piscine, à Moineville, près de Metz.","telephone":"+33 6 18 21 28 10","address":{"@type":"PostalAddress","streetAddress":"6 Vathier Haye","postalCode":"54580","addressLocality":"Moineville","addressCountry":"FR"},"servesCuisine":"Cuisine traditionnelle de saison","acceptsReservations":true,"sameAs":["https://www.facebook.com/lesjardinsdelhacienda54","https://www.instagram.com/lesjardinsdel.hacienda/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persienne" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-h-clair.png" alt="" width="64" height="64"><span data-voile-libelle>Réceptions</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-h.png" alt="" width="96" height="96" data-ouverture-objet>
+  <p class="ouverture-nom">Les Jardins de l&#39;Hacienda</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Restaurant &amp; réceptions · Moineville</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-h.png" alt="" width="40" height="40"><span>Les Jardins de l&#39;Hacienda</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions" aria-current="page">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-carte" class="menu-lien" data-libelle="La carte">La carte</a></li><li style="--i:2"><a href="/le-lieu" class="menu-lien" data-libelle="Le lieu">Le lieu</a></li><li style="--i:3"><a href="/receptions" class="menu-lien" data-libelle="Réceptions" aria-current="page">Réceptions</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33618212810">Appeler 06 18 21 28 10</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="rec-ouv page-ouv lumiere" id="debut" data-ambiance="nuit">
+  <figure class="media rec-fond" data-grok style="--cadrage:66% 35%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/fete-soir-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/fete-soir-1280.webp" srcset="/assets/images/grok/fete-soir-640.webp 640w, /assets/images/grok/fete-soir-1280.webp 1280w" sizes="100vw" alt="" width="1280" height="854" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <svg class="guirlande guirlande--haut" viewBox="0 0 1200 140" preserveAspectRatio="none" data-effet="papel-picado" aria-hidden="true"><path d="M0 12 Q 600 52 1200 12" stroke="#F2EFE9" stroke-width="2" fill="none"/><g transform="translate(10.9 15.5)"><g class="fanion" style="--i:0"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(96.6 25.3)"><g class="fanion" style="--i:1"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(182.3 33.5)"><g class="fanion" style="--i:2"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#D9682B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(268.0 40.0)"><g class="fanion" style="--i:3"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#23453A"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(353.7 44.9)"><g class="fanion" style="--i:4"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E7B7C8"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(439.4 48.2)"><g class="fanion" style="--i:5"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#F2EFE9"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(525.1 49.8)"><g class="fanion" style="--i:6"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(610.9 49.8)"><g class="fanion" style="--i:7"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(696.6 48.2)"><g class="fanion" style="--i:8"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#D9682B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(782.3 44.9)"><g class="fanion" style="--i:9"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#23453A"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(868.0 40.0)"><g class="fanion" style="--i:10"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E7B7C8"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(953.7 33.5)"><g class="fanion" style="--i:11"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#F2EFE9"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(1039.4 25.3)"><g class="fanion" style="--i:12"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#E2A23B"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g><g transform="translate(1125.1 15.5)"><g class="fanion" style="--i:13"><path d="M0 0 H64 V74 L54.4 88 L44.8 74 L35.2 88 L25.6 74 L16 88 L6.4 74 L0 88 Z" fill="#1F3E8C"/><circle cx="32" cy="35.2" r="10" fill="#1A1210" opacity=".35"/><path d="M12.8 15.84 h38.4 M16 54.56 h32" stroke="#1A1210" stroke-opacity=".3" stroke-width="3" stroke-dasharray="4 5"/></g></g></svg>
+  <div class="conteneur rec-ouv-grille">
+    <div>
+      <p class="surtitre" data-anime="gsap">Restaurant &amp; réceptions</p>
+      <h1 class="titre-page titre-decoupe" data-grille="typo" data-effet="decoupe" aria-label="Les grands jours"><span class="decoupe-mot" aria-hidden="true"><span class="decoupe">L</span><span class="decoupe">e</span><span class="decoupe">s</span></span> <span class="decoupe-mot" aria-hidden="true"><span class="decoupe">g</span><span class="decoupe">r</span><span class="decoupe">a</span><span class="decoupe">n</span><span class="decoupe">d</span><span class="decoupe">s</span></span> <span class="decoupe-mot" aria-hidden="true"><span class="decoupe">j</span><span class="decoupe">o</span><span class="decoupe">u</span><span class="decoupe">r</span><span class="decoupe">s</span></span></h1>
+      <p class="masque-ecran-bas" data-anime="gsap">Célébrez le plus beau jour de votre vie dans un cadre idyllique : une journée unique, préparée sur mesure avec la maison.</p>
+      <p class="texte-cle" data-info-cle data-anime="gsap">Mariage, baptême, anniversaire, pot de départ, séminaire</p>
+      <p data-anime="gsap"><a class="bouton bouton--clair" href="#demande" data-sans-transition data-action-principale>Demander une date</a></p>
+    </div>
+    <figure class="media rec-cadre" data-iris-centre style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/maries-784.webp" srcset="/assets/images/maries-480.webp 480w, /assets/images/maries-640.webp 640w, /assets/images/maries-784.webp 784w" sizes="(max-width: 760px) 70vw, 30vw" alt="Des mariés lèvent leur verre au bord de la piscine" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="rec-types lumiere" id="fetes" data-ambiance="soir">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur">
+    <h2 data-anime="lignes">Ce que l&#39;on fête ici</h2>
+    <ul class="fetes" data-anime="cascade">
+      <li class="fete">
+        <figure class="media fete-photo" style="--cadrage:51% 41%">
+  <picture>
+    <img src="/assets/images/maries-piscine-784.webp" srcset="/assets/images/maries-piscine-480.webp 480w, /assets/images/maries-piscine-640.webp 640w, /assets/images/maries-piscine-784.webp 784w" sizes="(max-width: 760px) 80vw, 18vw" alt="Des mariés devant la piscine et les palmiers" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Mariage</h3>
+        <p>Au bord de l&#39;eau, sous la pergola ou au coin du feu.</p>
+        <a class="fete-lien" href="#demande" data-sans-transition data-sujet="mariage">Demander une date<span class="visuellement-cache"> : Mariage</span></a>
+      </li><li class="fete">
+        <figure class="media fete-photo" style="--cadrage:53% 45%">
+  <picture>
+    <img src="/assets/images/table-bapteme-784.webp" srcset="/assets/images/table-bapteme-480.webp 480w, /assets/images/table-bapteme-640.webp 640w, /assets/images/table-bapteme-784.webp 784w" sizes="(max-width: 760px) 80vw, 18vw" alt="Table dressée en blanc et rouge sous les palmes" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Baptême</h3>
+        <p>Une table dressée pour la famille, à l&#39;ombre des palmes.</p>
+        <a class="fete-lien" href="#demande" data-sans-transition data-sujet="bapteme">Demander une date<span class="visuellement-cache"> : Baptême</span></a>
+      </li><li class="fete">
+        <figure class="media fete-photo" style="--cadrage:42% 49%">
+  <picture>
+    <img src="/assets/images/gateau-784.webp" srcset="/assets/images/gateau-480.webp 480w, /assets/images/gateau-640.webp 640w, /assets/images/gateau-784.webp 784w" sizes="(max-width: 760px) 80vw, 18vw" alt="Gâteau et fleurs pour une réception" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Anniversaire</h3>
+        <p>Un gâteau, des proches, et la soirée devant soi.</p>
+        <a class="fete-lien" href="#demande" data-sans-transition data-sujet="anniversaire">Demander une date<span class="visuellement-cache"> : Anniversaire</span></a>
+      </li><li class="fete">
+        <figure class="media fete-photo" style="--cadrage:48% 57%">
+  <picture>
+    <img src="/assets/images/table-fleurs-1600.webp" srcset="/assets/images/table-fleurs-480.webp 480w, /assets/images/table-fleurs-640.webp 640w, /assets/images/table-fleurs-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 18vw" alt="Verres et fleurs rouges sur une table de fête" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Pot de départ</h3>
+        <p>Pour dire au revoir à un collègue autour d&#39;un verre.</p>
+        <a class="fete-lien" href="#demande" data-sans-transition data-sujet="depart">Demander une date<span class="visuellement-cache"> : Pot de départ</span></a>
+      </li><li class="fete">
+        <figure class="media fete-photo" style="--cadrage:48% 51%">
+  <picture>
+    <img src="/assets/images/pool-party-640.webp" srcset="/assets/images/pool-party-480.webp 480w, /assets/images/pool-party-640.webp 640w" sizes="(max-width: 760px) 80vw, 18vw" alt="La piscine un jour de pool party" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Pool party</h3>
+        <p>La piscine, la musique et l&#39;été.</p>
+        <a class="fete-lien" href="#demande" data-sans-transition data-sujet="autre">Demander une date<span class="visuellement-cache"> : Pool party</span></a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="rec-souvenirs lumiere" id="souvenirs" data-ambiance="apres-midi">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur">
+    <div class="rec-souvenirs-tete">
+      <h2 data-anime="lignes">Souvenirs de fêtes</h2>
+      <p data-anime>Quelques réceptions vécues aux Jardins de l&#39;Hacienda.</p>
+    </div>
+    <div class="souvenirs">
+      <figure class="media souvenir souvenir--a" data-fx="parallaxe" style="--cadrage:45% 60%">
+  <picture>
+    <img src="/assets/images/piscine-large-1280.webp" srcset="/assets/images/piscine-large-640.webp 640w, /assets/images/piscine-large-1280.webp 1280w, /assets/images/piscine-large-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 46vw" alt="La piscine et ses palmiers, vue d&#39;ensemble" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media souvenir souvenir--b" data-anime="rideau" style="--cadrage:48% 39%">
+  <picture>
+    <img src="/assets/images/pergola-1600.webp" srcset="/assets/images/pergola-480.webp 480w, /assets/images/pergola-640.webp 640w, /assets/images/pergola-1600.webp 1600w" sizes="(max-width: 760px) 60vw, 26vw" alt="Tables dressées sous la pergola en bois" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media souvenir souvenir--c" data-fx="vitesse" style="--cadrage:53% 56%">
+  <picture>
+    <img src="/assets/images/brasero-1600.webp" srcset="/assets/images/brasero-480.webp 480w, /assets/images/brasero-640.webp 640w, /assets/images/brasero-1600.webp 1600w" sizes="(max-width: 760px) 60vw, 26vw" alt="Le brasero allumé devant les paillotes" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media souvenir souvenir--d" data-anime="rideau" style="--cadrage:48% 51%">
+  <picture>
+    <img src="/assets/images/buffet-fleurs-1600.webp" srcset="/assets/images/buffet-fleurs-480.webp 480w, /assets/images/buffet-fleurs-640.webp 640w, /assets/images/buffet-fleurs-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 30vw" alt="Plateau de légumes et de fleurs comestibles" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="rec-demande lumiere" id="demande" data-ambiance="matin">
+  <div class="rais" aria-hidden="true" data-grille="fil" data-effet="rais" data-audit-ignorer><span class="rais-bandes"></span></div>
+  <div class="conteneur rec-demande-grille">
+    <div>
+      <h2 data-anime="lignes">Parlons de votre fête</h2>
+      <p data-anime>Dites-nous l&#39;essentiel : la maison vous rappelle pour préparer la journée.</p>
+      <p data-anime>Pour certains événements, un acompte par couvert confirme la réservation.</p>
+      <p class="texte-cle" data-anime><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <figure class="media rec-demande-photo" data-anime="rideau" style="--cadrage:45% 64%">
+  <picture>
+    <img src="/assets/images/piscine-paillote-784.webp" srcset="/assets/images/piscine-paillote-480.webp 480w, /assets/images/piscine-paillote-640.webp 640w, /assets/images/piscine-paillote-784.webp 784w" sizes="220px" alt="Paillote et palmiers au bout de la piscine" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <form class="formulaire" id="demande-reception-form" data-formulaire data-confettis data-grille="retour" action="#" novalidate>
+  <div class="formulaire-ligne">
+    <div class="champ"><label for="demande-reception-prenom">Prénom</label><input id="demande-reception-prenom" name="prenom" autocomplete="given-name" required></div>
+    <div class="champ"><label for="demande-reception-nom">Nom de famille</label><input id="demande-reception-nom" name="nom" autocomplete="family-name" required></div>
+  </div>
+  <div class="formulaire-ligne">
+    <div class="champ"><label for="demande-reception-email">E-mail</label><input id="demande-reception-email" name="email" type="email" autocomplete="email" required></div>
+    <div class="champ"><label for="demande-reception-tel">Téléphone</label><input id="demande-reception-tel" name="telephone" type="tel" autocomplete="tel" required></div>
+  </div>
+  <div class="champ"><label for="demande-reception-sujet">Quel est le sujet de votre demande ?</label><select id="demande-reception-sujet" name="sujet"><option value="mariage">Mariage</option><option value="bapteme">Baptême</option><option value="anniversaire">Anniversaire</option><option value="depart">Pot de départ</option><option value="seminaire">Séminaire</option><option value="autre">Autre demande</option></select></div>
+  <div class="formulaire-ligne">
+    <div class="champ"><label for="demande-reception-date">Date souhaitée</label><input id="demande-reception-date" name="date" type="date"></div>
+    <div class="champ"><label for="demande-reception-invites">Nombre d&#39;invités</label><input id="demande-reception-invites" name="invites" type="number" min="1" inputmode="numeric"></div>
+  </div>
+  <div class="champ"><label for="demande-reception-message">Votre message</label><textarea id="demande-reception-message" name="message" rows="4"></textarea></div>
+  <p class="formulaire-mention">Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter.</p>
+  <p><button type="submit" class="bouton">Envoyer</button></p>
+  <p class="formulaire-envoye" data-message-envoi tabindex="-1" hidden></p>
+</form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-marque"><img src="/assets/images/logo-h-clair.png" alt="" width="56" height="56"><strong>Les Jardins de l&#39;Hacienda</strong></p>
+      <p>Restaurant et lieu de réception, à 15 km de Metz</p>
+      <p>6 Vathier Haye, 54580 Moineville<br><a href="tel:+33618212810">06 18 21 28 10</a></p>
+      <p class="pied-reseaux"><a href="https://www.facebook.com/lesjardinsdelhacienda54" target="_blank" rel="noopener">Facebook (nouvel onglet)</a> <a href="https://www.instagram.com/lesjardinsdel.hacienda/" target="_blank" rel="noopener">Instagram (nouvel onglet)</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-carte" data-libelle="La carte">La carte</a></li><li><a href="/le-lieu" data-libelle="Le lieu">Le lieu</a></li><li><a href="/receptions" data-libelle="Réceptions" aria-current="page">Réceptions</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : réservations et formulaires simulés.</p><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>© Les Jardins de l&#39;Hacienda</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33618212810">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

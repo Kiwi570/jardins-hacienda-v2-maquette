@@ -1,0 +1,13 @@
+{
+ "id": "20261110-200547-rapide-cible",
+ "date": "2026-11-10T20:20:47.494Z",
+ "niveau": "rapide",
+ "pages": "/,/la-carte,/le-lieu,/receptions,/reserver,/contact",
+ "etapes": "toutes",
+ "version": "1",
+ "echecs": 81,
+ "aRegarder": 23,
+ "nonLances": 7,
+ "manquants": 6,
+ "statut": "échecs"
+}

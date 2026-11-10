@@ -1,0 +1,8 @@
+{
+  "siteActuel": "lesjardinsdelhacienda54.com",
+  "pagesTypes": ["/", "/la-carte", "/le-lieu", "/receptions", "/reserver"],
+  "effets": ["persiennes", "rais", "pochoir", "assiette", "jardin-plans", "braises", "papel-picado", "carton-de-table"],
+  "grille": {
+    "dispenses": {}
+  }
+}
